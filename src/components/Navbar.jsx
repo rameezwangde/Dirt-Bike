@@ -1,0 +1,112 @@
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, Menu, X } from 'lucide-react';
+import logoImg from '../../image.png';
+
+const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  return (
+    <>
+      <motion.nav 
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="absolute top-0 left-0 w-full z-50"
+      >
+        <div 
+          className="mx-auto flex items-center justify-between px-[20px] lg:px-[48px]"
+          style={{
+            maxWidth: '1540px',
+            height: '100px',
+          }}
+        >
+          
+          {/* LEFT: Logo */}
+          <div className="flex items-center relative z-[60]">
+            <img src={logoImg} alt="Enduro Bike Dubai" style={{ width: '150px' }} className="h-auto object-contain" />
+          </div>
+
+          {/* CENTER: Navigation Links */}
+          <div className="hidden lg:flex items-center font-barlow text-[15px] font-semibold tracking-widest text-white/80 whitespace-nowrap" style={{ gap: '45px' }}>
+            <a href="#" className="relative text-[#F97818] uppercase group">
+              HOME
+              <div className="absolute -bottom-1 left-0 w-full h-[1px] bg-[#F97818]" />
+            </a>
+            <a href="#" className="relative uppercase hover:text-white transition-colors group">
+              EXPERIENCES <span className="inline-block ml-1 text-[10px]">↓</span>
+              <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F97818] transition-all duration-300 group-hover:w-full" />
+            </a>
+            <a href="#" className="relative uppercase hover:text-white transition-colors group">
+              ABOUT
+              <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F97818] transition-all duration-300 group-hover:w-full" />
+            </a>
+            <a href="#" className="relative uppercase hover:text-white transition-colors group">
+              JOURNAL
+              <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F97818] transition-all duration-300 group-hover:w-full" />
+            </a>
+            <a href="#" className="relative uppercase hover:text-white transition-colors group">
+              CONTACT
+              <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F97818] transition-all duration-300 group-hover:w-full" />
+            </a>
+          </div>
+
+          {/* RIGHT: CTA Button */}
+          <div className="hidden lg:flex items-center">
+            <button 
+              className="group relative bg-[#F97818] hover:bg-[#FF8A28] text-[#070B0D] font-barlow font-bold text-sm tracking-widest uppercase clip-button transition-colors duration-300 flex items-center justify-center gap-2 whitespace-nowrap"
+              style={{ width: '235px', height: '58px' }}
+            >
+              BOOK YOUR RIDE
+              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-[5px]" />
+            </button>
+          </div>
+
+          {/* MOBILE: Menu Button */}
+          <div className="lg:hidden flex items-center relative z-[60]">
+            <button 
+              className="text-white p-2 focus:outline-none"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
+            </button>
+          </div>
+
+        </div>
+        <div className="w-full h-[1px] bg-white/10 relative -mt-[1px]" />
+      </motion.nav>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: '-100%' }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: '-100%' }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="fixed inset-0 z-40 bg-[#070B0D] flex flex-col items-center justify-center pt-20"
+          >
+            <div className="flex flex-col items-center gap-8 font-barlow text-[24px] font-bold tracking-widest text-white/90 w-full px-6">
+              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-[#F97818] uppercase">HOME</a>
+              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">EXPERIENCES</a>
+              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">ABOUT</a>
+              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">JOURNAL</a>
+              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">CONTACT</a>
+              
+              <button 
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="mt-8 bg-[#F97818] hover:bg-[#FF8A28] text-[#070B0D] px-8 py-4 font-bold text-sm tracking-widest uppercase flex items-center justify-center gap-3 w-full max-w-[300px] transition-colors duration-300"
+                style={{ clipPath: 'polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%)' }}
+              >
+                BOOK YOUR RIDE
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+};
+
+export default Navbar;
