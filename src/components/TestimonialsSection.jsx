@@ -174,7 +174,7 @@ const TestimonialsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="w-full xl:w-[58%] flex flex-col items-center justify-center relative min-h-[650px] z-30"
+          className="w-full xl:w-[58%] flex flex-col items-center justify-center relative min-h-[500px] md:min-h-[650px] z-30"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -200,7 +200,7 @@ const TestimonialsSection = () => {
           </div>
 
           {/* Deck Clipping Wrapper */}
-          <div className="relative w-full max-w-[850px] h-[650px] overflow-hidden flex items-center justify-center rounded-lg mt-10 xl:mt-0">
+          <div className="relative w-full max-w-[850px] h-[500px] md:h-[650px] overflow-hidden flex items-center justify-center rounded-lg mt-4 md:mt-10 xl:mt-0">
             
             {/* Deck Container */}
             <div className="relative w-[85vw] md:w-[450px] h-[500px] md:h-[570px] flex items-center justify-center perspective-[1000px]">
