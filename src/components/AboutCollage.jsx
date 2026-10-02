@@ -5,7 +5,7 @@ import mainImg from '../../Golden Dune Motocross Chase.png';
 
 const AboutCollage = () => {
   return (
-    <div className="relative w-full max-w-[700px] h-[600px] mx-auto flex items-center justify-center">
+    <div className="relative w-full max-w-[700px] h-[450px] md:h-[600px] mx-auto flex items-center justify-center">
       
       {/* Main Photograph */}
       <motion.div

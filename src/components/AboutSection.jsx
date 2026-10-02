@@ -21,7 +21,7 @@ const AboutSection = () => {
       <div className="relative z-10 w-full max-w-[1500px] mx-auto px-[20px] md:px-[60px] flex flex-col">
         
         {/* Main Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-[70px] items-center w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-[30px] lg:gap-[70px] items-center w-full">
           
           {/* LEFT: Editorial Image Collage */}
           <div className="w-full">
