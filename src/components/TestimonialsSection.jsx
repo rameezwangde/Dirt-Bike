@@ -179,7 +179,7 @@ const TestimonialsSection = () => {
           onMouseLeave={() => setIsPaused(false)}
         >
           {/* Navigation Arrows */}
-          <div className="absolute left-[-10px] md:left-[-30px] top-1/2 -translate-y-1/2 z-50">
+          <div className="hidden md:flex absolute left-[-30px] top-1/2 -translate-y-1/2 z-50">
             <button 
               onClick={handlePrev}
               className="w-[54px] h-[54px] rounded-full bg-[#071116] flex items-center justify-center text-white hover:bg-[#F97818] hover:text-[#071116] transition-all duration-300 hover:scale-105 group shadow-lg"
@@ -189,7 +189,7 @@ const TestimonialsSection = () => {
             </button>
           </div>
 
-          <div className="absolute right-[-10px] md:right-[-30px] top-1/2 -translate-y-1/2 z-50">
+          <div className="hidden md:flex absolute right-[-30px] top-1/2 -translate-y-1/2 z-50">
             <button 
               onClick={handleNext}
               className="w-[54px] h-[54px] rounded-full bg-[#071116] flex items-center justify-center text-white hover:bg-[#F97818] hover:text-[#071116] transition-all duration-300 hover:scale-105 group shadow-lg"
