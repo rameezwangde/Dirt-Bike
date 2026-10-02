@@ -8,7 +8,7 @@ const ExperienceBar = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.65, ease: "easeOut" }}
-      className="absolute z-30 left-[20px] right-[20px] lg:left-[40px] lg:right-[40px] bottom-[20px] lg:bottom-[25px] grid grid-cols-2 lg:grid-cols-[1fr_1.25fr_1.1fr_0.75fr] h-auto lg:h-[112px]"
+      className="absolute z-30 left-[20px] right-[20px] lg:left-[40px] lg:right-[40px] bottom-[20px] lg:bottom-[25px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-[1fr_1.25fr_1.1fr] h-auto lg:h-[112px]"
       style={{
         background: 'rgba(5,8,9,0.90)',
         border: '1px solid rgba(255,255,255,0.16)',
@@ -41,27 +41,6 @@ const ExperienceBar = () => {
           <span className="font-inter text-[9px] lg:text-[11px] text-white/50 tracking-wider uppercase mt-1">Ride Safe. Ride Bold.</span>
         </div>
       </div>
-
-      {/* SECTION 4 (Controls) */}
-      <div className="flex items-center justify-between p-4 lg:px-8 lg:h-full">
-        <button className="text-white/50 hover:text-white transition-colors duration-300 hover:-translate-x-1">
-          <ArrowLeft className="w-5 h-5 lg:w-6 lg:h-6 stroke-[1.5]" />
-        </button>
-        
-        <div className="flex flex-col items-center">
-          <div className="font-barlow font-bold text-sm lg:text-base tracking-widest mb-1 flex items-center gap-2">
-            <span className="text-[#F97818]">01</span>
-            <span className="text-white/30">/</span>
-            <span className="text-white/50">04</span>
-          </div>
-          <span className="font-inter text-[9px] lg:text-[11px] text-white tracking-[0.2em] uppercase text-center">Dirt Bike</span>
-        </div>
-
-        <button className="text-white/50 hover:text-white transition-colors duration-300 hover:translate-x-1">
-          <ArrowRight className="w-5 h-5 lg:w-6 lg:h-6 stroke-[1.5]" />
-        </button>
-      </div>
-
     </motion.div>
   );
 };
