@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Menu, X } from 'lucide-react';
-import logoImg from '../../image.png';
+
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,7 +24,9 @@ const Navbar = () => {
           
           {/* LEFT: Logo */}
           <div className="flex items-center relative z-[60]">
-            <img src={logoImg} alt="Enduro Bike Dubai" style={{ width: '150px' }} className="h-auto object-contain" />
+            <div className="font-barlow font-bold text-2xl tracking-widest text-white/90">
+              YOUR LOGO
+            </div>
           </div>
 
           {/* CENTER: Navigation Links */}
