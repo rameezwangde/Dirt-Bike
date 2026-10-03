@@ -15,7 +15,7 @@ const AboutHero = () => {
       />
       
       {/* Mobile Text Readability Gradient */}
-      <div className="absolute inset-0 z-[1] md:hidden bg-gradient-to-b from-[#F7F4EE] via-[#F7F4EE]/70 to-transparent h-[70%]" />
+      <div className="absolute inset-0 z-[1] md:hidden bg-gradient-to-b from-[#F7F4EE]/95 via-[#F7F4EE]/85 to-[#F7F4EE]/10 h-[90%]" />
 
       {/* Background decorative contours (z-index: 1) */}
       <div className="absolute top-0 left-0 w-[45%] h-full opacity-5 pointer-events-none mix-blend-overlay z-[1]">
@@ -49,22 +49,11 @@ const AboutHero = () => {
             <span className="block text-[#F97818] tracking-[-0.035em] text-[52px] md:text-[clamp(64px,4.8vw,88px)]">ADVENTURE.</span>
           </h1>
 
-          {/* Handwritten Accent */}
-          <div 
-            className="absolute z-10 right-4 top-[240px] md:left-[480px] md:top-[220px]"
-            style={{ transform: 'rotate(-5deg)' }}
-          >
-            <span className="font-marker text-[#F97818] text-[18px] whitespace-nowrap">
-              SINCE DAY ONE
-            </span>
-            <svg width="30" height="30" viewBox="0 0 100 100" className="absolute -left-6 top-1 stroke-[#F97818] fill-none stroke-[3] rotate-[130deg]">
-              <path d="M10,50 Q40,40 80,60 M70,50 L80,60 L70,70" />
-            </svg>
-          </div>
+
         </div>
 
         {/* Description */}
-        <p className="font-inter text-[16px] font-normal leading-[1.55] text-[#4D4D49] max-w-[520px] mt-[28px]">
+        <p className="font-inter text-[16px] font-medium leading-[1.55] text-[#11161A] max-w-[520px] mt-[28px]">
           Born in the Dubai desert, Enduro Bike Dubai is built around one simple idea — to turn every ride into a story worth remembering.
         </p>
 
@@ -79,13 +68,13 @@ const AboutHero = () => {
         {/* CTA Button (z-index: 20) */}
         <div className="mt-[28px] relative z-20 self-start">
           <button 
-            className="h-[52px] px-[28px] bg-[#11161A] text-[#F7F4EE] hover:bg-[#F97818] hover:text-[#11161A] transition-colors duration-300 flex items-center gap-3 group"
-            style={{ clipPath: 'polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%)' }}
+            className="h-[48px] md:h-[52px] pl-[20px] md:pl-[28px] pr-[32px] md:pr-[40px] bg-[#11161A] text-[#F7F4EE] hover:bg-[#F97818] hover:text-[#11161A] transition-colors duration-300 flex items-center gap-2 md:gap-3 group whitespace-nowrap"
+            style={{ clipPath: 'polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%)' }}
           >
-            <span className="font-barlow text-[17px] font-extrabold tracking-[0.05em] uppercase">
+            <span className="font-barlow text-[15px] md:text-[17px] font-extrabold tracking-[0.05em] uppercase">
               DISCOVER OUR STORY
             </span>
-            <ArrowRight className="text-[#F97818] group-hover:text-[#11161A] transform group-hover:translate-x-[5px] transition-all duration-300" size={20} />
+            <ArrowRight className="text-[#F97818] group-hover:text-[#11161A] transform group-hover:translate-x-[5px] transition-all duration-300 flex-shrink-0" size={20} />
           </button>
         </div>
 
