@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import AboutHero from '../components/AboutHero';
+import WhyChooseUs from '../components/WhyChooseUs';
 import Footer from '../components/Footer';
 
 const AboutUs = () => {
@@ -8,6 +9,7 @@ const AboutUs = () => {
     <div className="min-h-screen flex flex-col relative bg-[#F7F4EE]">
       <Navbar />
       <AboutHero />
+      <WhyChooseUs />
       {/* You can add the rest of the About Us page content below here */}
       <Footer />
     </div>

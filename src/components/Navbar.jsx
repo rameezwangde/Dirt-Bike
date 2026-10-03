@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path;
 
   return (
     <>
@@ -32,17 +35,17 @@ const Navbar = () => {
 
           {/* CENTER: Navigation Links */}
           <div className="hidden lg:flex items-center font-barlow text-[15px] font-semibold tracking-widest text-white/80 whitespace-nowrap" style={{ gap: '45px' }}>
-            <Link to="/" className="relative text-[#F97818] uppercase group">
+            <Link to="/" className={`relative uppercase transition-colors group ${isActive('/') ? 'text-[#F97818]' : 'hover:text-white'}`}>
               HOME
-              <div className="absolute -bottom-1 left-0 w-full h-[1px] bg-[#F97818]" />
+              <div className={`absolute -bottom-1 left-0 h-[1px] bg-[#F97818] transition-all duration-300 ${isActive('/') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
             </Link>
             <a href="#" className="relative uppercase hover:text-white transition-colors group">
               EXPERIENCES <span className="inline-block ml-1 text-[10px]">↓</span>
               <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F97818] transition-all duration-300 group-hover:w-full" />
             </a>
-            <Link to="/about" className="relative uppercase hover:text-white transition-colors group">
+            <Link to="/about" className={`relative uppercase transition-colors group ${isActive('/about') ? 'text-[#F97818]' : 'hover:text-white'}`}>
               ABOUT
-              <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F97818] transition-all duration-300 group-hover:w-full" />
+              <div className={`absolute -bottom-1 left-0 h-[1px] bg-[#F97818] transition-all duration-300 ${isActive('/about') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
             </Link>
             <a href="#" className="relative uppercase hover:text-white transition-colors group">
               JOURNAL
@@ -90,9 +93,9 @@ const Navbar = () => {
             className="fixed inset-0 z-40 bg-[#070B0D] flex flex-col items-center justify-center pt-20"
           >
             <div className="flex flex-col items-center gap-8 font-barlow text-[24px] font-bold tracking-widest text-white/90 w-full px-6">
-              <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="text-[#F97818] uppercase">HOME</Link>
+              <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isActive('/') ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>HOME</Link>
               <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">EXPERIENCES</a>
-              <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">ABOUT</Link>
+              <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isActive('/about') ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>ABOUT</Link>
               <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">JOURNAL</a>
               <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">CONTACT</a>
               
