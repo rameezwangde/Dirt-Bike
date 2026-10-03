@@ -14,19 +14,6 @@ const HeroContent = () => {
     >
       <div className="lg:ml-[7vw]">
       
-      {/* Eyebrow */}
-      <motion.div 
-        initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
-        className="flex items-center gap-4 mb-5"
-      >
-        <div className="text-[#F97818] font-barlow font-bold text-sm">01</div>
-        <div className="text-[12px] text-white/70 font-inter uppercase tracking-[0.25em] flex items-center">
-          DUBAI • AL BADAYER DESERT
-          <div className="ml-5 w-[100px] h-[1px] bg-white/30" />
-        </div>
-      </motion.div>
 
       {/* Headline */}
       <div 

@@ -23,7 +23,9 @@ const Navbar = () => {
   const defaultTextColor = isAboutPage ? 'text-[#11161A]' : 'text-white/80';
   const logoColor = isAboutPage ? 'text-[#11161A]' : 'text-white/90';
   const hoverColor = isAboutPage ? 'hover:text-[#F97818]' : 'hover:text-white';
-  const scrolledBg = isAboutPage ? 'bg-[#F7F4EE]/95 shadow-md' : 'bg-[#070B0D]/95 shadow-md';
+  const scrolledBg = isAboutPage 
+    ? 'bg-cream/80 backdrop-blur-md shadow-sm border-b border-ink/5' 
+    : 'bg-charcoal/70 backdrop-blur-md shadow-lg border-b border-white/10';
   
   return (
     <>
@@ -31,7 +33,7 @@ const Navbar = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-sm ${scrolled ? scrolledBg : 'bg-transparent'}`}
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? scrolledBg : 'bg-transparent'}`}
       >
         <div 
           className="mx-auto flex items-center justify-between px-[20px] lg:px-[48px] transition-all duration-300"
