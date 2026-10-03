@@ -5,10 +5,10 @@ import { Play, ArrowRight } from 'lucide-react';
 const HeroContent = () => {
   return (
     <div 
-      className="absolute z-20 pointer-events-auto w-full max-w-[760px] px-[20px] lg:px-0"
+      className="absolute z-20 pointer-events-auto w-full max-w-[760px] px-[24px] lg:px-0"
       style={{
         left: '0',
-        top: '48%',
+        top: '40%',
         transform: 'translateY(-50%)',
       }}
     >
@@ -30,13 +30,7 @@ const HeroContent = () => {
 
       {/* Headline */}
       <div 
-        className="font-barlow font-black uppercase flex flex-col"
-        style={{
-          fontSize: 'clamp(55px, 12vw, 125px)',
-          lineHeight: 0.82,
-          letterSpacing: '-0.035em',
-          width: '100%'
-        }}
+        className="font-barlow font-black uppercase flex flex-col text-[65px] md:text-[clamp(55px,12vw,125px)] leading-[0.85] md:leading-[0.82] tracking-[-0.035em] w-full"
       >
         <motion.div
           initial={{ opacity: 0, y: 40 }}

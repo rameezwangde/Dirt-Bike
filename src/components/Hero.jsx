@@ -15,19 +15,24 @@ const Hero = () => {
       {/* Background Image (z-index: 0) */}
       <motion.img 
         src={bgImage}
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        className="absolute inset-0 w-full h-full object-cover z-0 object-right md:object-center"
         style={{
-          y: backgroundY,
-          objectPosition: 'center center'
+          y: backgroundY
         }}
         alt="Desert Dirt Bike"
       />
 
       {/* Dark overlay primarily on the LEFT side (z-index: 1) */}
       <div 
-        className="absolute inset-0 pointer-events-none z-[1]"
+        className="absolute inset-0 pointer-events-none z-[1] hidden md:block"
         style={{
           background: 'linear-gradient(90deg, rgba(5,10,12,0.97) 0%, rgba(5,10,12,0.88) 24%, rgba(5,10,12,0.52) 45%, rgba(5,10,12,0.10) 70%, rgba(5,10,12,0.03) 100%)'
+        }}
+      />
+      <div 
+        className="absolute inset-0 pointer-events-none z-[1] md:hidden"
+        style={{
+          background: 'linear-gradient(to top, rgba(5,10,12,0.95) 0%, rgba(5,10,12,0.8) 35%, rgba(5,10,12,0.2) 100%)'
         }}
       />
 
