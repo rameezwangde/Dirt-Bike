@@ -10,9 +10,12 @@ const AboutHero = () => {
       {/* Background Image (z-index: 0) */}
       <img 
         src={bgImage}
-        className="absolute inset-0 w-full h-full object-cover z-0 object-center"
+        className="absolute inset-0 w-full h-full object-cover z-0 object-right md:object-center"
         alt="About Enduro Bike Dubai"
       />
+      
+      {/* Mobile Text Readability Gradient */}
+      <div className="absolute inset-0 z-[1] md:hidden bg-gradient-to-b from-[#F7F4EE] via-[#F7F4EE]/70 to-transparent h-[70%]" />
 
       {/* Background decorative contours (z-index: 1) */}
       <div className="absolute top-0 left-0 w-[45%] h-full opacity-5 pointer-events-none mix-blend-overlay z-[1]">
@@ -26,8 +29,7 @@ const AboutHero = () => {
 
       {/* Strict Left Content Zone (z-index: 10) */}
       <div 
-        className="relative z-10 w-[42%] max-w-[620px]"
-        style={{ marginLeft: 'clamp(70px, 5vw, 110px)', paddingTop: '110px' }}
+        className="relative z-10 w-full md:w-[42%] max-w-[620px] px-[24px] md:px-0 pt-[140px] md:pt-[110px] md:ml-[clamp(70px,5vw,110px)]"
       >
         
         {/* Eyebrow */}
@@ -39,18 +41,18 @@ const AboutHero = () => {
         </div>
 
         {/* Main Title Container */}
-        <div className="relative max-w-[600px]">
-          <h1 className="font-barlow font-black uppercase leading-[0.82] tracking-[-0.025em] text-[clamp(66px,5.2vw,94px)]">
+        <div className="relative w-full md:max-w-[600px]">
+          <h1 className="font-barlow font-black uppercase leading-[0.85] md:leading-[0.82] tracking-[-0.025em] text-[58px] md:text-[clamp(66px,5.2vw,94px)]">
             <span className="block text-[#11161A]">MORE THAN</span>
             <span className="block text-[#F97818]">A RIDE.</span>
             <span className="block text-[#11161A]">IT'S AN</span>
-            <span className="block text-[#F97818] tracking-[-0.035em]" style={{ fontSize: 'clamp(64px,4.8vw,88px)' }}>ADVENTURE.</span>
+            <span className="block text-[#F97818] tracking-[-0.035em] text-[52px] md:text-[clamp(64px,4.8vw,88px)]">ADVENTURE.</span>
           </h1>
 
           {/* Handwritten Accent */}
           <div 
-            className="absolute z-10"
-            style={{ left: '480px', top: '220px', transform: 'rotate(-5deg)' }}
+            className="absolute z-10 right-4 top-[240px] md:left-[480px] md:top-[220px]"
+            style={{ transform: 'rotate(-5deg)' }}
           >
             <span className="font-marker text-[#F97818] text-[18px] whitespace-nowrap">
               SINCE DAY ONE
@@ -93,7 +95,7 @@ const AboutHero = () => {
       
       {/* Vertical Page Indicator (Left Edge) - z-index: 10 */}
       <div 
-        className="absolute z-10 flex flex-col items-center gap-4"
+        className="absolute z-10 hidden md:flex flex-col items-center gap-4"
         style={{ left: '30px', top: '48%', transform: 'translateY(-50%)' }}
       >
         <span className="text-[#F97818] font-barlow font-bold text-[10px]">01</span>
@@ -102,7 +104,7 @@ const AboutHero = () => {
       </div>
 
       {/* Right-Side Location Coordinates - z-index: 10 */}
-      <div className="absolute right-[50px] top-[140px] flex flex-col items-end gap-1 font-mono text-[10px] tracking-[0.12em] text-white/70 z-10 opacity-70">
+      <div className="absolute right-[50px] top-[140px] hidden md:flex flex-col items-end gap-1 font-mono text-[10px] tracking-[0.12em] text-white/70 z-10 opacity-70">
         <span>25.0760° N</span>
         <span>55.2962° E</span>
         <div className="mt-3 relative w-3 h-3 flex items-center justify-center opacity-60">
@@ -112,7 +114,7 @@ const AboutHero = () => {
       </div>
 
       {/* Right-Side Vertical Text - z-index: 10 */}
-      <div className="absolute right-[50px] bottom-[140px] z-10 opacity-65">
+      <div className="absolute right-[50px] bottom-[140px] z-10 opacity-65 hidden md:block">
         <span className="text-[9px] font-semibold tracking-[0.25em] text-white uppercase whitespace-nowrap" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
           Dubai<br />
           Desert<br />
@@ -121,30 +123,30 @@ const AboutHero = () => {
       </div>
 
       {/* Bottom Story Strip - z-index: 30 */}
-      <div className="absolute bottom-0 left-0 right-0 h-[78px] bg-[#050E13]/95 z-30">
-        <div className="h-full max-w-[1500px] mx-auto grid grid-cols-3 px-[40px]">
+      <div className="absolute bottom-0 left-0 right-0 h-auto md:h-[78px] bg-[#050E13]/95 z-30">
+        <div className="h-full max-w-[1500px] mx-auto flex overflow-x-auto md:grid md:grid-cols-3 px-[20px] md:px-[40px] py-[20px] md:py-0 snap-x snap-mandatory hide-scrollbar">
           
-          <div className="flex items-center gap-4 border-r border-white/10 pr-6">
+          <div className="flex-shrink-0 w-[240px] md:w-auto flex items-center gap-4 border-r border-white/10 pr-6 snap-start">
             <span className="text-[#F97818] font-barlow font-extrabold text-[20px]">01</span>
             <div className="flex flex-col justify-center">
-              <span className="text-[#F7F4EE] font-barlow font-bold tracking-wide text-[15px] uppercase">BORN IN DUBAI</span>
-              <span className="text-[#F7F4EE]/40 font-inter text-[12px] mt-0.5">Desert roots.</span>
+              <span className="text-[#F7F4EE] font-barlow font-bold tracking-wide text-[14px] md:text-[15px] uppercase">BORN IN DUBAI</span>
+              <span className="text-[#F7F4EE]/40 font-inter text-[11px] md:text-[12px] mt-0.5">Desert roots.</span>
             </div>
           </div>
 
-          <div className="flex items-center gap-4 border-r border-white/10 px-8">
+          <div className="flex-shrink-0 w-[260px] md:w-auto flex items-center gap-4 md:border-r border-white/10 px-8 snap-start">
             <span className="text-[#F97818] font-barlow font-extrabold text-[20px]">02</span>
             <div className="flex flex-col justify-center">
-              <span className="text-[#F7F4EE] font-barlow font-bold tracking-wide text-[15px] uppercase">BUILT FOR ADVENTURE</span>
-              <span className="text-[#F7F4EE]/40 font-inter text-[12px] mt-0.5">More than a tour.</span>
+              <span className="text-[#F7F4EE] font-barlow font-bold tracking-wide text-[14px] md:text-[15px] uppercase">BUILT FOR ADVENTURE</span>
+              <span className="text-[#F7F4EE]/40 font-inter text-[11px] md:text-[12px] mt-0.5">More than a tour.</span>
             </div>
           </div>
 
-          <div className="flex items-center gap-4 pl-8">
+          <div className="flex-shrink-0 w-[260px] md:w-auto flex items-center gap-4 pl-8 snap-start">
             <span className="text-[#F97818] font-barlow font-extrabold text-[20px]">03</span>
             <div className="flex flex-col justify-center">
-              <span className="text-[#F7F4EE] font-barlow font-bold tracking-wide text-[15px] uppercase">RIDE WITH CONFIDENCE</span>
-              <span className="text-[#F7F4EE]/40 font-inter text-[12px] mt-0.5">Guided. Equipped. Ready.</span>
+              <span className="text-[#F7F4EE] font-barlow font-bold tracking-wide text-[14px] md:text-[15px] uppercase">RIDE WITH CONFIDENCE</span>
+              <span className="text-[#F7F4EE]/40 font-inter text-[11px] md:text-[12px] mt-0.5">Guided. Equipped. Ready.</span>
             </div>
           </div>
 
