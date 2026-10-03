@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -31,18 +32,18 @@ const Navbar = () => {
 
           {/* CENTER: Navigation Links */}
           <div className="hidden lg:flex items-center font-barlow text-[15px] font-semibold tracking-widest text-white/80 whitespace-nowrap" style={{ gap: '45px' }}>
-            <a href="#" className="relative text-[#F97818] uppercase group">
+            <Link to="/" className="relative text-[#F97818] uppercase group">
               HOME
               <div className="absolute -bottom-1 left-0 w-full h-[1px] bg-[#F97818]" />
-            </a>
+            </Link>
             <a href="#" className="relative uppercase hover:text-white transition-colors group">
               EXPERIENCES <span className="inline-block ml-1 text-[10px]">↓</span>
               <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F97818] transition-all duration-300 group-hover:w-full" />
             </a>
-            <a href="#" className="relative uppercase hover:text-white transition-colors group">
+            <Link to="/about" className="relative uppercase hover:text-white transition-colors group">
               ABOUT
               <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F97818] transition-all duration-300 group-hover:w-full" />
-            </a>
+            </Link>
             <a href="#" className="relative uppercase hover:text-white transition-colors group">
               JOURNAL
               <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F97818] transition-all duration-300 group-hover:w-full" />
@@ -89,9 +90,9 @@ const Navbar = () => {
             className="fixed inset-0 z-40 bg-[#070B0D] flex flex-col items-center justify-center pt-20"
           >
             <div className="flex flex-col items-center gap-8 font-barlow text-[24px] font-bold tracking-widest text-white/90 w-full px-6">
-              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-[#F97818] uppercase">HOME</a>
+              <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="text-[#F97818] uppercase">HOME</Link>
               <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">EXPERIENCES</a>
-              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">ABOUT</a>
+              <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">ABOUT</Link>
               <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">JOURNAL</a>
               <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">CONTACT</a>
               
