@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
@@ -6,13 +6,24 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const isActive = (path) => location.pathname === path;
   const isAboutPage = location.pathname === '/about';
 
   const defaultTextColor = isAboutPage ? 'text-[#11161A]' : 'text-white/80';
   const logoColor = isAboutPage ? 'text-[#11161A]' : 'text-white/90';
   const hoverColor = isAboutPage ? 'hover:text-[#F97818]' : 'hover:text-white';
+  const scrolledBg = isAboutPage ? 'bg-[#F7F4EE]/95 shadow-md' : 'bg-[#070B0D]/95 shadow-md';
   
   return (
     <>
@@ -20,13 +31,13 @@ const Navbar = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="absolute top-0 left-0 w-full z-50"
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-sm ${scrolled ? scrolledBg : 'bg-transparent'}`}
       >
         <div 
-          className="mx-auto flex items-center justify-between px-[20px] lg:px-[48px]"
+          className="mx-auto flex items-center justify-between px-[20px] lg:px-[48px] transition-all duration-300"
           style={{
             maxWidth: '1540px',
-            height: '100px',
+            height: scrolled ? '80px' : '100px',
           }}
         >
           

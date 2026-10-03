@@ -78,6 +78,15 @@ const TestimonialsSection = () => {
     return () => clearInterval(timer);
   }, [currentIndex, isPaused, handleNext]);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   // Determine sliding offsets
   const getCardProps = (index) => {
     let offset = (index - currentIndex) % length;
@@ -88,10 +97,10 @@ const TestimonialsSection = () => {
       return { position: 'center', x: "0%", y: 0, scale: 1, rotate: 0, zIndex: 30, opacity: 1 };
     }
     if (offset === -1) {
-      return { position: 'left', x: "-64%", y: 25, scale: 0.85, rotate: -4, zIndex: 10, opacity: 0.85 };
+      return { position: 'left', x: isMobile ? "-110%" : "-64%", y: 25, scale: 0.85, rotate: -4, zIndex: 10, opacity: isMobile ? 0 : 0.85 };
     }
     if (offset === 1) {
-      return { position: 'right', x: "64%", y: 25, scale: 0.85, rotate: 4, zIndex: 10, opacity: 0.85 };
+      return { position: 'right', x: isMobile ? "110%" : "64%", y: 25, scale: 0.85, rotate: 4, zIndex: 10, opacity: isMobile ? 0 : 0.85 };
     }
     if (offset < -1) {
       return { position: 'hidden', x: "-170%", y: 25, scale: 0.82, rotate: -8, zIndex: 0, opacity: 0 };
@@ -160,7 +169,7 @@ const TestimonialsSection = () => {
               <span className="text-ink leading-tight text-[18px]">JOIN OUR GROWING</span>
               <span className="text-[#F97818] leading-tight text-[18px]">COMMUNITY</span>
               {/* Curved arrow */}
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#F97818" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mt-1 transform rotate-[130deg]">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#F97818" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="hidden md:block mt-1 transform rotate-[130deg]">
                 <path d="M5 9c2.5-4 8-6 12-4" />
                 <path d="M13 3l4 2-2 4" />
               </svg>
