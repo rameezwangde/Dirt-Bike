@@ -49,24 +49,7 @@ const Hero = () => {
 
       <Navbar />
 
-      {/* Vertical Technical Detail - Left Side (z-index: 20) */}
-      <div 
-        className="absolute hidden lg:flex flex-col items-center gap-8 z-20"
-        style={{ left: '38px', top: '50%', transform: 'translateY(-50%)' }}
-      >
-        <div className="flex flex-col items-center gap-5 relative">
-          {/* Thin vertical line */}
-          <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-[1px] bg-white/10 z-0" />
-          
-          {/* Steps */}
-          {['01', '02', '03', '04'].map((step, index) => (
-            <div key={step} className="relative z-10 flex flex-col items-center gap-2 group cursor-pointer bg-[#070B0D] py-1">
-              <div className={`w-1.5 h-1.5 rounded-full ${index === 0 ? 'bg-[#F97818]' : 'bg-white/30 group-hover:bg-white/60'} transition-colors duration-300`} />
-              <span className={`text-[11px] font-barlow font-semibold ${index === 0 ? 'text-[#F97818]' : 'text-white/30'} uppercase`}>{step}</span>
-            </div>
-          ))}
-        </div>
-      </div>
+
 
       <HeroContent />
 
