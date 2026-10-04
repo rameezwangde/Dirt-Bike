@@ -110,7 +110,7 @@ const ExperiencesSection = () => {
             transition={{ duration: 0.6 }}
             className="flex items-center justify-center gap-[18px]"
           >
-            <span className="font-inter text-[11px] font-bold tracking-[0.32em] uppercase text-[#11161A]">
+            <span className="font-inter text-[14px] font-bold tracking-[0.32em] uppercase text-[#11161A]">
               OUR EXPERIENCES
             </span>
             <div className="w-[80px] h-[1px] bg-[#F97818]"></div>
