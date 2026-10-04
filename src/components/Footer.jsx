@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="max-w-[1500px] mx-auto relative z-10 flex flex-col">
         
         {/* Top Grid - 4 Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-6 mb-8">
           
           {/* Column 1: Brand & Description */}
           <div className="lg:col-span-4 flex flex-col gap-6">
@@ -87,7 +87,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 font-inter text-[11px] text-white/40">
+        <div className="border-t border-white/10 pt-6 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 font-inter text-[11px] text-white/40">
           <div className="flex flex-col gap-3">
             <span className="tracking-widest uppercase font-bold text-white/30">25.2048° N / 55.2708° E — DUBAI, UAE</span>
             <span>&copy; {new Date().getFullYear()} Enduro Bike Dubai. All rights reserved.</span>
