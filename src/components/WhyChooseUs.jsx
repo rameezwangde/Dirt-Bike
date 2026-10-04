@@ -51,7 +51,7 @@ const itemVariants = {
 
 const WhyChooseUs = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-[#F7F4EE] pt-[90px] px-[24px] md:px-[60px] pb-[105px] min-h-[820px]">
+    <section className="relative w-full overflow-hidden bg-[#F7F4EE] pt-[40px] md:pt-[50px] px-[24px] md:px-[60px] pb-[40px] md:pb-[50px]">
       
       {/* Subtle Background Contours */}
       <div className="absolute top-0 left-0 w-full h-full opacity-[0.045] pointer-events-none mix-blend-overlay">

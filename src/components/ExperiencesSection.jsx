@@ -77,7 +77,7 @@ const cardVariants = {
 
 const ExperiencesSection = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-[#F7F4EE] pt-[90px] px-[20px] md:px-[60px] pb-[40px] md:pb-[50px]">
+    <section className="relative w-full overflow-hidden bg-[#F7F4EE] pt-[40px] md:pt-[50px] px-[20px] md:px-[60px] pb-[40px] md:pb-[50px]">
       
       {/* Subtle Background Contours */}
       <div className="absolute top-0 left-0 w-full h-full opacity-[0.04] pointer-events-none mix-blend-overlay">
