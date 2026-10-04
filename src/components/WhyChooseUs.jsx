@@ -75,7 +75,7 @@ const WhyChooseUs = () => {
         >
           {/* Eyebrow */}
           <div className="flex items-center justify-center gap-[18px]">
-            <span className="font-inter text-[12px] font-bold tracking-[0.32em] uppercase text-[#11161A]">
+            <span className="font-inter text-[18px] md:text-[20px] font-bold tracking-[0.32em] uppercase text-[#11161A]">
               WHY CHOOSE US
             </span>
             <div className="w-[70px] h-[1px] bg-[#F97818]"></div>
