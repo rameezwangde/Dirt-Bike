@@ -59,7 +59,7 @@ const tours = [
 
 const ToursSection = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-cream pt-[20px] px-[20px] md:px-[60px] pb-[90px]">
+    <section className="relative w-full overflow-hidden bg-cream pt-[20px] px-[20px] md:px-[60px] pb-[30px] md:pb-[40px]">
       
       {/* Decorative Background Details */}
       <div className="absolute inset-0 z-0 pointer-events-none mix-blend-multiply opacity-[0.05]">

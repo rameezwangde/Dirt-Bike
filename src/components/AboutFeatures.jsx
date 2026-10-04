@@ -32,7 +32,7 @@ const AboutFeatures = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, delay: 0.4 }}
-      className="w-full lg:w-[calc(100%-120px)] max-w-[1450px] mx-auto mt-[65px] bg-[#FAF8F4] border border-[#1E1E1E]/10 rounded-[20px] shadow-sm flex flex-col lg:flex-row overflow-hidden relative z-30 h-auto lg:h-[125px]"
+      className="w-full lg:w-[calc(100%-120px)] max-w-[1450px] mx-auto mt-[30px] bg-[#FAF8F4] border border-[#1E1E1E]/10 rounded-[20px] shadow-sm flex flex-col lg:flex-row overflow-hidden relative z-30 h-auto lg:h-[125px]"
     >
       {featureData.map((feature, index) => {
         const Icon = feature.icon;

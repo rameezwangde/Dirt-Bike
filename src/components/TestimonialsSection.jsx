@@ -110,7 +110,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-cream px-[20px] md:px-[60px] pt-[30px] pb-[80px]">
+    <section className="relative w-full overflow-hidden bg-cream px-[20px] md:px-[60px] pt-[30px] pb-[30px] md:pb-[40px]">
       
       {/* Subtle Background Elements */}
       <div className="absolute inset-0 z-0 pointer-events-none mix-blend-multiply opacity-[0.04]">

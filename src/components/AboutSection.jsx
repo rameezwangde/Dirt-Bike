@@ -6,7 +6,7 @@ import { Mountain, Trophy, Users } from 'lucide-react';
 
 const AboutSection = () => {
   return (
-    <section className="relative w-full bg-cream text-ink overflow-hidden pt-[90px] pb-[30px] z-20">
+    <section className="relative w-full bg-cream text-ink overflow-hidden pt-[40px] md:pt-[50px] pb-[30px] z-20">
       
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.04] mix-blend-multiply">
