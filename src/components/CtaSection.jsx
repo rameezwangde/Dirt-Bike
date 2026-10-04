@@ -4,7 +4,7 @@ import { ArrowRight, CalendarDays } from 'lucide-react';
 
 const CtaSection = () => {
   return (
-    <section className="relative w-full h-auto pb-[100px] md:pb-[120px] flex items-start justify-center pt-[40px] md:pt-[60px] overflow-hidden">
+    <section className="relative w-full h-auto pb-[50px] md:pb-[70px] flex items-start justify-center pt-[40px] md:pt-[60px] overflow-hidden">
       
       {/* Cinematic Background Image */}
       <div className="absolute inset-0 z-0">
@@ -95,23 +95,7 @@ const CtaSection = () => {
           </button>
         </motion.div>
 
-        {/* Bottom Decorative Info */}
-        <motion.div 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.6 }}
-          className="absolute bottom-[40px] w-full max-w-[1400px] flex justify-between items-end px-[20px] md:px-[60px]"
-        >
-          <div className="flex flex-col text-left font-inter text-[11px] tracking-widest uppercase text-white/40">
-            <span>LAT: 25.2048° N</span>
-            <span>LNG: 55.2708° E</span>
-          </div>
-          
-          <div className="hidden md:flex flex-col text-right">
-            <span className="font-marker text-[#F97818] text-[22px] rotate-[-2deg]">See you in the sand!</span>
-          </div>
-        </motion.div>
+
 
       </div>
     </section>
