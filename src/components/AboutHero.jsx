@@ -37,7 +37,7 @@ const AboutHero = () => {
           <span className="font-inter text-[12px] font-bold tracking-[0.35em] uppercase text-[#11161A]">
             OUR STORY
           </span>
-          <div className="w-[65px] h-[1px] bg-[#F97818]"></div>
+
         </div>
 
         {/* Main Title Container */}

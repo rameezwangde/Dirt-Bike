@@ -38,11 +38,11 @@ const CtaSection = () => {
           transition={{ duration: 0.6 }}
           className="flex items-center gap-4 mb-6"
         >
-          <div className="w-12 h-[1px] bg-[#F97818]" />
+
           <span className="font-inter text-[13px] font-bold tracking-[0.35em] uppercase text-[#F97818]">
             YOUR NEXT ADVENTURE
           </span>
-          <div className="w-12 h-[1px] bg-[#F97818]" />
+
         </motion.div>
 
         {/* Main Headline */}

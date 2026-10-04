@@ -78,7 +78,7 @@ const WhyChooseUs = () => {
             <span className="font-inter text-[18px] md:text-[20px] font-bold tracking-[0.32em] uppercase text-[#11161A]">
               WHY CHOOSE US
             </span>
-            <div className="w-[70px] h-[1px] bg-[#F97818]"></div>
+
           </div>
 
           {/* Main Heading */}

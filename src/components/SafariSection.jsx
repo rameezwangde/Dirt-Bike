@@ -84,7 +84,7 @@ const SafariSection = () => {
             <span className="font-inter text-[13px] font-bold tracking-[0.35em] uppercase text-ink">
               SAFARI TOURS
             </span>
-            <div className="w-16 h-[1px] bg-[#F97818]" />
+
           </div>
 
           <div className="w-full max-w-[1200px] mx-auto mt-[20px] text-center">

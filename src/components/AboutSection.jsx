@@ -41,7 +41,7 @@ const AboutSection = () => {
               <span className="font-inter text-[13px] font-bold tracking-[0.35em] uppercase text-[#202327]">
                 OUR STORY
               </span>
-              <div className="w-16 h-[1px] bg-[#F97818]" />
+
             </motion.div>
 
             <motion.div 

@@ -134,7 +134,7 @@ const TestimonialsSection = () => {
             <span className="font-inter text-[13px] font-bold tracking-[0.35em] uppercase text-ink">
               TESTIMONIALS
             </span>
-            <div className="w-12 h-[1px] bg-[#F97818]" />
+
           </div>
 
           <h2 className="font-barlow font-black uppercase leading-[0.83] mb-6" style={{ fontSize: 'clamp(48px, 10vw, 90px)' }}>

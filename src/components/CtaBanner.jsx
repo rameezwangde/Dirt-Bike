@@ -92,7 +92,7 @@ const CtaBanner = () => {
           <span className="font-inter text-[13px] font-semibold tracking-[0.14em] uppercase text-[#F7F4EE]">
             READY FOR YOUR NEXT
           </span>
-          <div className="w-[55px] h-[2px] bg-[#F97818]"></div>
+
         </motion.div>
 
         {/* Heading */}

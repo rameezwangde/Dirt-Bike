@@ -113,7 +113,7 @@ const ExperiencesSection = () => {
             <span className="font-inter text-[18px] md:text-[20px] font-bold tracking-[0.32em] uppercase text-[#11161A]">
               OUR EXPERIENCES
             </span>
-            <div className="w-[80px] h-[1px] bg-[#F97818]"></div>
+
           </motion.div>
 
           <motion.h2 
