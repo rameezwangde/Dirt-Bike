@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#04090C] text-[#F5F3EF] px-[20px] md:px-[60px] pt-[80px] pb-[40px] border-t-[3px] border-[#F97818] relative z-50 overflow-hidden shadow-2xl">
+    <footer className="w-full bg-[#04090C] text-[#F5F3EF] px-[20px] md:px-[60px] pt-[40px] md:pt-[50px] pb-[40px] border-t-[3px] border-[#F97818] relative z-50 overflow-hidden shadow-2xl">
       
       {/* Background Accent */}
       <div 

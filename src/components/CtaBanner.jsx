@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const CtaBanner = () => {
   return (
-    <section className="relative w-full h-[auto] md:h-[500px] md:min-h-[480px] md:max-h-[560px] overflow-hidden flex flex-col md:flex-row bg-[#071116]">
+    <section className="relative w-full overflow-hidden flex flex-col bg-[#071116]">
       
       {/* Background Cinematic Image */}
       <motion.div 
@@ -79,7 +79,7 @@ const CtaBanner = () => {
 
 
       {/* CENTER: Main Content Area */}
-      <div className="relative z-30 w-full md:w-[650px] md:absolute md:left-[50%] md:top-[60px] md:-translate-x-[50%] flex flex-col items-center px-[24px] pt-[60px] md:pt-0 pb-[100px] md:pb-0 text-center">
+      <div className="relative z-30 w-full md:w-[650px] mx-auto flex flex-col items-center px-[24px] pt-[60px] pb-[40px] text-center">
         
         {/* Eyebrow */}
         <motion.div 
@@ -162,37 +162,7 @@ const CtaBanner = () => {
           </div>
         </motion.div>
 
-        {/* Adventure Stamp */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.85, rotate: 0 }}
-          whileInView={{ opacity: 1, scale: 1, rotate: 5 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="absolute right-[4%] xl:right-[5%] top-[18%] w-[135px] h-[135px] rounded-full border-[2px] border-[#F7F4EE]/55 flex flex-col items-center justify-center bg-[#11161A]/10 backdrop-blur-[2px]"
-        >
-          {/* Circular Text */}
-          <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full">
-            <path id="stamp-curve-top" d="M 15 50 A 35 35 0 1 1 85 50" fill="transparent" />
-            <path id="stamp-curve-bottom" d="M 85 50 A 35 35 0 1 1 15 50" fill="transparent" />
-            <text className="font-barlow font-bold text-[13px] tracking-[0.14em]" fill="rgba(247,244,238,0.72)">
-              <textPath href="#stamp-curve-top" startOffset="50%" textAnchor="middle">
-                ENDURO BIKE DUBAI
-              </textPath>
-            </text>
-            <text className="font-barlow font-bold text-[11px] tracking-[0.1em]" fill="rgba(247,244,238,0.72)">
-              <textPath href="#stamp-curve-bottom" startOffset="50%" textAnchor="middle">
-                EST. 2018
-              </textPath>
-            </text>
-          </svg>
-          
-          <Mountain size={38} className="text-[#F7F4EE]/72 mb-1" strokeWidth={1.2} />
-          
-          {/* Postal Lines */}
-          <svg width="70" height="40" viewBox="0 0 60 40" className="absolute -right-[75px] top-1/2 -translate-y-1/2 stroke-[#F97818] fill-none stroke-[2]">
-             <path d="M0,10 Q15,0 30,10 T60,10 M0,20 Q15,10 30,20 T60,20 M0,30 Q15,20 30,30 T60,30 M0,40 Q15,30 30,40 T60,40" />
-          </svg>
-        </motion.div>
+
 
       </div>
 
