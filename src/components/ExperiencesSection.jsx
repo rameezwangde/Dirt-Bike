@@ -110,7 +110,7 @@ const ExperiencesSection = () => {
             transition={{ duration: 0.6 }}
             className="flex items-center justify-center gap-[18px]"
           >
-            <span className="font-inter text-[14px] font-bold tracking-[0.32em] uppercase text-[#11161A]">
+            <span className="font-inter text-[18px] md:text-[20px] font-bold tracking-[0.32em] uppercase text-[#11161A]">
               OUR EXPERIENCES
             </span>
             <div className="w-[80px] h-[1px] bg-[#F97818]"></div>
@@ -137,18 +137,7 @@ const ExperiencesSection = () => {
             Discover a range of thrilling desert experiences, designed for adventure seekers of all levels. From dune buggies to dirt bikes, we have the perfect ride for you.
           </motion.p>
 
-          {/* Upper-Right Editorial Detail */}
-          <div className="hidden xl:flex flex-col items-start absolute top-[55px] right-[50px] pointer-events-none transform -rotate-[5deg]">
-            <Mountain className="text-[#11161A] mb-1 opacity-70" size={32} strokeWidth={1} />
-            <span className="font-marker text-[#11161A] text-[27px] leading-[0.95]">EXPLORE</span>
-            <span className="font-marker text-[#11161A] text-[27px] leading-[0.95]">RIDE</span>
-            <div className="relative">
-              <span className="font-marker text-[#11161A] text-[27px] leading-[0.95]">EXPERIENCE</span>
-              <svg className="absolute -bottom-2 left-0 w-[110%] h-[6px]" preserveAspectRatio="none">
-                <path d="M0,3 Q50,0 100,5" stroke="#F97818" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-              </svg>
-            </div>
-          </div>
+
         </div>
 
         {/* Cards Grid Container */}

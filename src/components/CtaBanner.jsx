@@ -76,26 +76,10 @@ const CtaBanner = () => {
         <span className="font-barlow font-black text-[80px] xl:text-[90px] leading-[0.82] uppercase text-[#11161A]">ADVENTURES</span>
       </div>
 
-      {/* LEFT: Rider */}
-      <motion.div 
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
-        transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-        className="absolute md:left-[10%] xl:left-[14%] bottom-[-10px] w-[350px] md:w-[400px] xl:w-[480px] z-20 hidden md:block"
-      >
-        <div className="relative w-full" style={{ maskImage: 'radial-gradient(ellipse at bottom center, black 65%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse at bottom center, black 65%, transparent 100%)' }}>
-          <img src="/images/cta-rider.jpg" alt="Motocross Rider" className="w-full h-auto object-contain mix-blend-multiply drop-shadow-2xl" />
-        </div>
-      </motion.div>
 
-      {/* Mobile Rider (shown only on small screens) */}
-      <div className="absolute left-[-10%] bottom-[0px] w-[280px] z-10 md:hidden opacity-90 mix-blend-multiply" style={{ maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%)', WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%)' }}>
-        <img src="/images/cta-rider.jpg" alt="Motocross Rider" className="w-full h-auto object-contain" />
-      </div>
 
       {/* CENTER: Main Content Area */}
-      <div className="relative z-30 w-full md:w-[650px] md:absolute md:left-[47%] md:top-[50%] md:-translate-x-[35%] md:-translate-y-[50%] flex flex-col items-center md:items-center px-[24px] pt-[80px] pb-[160px] md:p-0 text-center">
+      <div className="relative z-30 w-full md:w-[650px] md:absolute md:left-[50%] md:top-[60px] md:-translate-x-[50%] flex flex-col items-center px-[24px] pt-[60px] md:pt-0 pb-[100px] md:pb-0 text-center">
         
         {/* Eyebrow */}
         <motion.div 
