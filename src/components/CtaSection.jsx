@@ -4,7 +4,7 @@ import { ArrowRight, CalendarDays } from 'lucide-react';
 
 const CtaSection = () => {
   return (
-    <section className="relative w-full h-[700px] md:h-[800px] flex items-start justify-center pt-[40px] md:pt-[60px] overflow-hidden">
+    <section className="relative w-full h-auto pb-[100px] md:pb-[120px] flex items-start justify-center pt-[40px] md:pt-[60px] overflow-hidden">
       
       {/* Cinematic Background Image */}
       <div className="absolute inset-0 z-0">
