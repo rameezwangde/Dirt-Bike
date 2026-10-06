@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 import TourCard from '../components/TourCard';
+import PackagesHero from '../components/PackagesHero';
 
 const packageTours = [
   {
@@ -73,10 +74,12 @@ const packageTours = [
 
 const Packages = () => {
   return (
-    <div className="bg-cream min-h-screen pt-32">
+    <div className="bg-cream min-h-screen">
       <Navbar />
       
-      <section className="relative w-full overflow-hidden bg-cream px-[20px] md:px-[60px] pb-[80px]">
+      <PackagesHero />
+
+      <section className="relative w-full overflow-hidden bg-cream px-[20px] md:px-[60px] pb-[80px] pt-16">
         
         <div className="relative z-[2] max-w-[1500px] mx-auto w-full flex flex-col items-center">
           

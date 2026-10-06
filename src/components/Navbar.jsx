@@ -22,7 +22,7 @@ const Navbar = () => {
   }, []);
 
   const isActive = (path) => location.pathname === path;
-  const lightPages = ['/about', '/packages', '/quad-bike-dubai', '/dirt-bike-dubai', '/buggy-rental-dubai', '/desert-safari-dubai'];
+  const lightPages = ['/about', '/quad-bike-dubai', '/dirt-bike-dubai', '/buggy-rental-dubai', '/desert-safari-dubai'];
   const isLightModePage = lightPages.includes(location.pathname);
   
   const isPackagesActive = location.pathname === '/packages' || 

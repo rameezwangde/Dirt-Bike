@@ -77,6 +77,12 @@ const translations = {
     cta_hand_2: "DESERT.",
     cta_hand_3: "DIFFERENT",
     cta_hand_4: "STORIES."
+  ,
+    packages_eyebrow: "CHOOSE YOUR RIDE",
+    packages_title_1: "PREMIUM",
+    packages_title_2: "DESERT",
+    packages_title_3: "PACKAGES",
+    packages_desc: "From high-speed dirt bikes to rugged dune buggies and powerful quads, we have the perfect machine for your next adventure."
   },
   ES: {
     home: "INICIO",
@@ -144,6 +150,12 @@ const translations = {
     cta_hand_2: "DESIERTO.",
     cta_hand_3: "DIFERENTES",
     cta_hand_4: "HISTORIAS."
+  ,
+    packages_eyebrow: "ELIGE TU VIAJE",
+    packages_title_1: "PAQUETES",
+    packages_title_2: "PREMIUM",
+    packages_title_3: "DEL DESIERTO",
+    packages_desc: "Desde motos de cross de alta velocidad hasta buggies y potentes quads, tenemos la máquina perfecta para tu próxima aventura."
   },
   RU: {
     home: "ГЛАВНАЯ",
@@ -211,6 +223,12 @@ const translations = {
     cta_hand_2: "ПУСТЫНЯ.",
     cta_hand_3: "ДРУГИЕ",
     cta_hand_4: "ИСТОРИИ."
+  ,
+    packages_eyebrow: "ВЫБЕРИТЕ СВОЙ ТРАНСПОРТ",
+    packages_title_1: "ПРЕМИАЛЬНЫЕ",
+    packages_title_2: "ПАКЕТЫ",
+    packages_title_3: "В ПУСТЫНЕ",
+    packages_desc: "От скоростных кроссовых мотоциклов до багги и мощных квадроциклов — у нас есть идеальная машина для вашего следующего приключения."
   },
   FR: {
     home: "ACCUEIL",
@@ -278,6 +296,12 @@ const translations = {
     cta_hand_2: "DÉSERT.",
     cta_hand_3: "HISTOIRES",
     cta_hand_4: "DIFFÉRENTES."
+  ,
+    packages_eyebrow: "CHOISISSEZ VOTRE MONTURE",
+    packages_title_1: "FORFAITS",
+    packages_title_2: "DÉSERT",
+    packages_title_3: "PREMIUM",
+    packages_desc: "Des motos de cross à grande vitesse aux buggys et quads puissants, nous avons la machine parfaite pour votre prochaine aventure."
   },
   AR: {
     home: "الرئيسية",
@@ -345,6 +369,12 @@ const translations = {
     cta_hand_2: "الصحراء.",
     cta_hand_3: "قصص",
     cta_hand_4: "مختلفة."
+  ,
+    packages_eyebrow: "اختر رحلتك",
+    packages_title_1: "باقات",
+    packages_title_2: "صحراوية",
+    packages_title_3: "مميزة",
+    packages_desc: "من الدراجات الترابية عالية السرعة إلى عربات الكثبان الرملية القوية والدراجات الرباعية، لدينا الآلة المثالية لمغامرتك التالية."
   }
 };
 
