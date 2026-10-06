@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import CurrencySelector from './CurrencySelector';
+import LanguageSelector from './LanguageSelector';
 
 
 const Navbar = () => {
@@ -77,8 +79,12 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* RIGHT: CTA Button */}
-          <div className="hidden lg:flex items-center">
+          {/* RIGHT: Selectors & CTA Button */}
+          <div className="hidden lg:flex items-center gap-4">
+            <div className="flex items-center gap-2 mr-2">
+              <CurrencySelector />
+              <LanguageSelector />
+            </div>
             <button 
               className="group relative bg-[#F97818] hover:bg-[#FF8A28] text-[#070B0D] font-barlow font-bold text-sm tracking-widest uppercase clip-button transition-colors duration-300 flex items-center justify-center gap-2 whitespace-nowrap"
               style={{ width: '235px', height: '58px' }}

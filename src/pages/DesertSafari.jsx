@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
+import { useCurrency } from '../context/CurrencyContext';
 
 const packages = [
   {
@@ -31,6 +32,8 @@ const packages = [
 ];
 
 const DesertSafari = () => {
+  const { currency, convertPrice } = useCurrency();
+
   return (
     <div className="bg-cream min-h-screen pt-32 font-inter">
       <Navbar />
@@ -80,8 +83,8 @@ const DesertSafari = () => {
 
                 <div className="mb-6 mt-auto flex items-end gap-2">
                   <div className="flex items-start">
-                    <span className="text-[#F97818] font-bold text-sm mt-1 mr-1">AED</span>
-                    <span className="text-[#11161A] font-barlow font-black text-4xl leading-none">{pkg.price}</span>
+                    <span className="text-[#F97818] font-bold text-sm mt-1 mr-1">{currency.code}</span>
+                    <span className="text-[#11161A] font-barlow font-black text-4xl leading-none">{convertPrice(pkg.price)}</span>
                   </div>
                   <span className="text-gray-500 text-sm font-medium mb-1">/ {pkg.priceType.replace('Per ', '')}</span>
                 </div>
