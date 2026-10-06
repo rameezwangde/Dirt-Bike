@@ -57,15 +57,19 @@ const Navbar = () => {
               <div className={`absolute -bottom-1 left-0 h-[1px] bg-[#F97818] transition-all duration-300 ${isActive('/') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
             </Link>
             <Link to="/about" className={`relative uppercase transition-colors group ${isActive('/about') ? 'text-[#F97818]' : hoverColor}`}>
-              ABOUT
+              ABOUT US
               <div className={`absolute -bottom-1 left-0 h-[1px] bg-[#F97818] transition-all duration-300 ${isActive('/about') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
             </Link>
             <a href="#" className={`relative uppercase transition-colors group ${hoverColor}`}>
-              EXPERIENCE <span className="inline-block ml-1 text-[10px]">↓</span>
+              PACKAGES
               <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F97818] transition-all duration-300 group-hover:w-full" />
             </a>
             <a href="#" className={`relative uppercase transition-colors group ${hoverColor}`}>
               GALLERY
+              <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F97818] transition-all duration-300 group-hover:w-full" />
+            </a>
+            <a href="#" className={`relative uppercase transition-colors group ${hoverColor}`}>
+              TESTIMONIALS
               <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F97818] transition-all duration-300 group-hover:w-full" />
             </a>
             <a href="#" className={`relative uppercase transition-colors group ${hoverColor}`}>
@@ -111,9 +115,10 @@ const Navbar = () => {
           >
             <div className="flex flex-col items-center gap-8 font-barlow text-[24px] font-bold tracking-widest text-white/90 w-full px-6">
               <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isActive('/') ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>HOME</Link>
-              <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isActive('/about') ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>ABOUT</Link>
-              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">EXPERIENCE</a>
+              <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isActive('/about') ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>ABOUT US</Link>
+              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">PACKAGES</a>
               <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">GALLERY</a>
+              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">TESTIMONIALS</a>
               <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">CONTACT</a>
               
               <button 
