@@ -118,9 +118,9 @@ const DirtBike = () => {
                   <span className="text-gray-500 text-sm font-medium mb-1">/ Per Bike</span>
                 </div>
 
-                <button className="bg-[#cf8144] hover:bg-[#b56e36] text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit">
+                <a href="https://wa.me/971504799258" target="_blank" rel="noopener noreferrer" className="bg-[#cf8144] hover:bg-[#b56e36] text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit inline-block">
                   Book Now
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}

@@ -12,7 +12,7 @@ const packageTours = [
     image: "/images/dirt-bike-tour.jpg",
     description: "Ride powerful KTM 450cc dirt bikes through Dubai's stunning dunes. Guided tours, safety gear, and beginner lessons for an unforgettable desert adventure.",
     ctaText: "EXPLORE DIRT BIKES",
-    link: "https://wa.me/971504799258",
+    link: "/dirt-bike-dubai",
     iconSvg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
         <path d="M12 2C7 2 3 6 3 11v5a2 2 0 0 0 2 2h2" />
@@ -28,7 +28,7 @@ const packageTours = [
     image: "/images/dune-buggy-tour.jpg",
     description: "Experience Dubai's desert like never before with our high-performance dune buggies. Perfect for families, groups, and thrill-seekers of all levels.",
     ctaText: "EXPLORE BUGGIES",
-    link: "https://wa.me/971504799258",
+    link: "/buggy-rental-dubai",
     iconSvg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
         <path d="M3 12h18" />
@@ -45,7 +45,7 @@ const packageTours = [
     image: "/images/safari-adventure.jpg", 
     description: "Immerse yourself in a complete desert experience. Enjoy dune bashing, camel rides, sandboarding, and an authentic Bedouin camp dinner.",
     ctaText: "EXPLORE SAFARI",
-    link: "https://wa.me/971504799258",
+    link: "/desert-safari-dubai",
     iconSvg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
         <path d="M4 14l8-9 8 9" />
@@ -59,7 +59,7 @@ const packageTours = [
     image: "/images/quad-bike-tour.jpg",
     description: "Get ready for an adrenaline-packed quad biking adventure across the golden dunes. Ideal for solo riders, friends, and families.",
     ctaText: "EXPLORE QUADS",
-    link: "https://wa.me/971504799258",
+    link: "/quad-bike-dubai",
     iconSvg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
         <rect x="5" y="10" width="14" height="6" rx="1" />
