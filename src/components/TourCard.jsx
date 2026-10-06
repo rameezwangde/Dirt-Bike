@@ -9,7 +9,7 @@ const TourCard = ({ tour, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.7, delay: index * 0.12 }}
-      className="relative flex flex-col w-full h-[590px] group transition-transform duration-400 ease-out hover:-translate-y-[5px]"
+      className="relative flex flex-col w-full h-full min-h-[590px] group transition-transform duration-400 ease-out hover:-translate-y-[5px]"
       style={{
         boxShadow: '0 18px 45px rgba(18,16,12,0.10)',
         borderRadius: '2px', // almost 0 radius
@@ -44,7 +44,7 @@ const TourCard = ({ tour, index }) => {
 
       {/* Bottom Information Panel */}
       <div 
-        className="absolute bottom-0 w-full h-[calc(100%-275px)] bg-[#071116] z-0 flex flex-col"
+        className="relative w-full flex-grow bg-[#071116] z-0 flex flex-col"
         style={{ padding: '28px 34px 30px' }}
       >
         
