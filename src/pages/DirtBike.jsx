@@ -107,9 +107,12 @@ const DirtBike = () => {
                   </div>
                 </div>
 
-                <div className="mb-6">
-                  <span className="text-gray-600 text-sm">Per Bike </span>
-                  <span className="text-xl font-bold text-[#11161A]">AED{pkg.price}</span>
+                <div className="mb-6 mt-auto flex items-end gap-2">
+                  <div className="flex items-start">
+                    <span className="text-[#F97818] font-bold text-sm mt-1 mr-1">AED</span>
+                    <span className="text-[#11161A] font-barlow font-black text-4xl leading-none">{pkg.price}</span>
+                  </div>
+                  <span className="text-gray-500 text-sm font-medium mb-1">/ Per Bike</span>
                 </div>
 
                 <button className="bg-[#cf8144] hover:bg-[#b56e36] text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit">
