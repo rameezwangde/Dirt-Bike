@@ -126,6 +126,12 @@ const Navbar = () => {
               <Link to="/packages" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isPackagesActive ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>{t('packages')}</Link>
               <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">{t('contact')}</Link>
               
+              {/* Selectors for Mobile */}
+              <div className="flex items-center gap-4 mt-2 mb-2">
+                <CurrencySelector />
+                <LanguageSelector />
+              </div>
+
               <button 
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="mt-8 bg-[#F97818] hover:bg-[#FF8A28] text-[#070B0D] px-8 py-4 font-bold text-sm tracking-widest uppercase flex items-center justify-center gap-3 w-full max-w-[300px] transition-colors duration-300"
