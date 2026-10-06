@@ -37,7 +37,7 @@ const CurrencySelector = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full right-0 mt-2 w-[240px] bg-[#111111] border border-white/10 rounded overflow-hidden shadow-2xl"
+            className="absolute top-full left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:right-0 mt-2 w-[240px] bg-[#111111] border border-white/10 rounded overflow-hidden shadow-2xl"
           >
             <div className="px-4 py-2 bg-[#1a1a1a] border-b border-white/5">
               <span className="text-[11px] font-bold tracking-widest text-white/40 uppercase">Select Currency</span>

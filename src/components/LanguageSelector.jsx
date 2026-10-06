@@ -36,7 +36,7 @@ const LanguageSelector = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full right-0 mt-2 w-[180px] bg-[#111111] border border-white/10 rounded overflow-hidden shadow-2xl"
+            className="absolute top-full left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:right-0 mt-2 w-[180px] bg-[#111111] border border-white/10 rounded overflow-hidden shadow-2xl"
           >
             <div className="flex flex-col py-1">
               {languages.map((lang) => (
