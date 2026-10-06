@@ -44,6 +44,7 @@ const packageTours = [
     image: "/images/safari-adventure.jpg", 
     description: "Immerse yourself in a complete desert experience. Enjoy dune bashing, camel rides, sandboarding, and an authentic Bedouin camp dinner.",
     ctaText: "EXPLORE SAFARI",
+    link: "/desert-safari-dubai",
     iconSvg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
         <path d="M4 14l8-9 8 9" />

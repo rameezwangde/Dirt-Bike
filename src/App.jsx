@@ -5,6 +5,7 @@ import AboutUs from './pages/AboutUs';
 import Packages from './pages/Packages';
 import DirtBike from './pages/DirtBike';
 import BuggyRental from './pages/BuggyRental';
+import DesertSafari from './pages/DesertSafari';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/packages" element={<Packages />} />
         <Route path="/dirt-bike-dubai" element={<DirtBike />} />
         <Route path="/buggy-rental-dubai" element={<BuggyRental />} />
+        <Route path="/desert-safari-dubai" element={<DesertSafari />} />
       </Routes>
     </>
   );
