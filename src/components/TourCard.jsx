@@ -107,7 +107,7 @@ const TourCard = ({ tour, index }) => {
           {tour.link ? (
             <Link 
               to={tour.link}
-              className="mt-auto self-start bg-[#F97818] hover:bg-[#FF8A28] text-[#071116] font-barlow font-extrabold uppercase flex items-center transition-colors duration-250 ease-out group/btn"
+              className="mt-auto self-start bg-[#F97818] hover:bg-[#FF8A28] text-[#071116] font-barlow font-extrabold uppercase whitespace-nowrap flex items-center transition-colors duration-250 ease-out group/btn"
               style={{
                 height: '48px',
                 width: 'fit-content',
@@ -123,7 +123,7 @@ const TourCard = ({ tour, index }) => {
             </Link>
           ) : (
             <button 
-              className="mt-auto self-start bg-[#F97818] hover:bg-[#FF8A28] text-[#071116] font-barlow font-extrabold uppercase flex items-center transition-colors duration-250 ease-out group/btn"
+              className="mt-auto self-start bg-[#F97818] hover:bg-[#FF8A28] text-[#071116] font-barlow font-extrabold uppercase whitespace-nowrap flex items-center transition-colors duration-250 ease-out group/btn"
               style={{
                 height: '48px',
                 width: 'fit-content',

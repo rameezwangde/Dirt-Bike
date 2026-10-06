@@ -56,14 +56,14 @@ const packages = [
 
 const DirtBike = () => {
   return (
-    <div className="bg-[#1a2332] min-h-screen pt-32 font-inter">
+    <div className="bg-[#f8f9fa] min-h-screen pt-32 font-inter">
       <Navbar />
       
       <div className="max-w-[1200px] mx-auto px-6 pb-24">
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-5xl font-bold text-white text-center mb-16 font-barlow tracking-wide"
+          className="text-4xl md:text-5xl font-bold text-[#11161A] text-center mb-16 font-barlow tracking-wide"
         >
           Best Dirt Biking Tours in Dubai
         </motion.h1>

@@ -18,7 +18,8 @@ const Navbar = () => {
   }, []);
 
   const isActive = (path) => location.pathname === path;
-  const isLightModePage = location.pathname === '/about' || location.pathname === '/packages';
+  const lightPages = ['/about', '/packages', '/quad-bike-dubai', '/dirt-bike-dubai', '/buggy-rental-dubai', '/desert-safari-dubai'];
+  const isLightModePage = lightPages.includes(location.pathname);
 
   const defaultTextColor = isLightModePage ? 'text-[#11161A]' : 'text-white/80';
   const logoColor = isLightModePage ? 'text-[#11161A]' : 'text-white/90';

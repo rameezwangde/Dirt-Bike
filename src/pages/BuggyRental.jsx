@@ -128,14 +128,14 @@ const packages = [
 
 const BuggyRental = () => {
   return (
-    <div className="bg-[#1a2332] min-h-screen pt-32 font-inter">
+    <div className="bg-[#f8f9fa] min-h-screen pt-32 font-inter">
       <Navbar />
       
       <div className="max-w-[1200px] mx-auto px-6 pb-24">
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-5xl font-bold text-white text-center mb-4 font-barlow tracking-wide"
+          className="text-4xl md:text-5xl font-bold text-[#11161A] text-center mb-4 font-barlow tracking-wide"
         >
           Best Dune Buggy Dubai Tour Packages
         </motion.h1>
@@ -144,7 +144,7 @@ const BuggyRental = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.1 }}
-          className="text-white/80 text-center mb-16 max-w-2xl mx-auto"
+          className="text-gray-600 text-center mb-16 max-w-2xl mx-auto"
         >
           We have many Dune buggy tour packages to accommodate your needs and the time you plan or have for your trips. Here's a brief review of our top packages:
         </motion.p>

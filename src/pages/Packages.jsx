@@ -58,6 +58,7 @@ const packageTours = [
     image: "/images/quad-bike-tour.jpg",
     description: "Get ready for an adrenaline-packed quad biking adventure across the golden dunes. Ideal for solo riders, friends, and families.",
     ctaText: "EXPLORE QUADS",
+    link: "/quad-bike-dubai",
     iconSvg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
         <rect x="5" y="10" width="14" height="6" rx="1" />
