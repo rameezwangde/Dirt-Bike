@@ -20,6 +20,12 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
   const lightPages = ['/about', '/packages', '/quad-bike-dubai', '/dirt-bike-dubai', '/buggy-rental-dubai', '/desert-safari-dubai'];
   const isLightModePage = lightPages.includes(location.pathname);
+  
+  const isPackagesActive = location.pathname === '/packages' || 
+                           location.pathname === '/dirt-bike-dubai' || 
+                           location.pathname === '/buggy-rental-dubai' || 
+                           location.pathname === '/desert-safari-dubai' || 
+                           location.pathname === '/quad-bike-dubai';
 
   const defaultTextColor = isLightModePage ? 'text-[#11161A]' : 'text-white/80';
   const logoColor = isLightModePage ? 'text-[#11161A]' : 'text-white/90';
@@ -61,9 +67,9 @@ const Navbar = () => {
               ABOUT US
               <div className={`absolute -bottom-1 left-0 h-[1px] bg-[#F97818] transition-all duration-300 ${isActive('/about') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
             </Link>
-            <Link to="/packages" className={`relative uppercase transition-colors group ${isActive('/packages') ? 'text-[#F97818]' : hoverColor}`}>
+            <Link to="/packages" className={`relative uppercase transition-colors group ${isPackagesActive ? 'text-[#F97818]' : hoverColor}`}>
               PACKAGES
-              <div className={`absolute -bottom-1 left-0 h-[1px] bg-[#F97818] transition-all duration-300 ${isActive('/packages') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+              <div className={`absolute -bottom-1 left-0 h-[1px] bg-[#F97818] transition-all duration-300 ${isPackagesActive ? 'w-full' : 'w-0 group-hover:w-full'}`} />
             </Link>
             <a href="#" className={`relative uppercase transition-colors group ${hoverColor}`}>
               CONTACT
@@ -109,7 +115,7 @@ const Navbar = () => {
             <div className="flex flex-col items-center gap-8 font-barlow text-[24px] font-bold tracking-widest text-white/90 w-full px-6">
               <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isActive('/') ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>HOME</Link>
               <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isActive('/about') ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>ABOUT US</Link>
-              <Link to="/packages" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isActive('/packages') ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>PACKAGES</Link>
+              <Link to="/packages" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isPackagesActive ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>PACKAGES</Link>
               <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">CONTACT</a>
               
               <button 

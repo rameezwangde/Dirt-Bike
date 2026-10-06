@@ -24,7 +24,7 @@ const packages = [
 
 const QuadBike = () => {
   return (
-    <div className="bg-[#f8f9fa] min-h-screen pt-32 font-inter">
+    <div className="bg-cream min-h-screen pt-32 font-inter">
       <Navbar />
       
       <div className="max-w-[1200px] mx-auto px-6 pb-24">
