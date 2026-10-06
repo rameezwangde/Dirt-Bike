@@ -46,16 +46,16 @@ const LanguageSelector = () => {
                     setLanguage(lang);
                     setIsOpen(false);
                   }}
-                  className={`w-full flex items-center justify-between px-4 py-3 hover:bg-[#222222] transition-colors ${language.code === lang.code ? 'bg-[#b71c1c]/10 text-[#f44336]' : 'text-white/80'}`}
+                  className={`w-full flex items-center justify-between px-4 py-3 hover:bg-[#222222] transition-colors ${language.code === lang.code ? 'bg-[#F97818]/10 text-[#F97818]' : 'text-white/80'}`}
                 >
                   <div className="flex items-center gap-3">
-                    <span className={`text-[12px] font-bold ${language.code === lang.code ? 'text-[#f44336]' : 'text-white/50'}`}>{lang.flag}</span>
+                    <span className={`text-[12px] font-bold ${language.code === lang.code ? 'text-[#F97818]' : 'text-white/50'}`}>{lang.flag}</span>
                     <span className="text-[15px] font-black">{lang.name}</span>
                   </div>
                   {language.code === lang.code ? (
                     <div className="flex items-center gap-2">
                       <span className="bg-white/10 text-white/60 text-[10px] font-bold px-1.5 py-0.5 rounded">{lang.code}</span>
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#f44336]" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#F97818]" />
                     </div>
                   ) : (
                     <span className="bg-white/5 text-white/40 text-[10px] font-bold px-1.5 py-0.5 rounded">{lang.code}</span>

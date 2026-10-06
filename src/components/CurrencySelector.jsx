@@ -26,7 +26,7 @@ const CurrencySelector = () => {
       >
         <span className="text-[12px] font-bold text-white/70">{currency.flag}</span>
         <span className="text-[15px] font-black uppercase tracking-wider">{currency.code}</span>
-        <span className="bg-[#b71c1c] text-white/90 text-[10px] font-bold px-1.5 py-0.5 rounded ml-1">AED</span>
+        <span className="bg-[#F97818] text-[#111111] text-[10px] font-bold px-1.5 py-0.5 rounded ml-1">AED</span>
         <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-300 ml-1 text-white/50 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
 
@@ -42,7 +42,7 @@ const CurrencySelector = () => {
             <div className="px-4 py-2 bg-[#1a1a1a] border-b border-white/5">
               <span className="text-[11px] font-bold tracking-widest text-white/40 uppercase">Select Currency</span>
             </div>
-            <div className="max-h-[300px] overflow-y-auto">
+            <div>
               {currencies.map((curr) => (
                 <button
                   key={curr.code}
@@ -50,10 +50,10 @@ const CurrencySelector = () => {
                     setCurrency(curr);
                     setIsOpen(false);
                   }}
-                  className={`w-full flex items-center justify-between px-4 py-3 hover:bg-[#222222] transition-colors ${currency.code === curr.code ? 'bg-[#b71c1c]/10 text-[#f44336]' : 'text-white/80'}`}
+                  className={`w-full flex items-center justify-between px-4 py-3 hover:bg-[#222222] transition-colors ${currency.code === curr.code ? 'bg-[#F97818]/10 text-[#F97818]' : 'text-white/80'}`}
                 >
                   <div className="flex items-center gap-3">
-                    <span className={`text-[12px] font-bold ${currency.code === curr.code ? 'text-[#f44336]' : 'text-white/50'}`}>{curr.flag}</span>
+                    <span className={`text-[12px] font-bold ${currency.code === curr.code ? 'text-[#F97818]' : 'text-white/50'}`}>{curr.flag}</span>
                     <span className="text-[14px] font-black uppercase tracking-wider">{curr.code} ({curr.symbol})</span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -61,7 +61,7 @@ const CurrencySelector = () => {
                       {curr.code === 'AED' ? 'Base (1:1)' : `1 AED ≈ ${curr.rate} ${curr.code}`}
                     </span>
                     {currency.code === curr.code && (
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#f44336]" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#F97818]" />
                     )}
                   </div>
                 </button>
