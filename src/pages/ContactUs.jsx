@@ -1,17 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import ContactHero from '../components/ContactHero';
 import { useLanguage } from '../context/LanguageContext';
 
 const ContactUs = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="bg-[#071116] min-h-screen text-white">
+    <div className="bg-[#071116] min-h-screen text-white pt-[120px]">
       <Navbar />
-      
-      <ContactHero />
 
       <section className="relative w-full max-w-[1500px] mx-auto px-[20px] md:px-[60px] py-[60px] md:py-[100px]">
         
