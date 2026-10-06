@@ -18,12 +18,12 @@ const Navbar = () => {
   }, []);
 
   const isActive = (path) => location.pathname === path;
-  const isAboutPage = location.pathname === '/about';
+  const isLightModePage = location.pathname === '/about' || location.pathname === '/packages';
 
-  const defaultTextColor = isAboutPage ? 'text-[#11161A]' : 'text-white/80';
-  const logoColor = isAboutPage ? 'text-[#11161A]' : 'text-white/90';
-  const hoverColor = isAboutPage ? 'hover:text-[#F97818]' : 'hover:text-white';
-  const scrolledBg = isAboutPage 
+  const defaultTextColor = isLightModePage ? 'text-[#11161A]' : 'text-white/80';
+  const logoColor = isLightModePage ? 'text-[#11161A]' : 'text-white/90';
+  const hoverColor = isLightModePage ? 'hover:text-[#F97818]' : 'hover:text-white';
+  const scrolledBg = isLightModePage 
     ? 'bg-cream/80 backdrop-blur-md shadow-sm border-b border-ink/5' 
     : 'bg-charcoal/70 backdrop-blur-md shadow-lg border-b border-white/10';
   

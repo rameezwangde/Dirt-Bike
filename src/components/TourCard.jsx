@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const TourCard = ({ tour, index }) => {
   return (
@@ -103,21 +104,40 @@ const TourCard = ({ tour, index }) => {
           </p>
 
           {/* CTA Button */}
-          <button 
-            className="mt-auto self-start bg-[#F97818] hover:bg-[#FF8A28] text-[#071116] font-barlow font-extrabold uppercase flex items-center transition-colors duration-250 ease-out group/btn"
-            style={{
-              height: '48px',
-              width: 'fit-content',
-              padding: '0 25px',
-              fontSize: '17px',
-              letterSpacing: '0.04em',
-              gap: '12px',
-              clipPath: 'polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%)'
-            }}
-          >
-            {tour.ctaText}
-            <ArrowRight className="w-[18px] h-[18px] stroke-[2.5] transition-transform duration-250 ease-out group-hover/btn:translate-x-[4px]" />
-          </button>
+          {tour.link ? (
+            <Link 
+              to={tour.link}
+              className="mt-auto self-start bg-[#F97818] hover:bg-[#FF8A28] text-[#071116] font-barlow font-extrabold uppercase flex items-center transition-colors duration-250 ease-out group/btn"
+              style={{
+                height: '48px',
+                width: 'fit-content',
+                padding: '0 25px',
+                fontSize: '17px',
+                letterSpacing: '0.04em',
+                gap: '12px',
+                clipPath: 'polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%)'
+              }}
+            >
+              {tour.ctaText}
+              <ArrowRight className="w-[18px] h-[18px] stroke-[2.5] transition-transform duration-250 ease-out group-hover/btn:translate-x-[4px]" />
+            </Link>
+          ) : (
+            <button 
+              className="mt-auto self-start bg-[#F97818] hover:bg-[#FF8A28] text-[#071116] font-barlow font-extrabold uppercase flex items-center transition-colors duration-250 ease-out group/btn"
+              style={{
+                height: '48px',
+                width: 'fit-content',
+                padding: '0 25px',
+                fontSize: '17px',
+                letterSpacing: '0.04em',
+                gap: '12px',
+                clipPath: 'polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%)'
+              }}
+            >
+              {tour.ctaText}
+              <ArrowRight className="w-[18px] h-[18px] stroke-[2.5] transition-transform duration-250 ease-out group-hover/btn:translate-x-[4px]" />
+            </button>
+          )}
         </div>
 
       </div>

@@ -11,6 +11,7 @@ const packageTours = [
     image: "/images/dirt-bike-tour.jpg",
     description: "Ride powerful KTM 450cc dirt bikes through Dubai's stunning dunes. Guided tours, safety gear, and beginner lessons for an unforgettable desert adventure.",
     ctaText: "EXPLORE DIRT BIKES",
+    link: "/dirt-bike-dubai",
     iconSvg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
         <path d="M12 2C7 2 3 6 3 11v5a2 2 0 0 0 2 2h2" />
