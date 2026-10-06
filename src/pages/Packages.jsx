@@ -27,6 +27,7 @@ const packageTours = [
     image: "/images/dune-buggy-tour.jpg",
     description: "Experience Dubai's desert like never before with our high-performance dune buggies. Perfect for families, groups, and thrill-seekers of all levels.",
     ctaText: "EXPLORE BUGGIES",
+    link: "/buggy-rental-dubai",
     iconSvg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
         <path d="M3 12h18" />
