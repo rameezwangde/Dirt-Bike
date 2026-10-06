@@ -1,14 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Play, ArrowRight } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const HeroContent = () => {
+  const { t } = useLanguage();
+
   return (
     <div 
       className="absolute z-20 pointer-events-auto w-full max-w-[760px] px-[24px] lg:px-0"
       style={{
         left: '0',
-        top: '40%',
+        top: '47%',
         transform: 'translateY(-50%)',
       }}
     >
@@ -25,7 +28,7 @@ const HeroContent = () => {
           transition={{ duration: 0.8, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
           className="text-[#F5F3EF] whitespace-normal sm:whitespace-nowrap"
         >
-          RIDE BEYOND
+          {t('hero_line1')}
         </motion.div>
         
         <motion.div
@@ -34,7 +37,7 @@ const HeroContent = () => {
           transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
           className="text-stroke-primary relative inline-flex items-baseline"
         >
-          <span>THE ROAD</span>
+          <span>{t('hero_line2')}</span>
           <span className="text-[#F97818] -webkit-text-stroke-0" style={{ WebkitTextStroke: '0px' }}>.</span>
         </motion.div>
       </div>
@@ -53,7 +56,7 @@ const HeroContent = () => {
           maxWidth: '620px'
         }}
       >
-        Dirt bikes. Buggies. Quads. One desert built for adrenaline.
+        {t('hero_desc')}
       </motion.div>
 
       {/* CTA Area */}
@@ -73,7 +76,7 @@ const HeroContent = () => {
             clipPath: 'polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%)'
           }}
         >
-          EXPLORE RIDES
+          {t('explore_rides')}
           <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-[5px]" />
         </button>
 

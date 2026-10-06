@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Car, Mountain, Bike, Plane, Sunset } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 
 const experiences = [
   {
@@ -76,6 +77,66 @@ const cardVariants = {
 };
 
 const ExperiencesSection = () => {
+  const { t } = useLanguage();
+  
+  const translatedExperiences = [
+    {
+      id: 1,
+      title: t('exp_card1_title'),
+      category: "4X4",
+      icon: Car,
+      image: "/images/safari-4x4.jpg",
+      fallbackColor: "#2A2520",
+      description: t('exp_card1_desc'),
+      cta: t('exp_card1_cta'),
+      link: "/tours"
+    },
+    {
+      id: 2,
+      title: t('exp_card2_title'),
+      category: "BUGGY",
+      icon: Car,
+      image: "/images/dune-buggy.jpg",
+      fallbackColor: "#332315",
+      description: t('exp_card2_desc'),
+      cta: t('exp_card2_cta'),
+      link: "/tours"
+    },
+    {
+      id: 3,
+      title: t('exp_card3_title'),
+      category: "BIKE",
+      icon: Bike,
+      image: "/images/dirt-bike.jpg",
+      fallbackColor: "#2A1810",
+      description: t('exp_card3_desc'),
+      cta: t('exp_card3_cta'),
+      link: "/tours"
+    },
+    {
+      id: 4,
+      title: t('exp_card4_title'),
+      category: "QUAD",
+      icon: Car,
+      image: "/images/quad-bike.jpg",
+      fallbackColor: "#3C281B",
+      description: t('exp_card4_desc'),
+      cta: t('exp_card4_cta'),
+      link: "/tours"
+    },
+    {
+      id: 5,
+      title: t('exp_card5_title'),
+      category: "DESERT",
+      icon: Mountain,
+      image: "/images/desert-sunset.jpg",
+      fallbackColor: "#2A2320",
+      description: t('exp_card5_desc'),
+      cta: t('exp_card5_cta'),
+      link: "/safari"
+    }
+  ];
+
   return (
     <section className="relative w-full overflow-hidden bg-[#F7F4EE] pt-[40px] md:pt-[50px] px-[20px] md:px-[60px] pb-[40px] md:pb-[50px]">
       
@@ -111,7 +172,7 @@ const ExperiencesSection = () => {
             className="flex items-center justify-center gap-[18px]"
           >
             <span className="font-inter text-[18px] md:text-[20px] font-bold tracking-[0.32em] uppercase text-[#11161A]">
-              OUR EXPERIENCES
+              {t('exp_eyebrow')}
             </span>
 
           </motion.div>
@@ -123,8 +184,8 @@ const ExperiencesSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-barlow font-black text-center leading-[0.95] tracking-[-0.025em] mt-[18px] text-[clamp(50px,4.4vw,82px)]"
           >
-            <span className="text-[#11161A]">Unforgettable </span>
-            <span className="text-[#F97818]">Desert Adventures</span>
+            <span className="text-[#11161A]">{t('exp_title_1')}</span>
+            <span className="text-[#F97818]">{t('exp_title_2')}</span>
           </motion.h2>
 
           <motion.p 
@@ -134,7 +195,7 @@ const ExperiencesSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="font-inter text-[14px] md:text-[16px] font-normal leading-[1.5] text-[#66615C] text-center max-w-[720px] mt-[18px]"
           >
-            Discover a range of thrilling desert experiences, designed for adventure seekers of all levels. From dune buggies to dirt bikes, we have the perfect ride for you.
+            {t('exp_desc')}
           </motion.p>
 
 
@@ -148,7 +209,7 @@ const ExperiencesSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="mt-[50px] flex flex-col md:grid md:grid-cols-2 xl:grid-cols-6 gap-[16px]"
         >
-          {experiences.map((exp, index) => {
+          {translatedExperiences.map((exp, index) => {
             
             // Layout logic based on grid
             let gridClass = "w-full ";

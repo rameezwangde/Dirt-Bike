@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import TourCard from './TourCard';
 import { Mountain } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const tours = [
   {
@@ -58,6 +59,8 @@ const tours = [
 ];
 
 const ToursSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative w-full overflow-hidden bg-cream pt-[20px] px-[20px] md:px-[60px] pb-[30px] md:pb-[40px]">
       
@@ -99,7 +102,7 @@ const ToursSection = () => {
         >
           <div className="flex items-center justify-center gap-4 mb-[24px]">
             <span className="font-inter text-[13px] font-bold tracking-[0.35em] uppercase text-ink">
-              OUR TOURS
+              {t('our_tours')}
             </span>
 
           </div>

@@ -2,8 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, ArrowRight } from 'lucide-react';
 import bgImage from '../../Desert Rider at Sunset, Dubai Skyline.png';
+import { useLanguage } from '../context/LanguageContext';
 
 const AboutHero = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative w-full min-h-[760px] h-[100vh] max-h-[900px] overflow-hidden bg-[#F7F4EE]">
       
@@ -35,7 +38,7 @@ const AboutHero = () => {
         {/* Eyebrow */}
         <div className="flex items-center gap-[18px] mb-[28px]">
           <span className="font-inter text-[12px] font-bold tracking-[0.35em] uppercase text-[#11161A]">
-            OUR STORY
+            {t('about_eyebrow')}
           </span>
 
         </div>
@@ -43,10 +46,10 @@ const AboutHero = () => {
         {/* Main Title Container */}
         <div className="relative w-full md:max-w-[600px]">
           <h1 className="font-barlow font-black uppercase leading-[0.85] md:leading-[0.82] tracking-[-0.025em] text-[58px] md:text-[clamp(66px,5.2vw,94px)]">
-            <span className="block text-[#11161A]">MORE THAN</span>
-            <span className="block text-[#F97818]">A RIDE.</span>
-            <span className="block text-[#11161A]">IT'S AN</span>
-            <span className="block text-[#F97818] tracking-[-0.035em] text-[52px] md:text-[clamp(64px,4.8vw,88px)]">ADVENTURE.</span>
+            <span className="block text-[#11161A]">{t('about_title_1')}</span>
+            <span className="block text-[#F97818]">{t('about_title_2')}</span>
+            <span className="block text-[#11161A]">{t('about_title_3')}</span>
+            <span className="block text-[#F97818] tracking-[-0.035em] text-[52px] md:text-[clamp(64px,4.8vw,88px)]">{t('about_title_4')}</span>
           </h1>
 
 
@@ -54,14 +57,14 @@ const AboutHero = () => {
 
         {/* Description */}
         <p className="font-inter text-[16px] font-medium leading-[1.55] text-[#11161A] max-w-[520px] mt-[28px]">
-          Born in the Dubai desert, Enduro Bike Dubai is built around one simple idea — to turn every ride into a story worth remembering.
+          {t('about_desc')}
         </p>
 
         {/* Location Detail */}
         <div className="flex items-center gap-2 mt-[22px]">
           <MapPin className="text-[#F97818]" size={16} strokeWidth={2.5} />
           <span className="font-inter text-[12px] font-bold tracking-[0.16em] uppercase text-[#11161A]">
-            AL BADAYER DESERT · DUBAI
+            {t('about_loc')}
           </span>
         </div>
 
@@ -72,7 +75,7 @@ const AboutHero = () => {
             style={{ clipPath: 'polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%)' }}
           >
             <span className="font-barlow text-[15px] md:text-[17px] font-extrabold tracking-[0.05em] uppercase">
-              DISCOVER OUR STORY
+              {t('about_btn')}
             </span>
             <ArrowRight className="text-[#F97818] group-hover:text-[#11161A] transform group-hover:translate-x-[5px] transition-all duration-300 flex-shrink-0" size={20} />
           </button>
@@ -118,24 +121,24 @@ const AboutHero = () => {
           <div className="flex-shrink-0 w-[240px] md:w-auto flex items-center gap-4 border-r border-white/10 pr-6 snap-start">
             <span className="text-[#F97818] font-barlow font-extrabold text-[20px]">01</span>
             <div className="flex flex-col justify-center">
-              <span className="text-[#F7F4EE] font-barlow font-bold tracking-wide text-[14px] md:text-[15px] uppercase">BORN IN DUBAI</span>
-              <span className="text-[#F7F4EE]/40 font-inter text-[11px] md:text-[12px] mt-0.5">Desert roots.</span>
+              <span className="text-[#F7F4EE] font-barlow font-bold tracking-wide text-[14px] md:text-[15px] uppercase">{t('about_feat1_title')}</span>
+              <span className="text-[#F7F4EE]/40 font-inter text-[11px] md:text-[12px] mt-0.5">{t('about_feat1_sub')}</span>
             </div>
           </div>
 
           <div className="flex-shrink-0 w-[260px] md:w-auto flex items-center gap-4 md:border-r border-white/10 px-8 snap-start">
             <span className="text-[#F97818] font-barlow font-extrabold text-[20px]">02</span>
             <div className="flex flex-col justify-center">
-              <span className="text-[#F7F4EE] font-barlow font-bold tracking-wide text-[14px] md:text-[15px] uppercase">BUILT FOR ADVENTURE</span>
-              <span className="text-[#F7F4EE]/40 font-inter text-[11px] md:text-[12px] mt-0.5">More than a tour.</span>
+              <span className="text-[#F7F4EE] font-barlow font-bold tracking-wide text-[14px] md:text-[15px] uppercase">{t('about_feat2_title')}</span>
+              <span className="text-[#F7F4EE]/40 font-inter text-[11px] md:text-[12px] mt-0.5">{t('about_feat2_sub')}</span>
             </div>
           </div>
 
           <div className="flex-shrink-0 w-[260px] md:w-auto flex items-center gap-4 pl-8 snap-start">
             <span className="text-[#F97818] font-barlow font-extrabold text-[20px]">03</span>
             <div className="flex flex-col justify-center">
-              <span className="text-[#F7F4EE] font-barlow font-bold tracking-wide text-[14px] md:text-[15px] uppercase">RIDE WITH CONFIDENCE</span>
-              <span className="text-[#F7F4EE]/40 font-inter text-[11px] md:text-[12px] mt-0.5">Guided. Equipped. Ready.</span>
+              <span className="text-[#F7F4EE] font-barlow font-bold tracking-wide text-[14px] md:text-[15px] uppercase">{t('about_feat3_title')}</span>
+              <span className="text-[#F7F4EE]/40 font-inter text-[11px] md:text-[12px] mt-0.5">{t('about_feat3_sub')}</span>
             </div>
           </div>
 

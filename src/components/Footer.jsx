@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 
 const WhatsAppIcon = ({ size = 24, className = "" }) => (
   <svg viewBox="0 0 24 24" width={size} height={size} className={className} fill="currentColor">
@@ -8,6 +9,8 @@ const WhatsAppIcon = ({ size = 24, className = "" }) => (
 );
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="w-full bg-[#04090C] text-[#F5F3EF] px-[20px] md:px-[60px] pt-[40px] md:pt-[50px] pb-[40px] border-t-[3px] border-[#F97818] relative z-50 overflow-hidden shadow-2xl">
       
@@ -43,7 +46,7 @@ const Footer = () => {
 
           {/* Column 2: Quick Links */}
           <div className="lg:col-span-2 flex flex-col gap-5 lg:ml-10">
-            <h4 className="font-barlow font-black text-[#F97818] uppercase text-[16px] tracking-wider">QUICK LINKS</h4>
+            <h4 className="font-barlow font-black text-[#F97818] uppercase text-[16px] tracking-wider">{t('quick_links')}</h4>
             <ul className="flex flex-col gap-3 font-inter text-[14px] text-white/60">
               <li><Link to="/" className="hover:text-[#F97818] transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-[#F97818] transition-colors">About Us</Link></li>
@@ -54,7 +57,7 @@ const Footer = () => {
 
           {/* Column 3: Experiences */}
           <div className="lg:col-span-3 flex flex-col gap-5">
-            <h4 className="font-barlow font-black text-[#F97818] uppercase text-[16px] tracking-wider">EXPERIENCES</h4>
+            <h4 className="font-barlow font-black text-[#F97818] uppercase text-[16px] tracking-wider">{t('experiences')}</h4>
             <ul className="flex flex-col gap-3 font-inter text-[14px] text-white/60">
               <li><Link to="/tours" className="hover:text-[#F97818] transition-colors">Dune Buggy Tours</Link></li>
               <li><Link to="/tours" className="hover:text-[#F97818] transition-colors">Dirt Bike Tours</Link></li>
@@ -65,14 +68,14 @@ const Footer = () => {
 
           {/* Column 4: Contact & Follow */}
           <div className="lg:col-span-3 flex flex-col gap-5">
-            <h4 className="font-barlow font-black text-[#F97818] uppercase text-[16px] tracking-wider">CONTACT</h4>
+            <h4 className="font-barlow font-black text-[#F97818] uppercase text-[16px] tracking-wider">{t('contact_us')}</h4>
             <ul className="flex flex-col gap-3 font-inter text-[14px] text-white/60">
               <li>+971 50 479 9258</li>
               <li>info@endurobikedubai.com</li>
               <li className="leading-relaxed">Al Badayer Desert - Dubai-Hatta Rd -<br/>Dubai - United Arab Emirates</li>
             </ul>
             
-            <h4 className="font-barlow font-black text-[#F97818] uppercase text-[16px] tracking-wider mt-4">FOLLOW THE ADVENTURE</h4>
+            <h4 className="font-barlow font-black text-[#F97818] uppercase text-[16px] tracking-wider mt-4">{t('follow')}</h4>
             <div className="flex items-center gap-3 text-white/60 font-inter text-[13px]">
               <a href="#" className="hover:text-[#F97818] flex items-center gap-1.5 transition-colors">
                 <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">

@@ -2,8 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Mountain } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 
 const CtaBanner = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative w-full overflow-hidden flex flex-col bg-[#071116]">
       
@@ -90,7 +93,7 @@ const CtaBanner = () => {
           className="flex items-center justify-center gap-[15px]"
         >
           <span className="font-inter text-[13px] font-semibold tracking-[0.14em] uppercase text-[#F7F4EE]">
-            READY FOR YOUR NEXT
+            {t('cta_eyebrow')}
           </span>
 
         </motion.div>
@@ -103,8 +106,8 @@ const CtaBanner = () => {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="font-barlow font-black uppercase leading-[0.9] tracking-[-0.02em] mt-[12px] text-[clamp(58px,5vw,92px)] whitespace-nowrap md:whitespace-normal"
         >
-          <span className="text-[#F7F4EE] block md:inline">DESERT </span>
-          <span className="text-[#F97818] block md:inline">STORY?</span>
+          <span className="text-[#F7F4EE] block md:inline">{t('cta_title_1')}</span>
+          <span className="text-[#F97818] block md:inline">{t('cta_title_2')}</span>
         </motion.h2>
 
         {/* Description */}
@@ -115,7 +118,7 @@ const CtaBanner = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="font-inter text-[14px] md:text-[16px] font-normal leading-[1.5] text-white/90 max-w-[100%] md:max-w-[650px] mt-[22px]"
         >
-          Ready for an unforgettable desert adventure? Book your ride now and immerse yourself in the heart-pounding excitement of Dubai's deserts with Enduro Bike Dubai. Let the journey begin!
+          {t('cta_desc')}
         </motion.p>
 
         {/* CTA Button */}
@@ -131,7 +134,7 @@ const CtaBanner = () => {
               className="group relative bg-[#F97818] hover:bg-[#F7F4EE] text-[#11161A] font-inter font-extrabold text-[14px] tracking-[0.04em] uppercase transition-all duration-300 flex items-center justify-center gap-[12px] hover:scale-[1.02] shadow-2xl"
               style={{ width: 'auto', height: '58px', padding: '0 42px', clipPath: 'polygon(7% 0, 100% 0, 93% 100%, 0 100%)' }}
             >
-              BOOK NOW
+              {t('cta_book')}
               <ArrowRight className="w-5 h-5 text-[#11161A] transition-transform duration-300 cubic-bezier-ease group-hover:translate-x-[6px]" strokeWidth={2.5} />
             </button>
           </Link>
@@ -150,11 +153,11 @@ const CtaBanner = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="absolute right-[13%] top-[42%] flex flex-col items-start"
         >
-          <span className="font-marker text-[#F7F4EE] text-[36px] xl:text-[40px] leading-[1.02]">SAME</span>
-          <span className="font-marker text-[#F7F4EE] text-[36px] xl:text-[40px] leading-[1.02]">DESERT.</span>
-          <span className="font-marker text-[#F7F4EE] text-[36px] xl:text-[40px] leading-[1.02]">DIFFERENT</span>
+          <span className="font-marker text-[#F7F4EE] text-[36px] xl:text-[40px] leading-[1.02]">{t('cta_hand_1')}</span>
+          <span className="font-marker text-[#F7F4EE] text-[36px] xl:text-[40px] leading-[1.02]">{t('cta_hand_2')}</span>
+          <span className="font-marker text-[#F7F4EE] text-[36px] xl:text-[40px] leading-[1.02]">{t('cta_hand_3')}</span>
           <div className="relative">
-            <span className="font-marker text-[#F7F4EE] text-[36px] xl:text-[40px] leading-[1.02]">STORIES.</span>
+            <span className="font-marker text-[#F7F4EE] text-[36px] xl:text-[40px] leading-[1.02]">{t('cta_hand_4')}</span>
             {/* Hand-drawn Underline */}
             <svg className="absolute -bottom-2 left-0 w-[150px] h-[12px]" preserveAspectRatio="none">
               <path d="M0,5 Q50,0 100,8 T150,5" stroke="#F97818" strokeWidth="4.5" fill="none" strokeLinecap="round" />

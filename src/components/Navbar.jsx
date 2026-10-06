@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 import CurrencySelector from './CurrencySelector';
 import LanguageSelector from './LanguageSelector';
 
 
 const Navbar = () => {
+  const { t } = useLanguage();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
@@ -60,23 +62,23 @@ const Navbar = () => {
           </div>
 
           {/* CENTER: Navigation Links */}
-          <div className={`hidden lg:flex items-center font-barlow text-[15px] font-semibold tracking-widest ${defaultTextColor} whitespace-nowrap`} style={{ gap: '45px' }}>
+          <div className={`hidden lg:flex items-center font-barlow text-[13px] xl:text-[15px] font-semibold tracking-wider xl:tracking-widest ${defaultTextColor} whitespace-nowrap gap-4 lg:gap-6 xl:gap-[45px]`}>
             <Link to="/" className={`relative uppercase transition-colors group ${isActive('/') ? 'text-[#F97818]' : hoverColor}`}>
-              HOME
+              {t('home')}
               <div className={`absolute -bottom-1 left-0 h-[1px] bg-[#F97818] transition-all duration-300 ${isActive('/') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
             </Link>
             <Link to="/about" className={`relative uppercase transition-colors group ${isActive('/about') ? 'text-[#F97818]' : hoverColor}`}>
-              ABOUT US
+              {t('about')}
               <div className={`absolute -bottom-1 left-0 h-[1px] bg-[#F97818] transition-all duration-300 ${isActive('/about') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
             </Link>
             <Link to="/packages" className={`relative uppercase transition-colors group ${isPackagesActive ? 'text-[#F97818]' : hoverColor}`}>
-              PACKAGES
+              {t('packages')}
               <div className={`absolute -bottom-1 left-0 h-[1px] bg-[#F97818] transition-all duration-300 ${isPackagesActive ? 'w-full' : 'w-0 group-hover:w-full'}`} />
             </Link>
-            <a href="#" className={`relative uppercase transition-colors group ${hoverColor}`}>
-              CONTACT
+            <Link to="/contact" className={`relative uppercase transition-colors group ${hoverColor}`}>
+              {t('contact')}
               <div className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#F97818] transition-all duration-300 group-hover:w-full" />
-            </a>
+            </Link>
           </div>
 
           {/* RIGHT: Selectors & CTA Button */}
@@ -86,10 +88,10 @@ const Navbar = () => {
               <LanguageSelector />
             </div>
             <button 
-              className="group relative bg-[#F97818] hover:bg-[#FF8A28] text-[#070B0D] font-barlow font-bold text-sm tracking-widest uppercase clip-button transition-colors duration-300 flex items-center justify-center gap-2 whitespace-nowrap"
-              style={{ width: '235px', height: '58px' }}
+              className="group relative bg-[#F97818] hover:bg-[#FF8A28] text-[#070B0D] font-barlow font-bold text-[13px] xl:text-sm tracking-wider xl:tracking-widest uppercase clip-button transition-colors duration-300 flex items-center justify-center gap-2 whitespace-nowrap px-6 xl:px-8"
+              style={{ height: '58px', minWidth: '200px' }}
             >
-              BOOK YOUR RIDE
+              {t('book')}
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-[5px]" />
             </button>
           </div>
@@ -119,17 +121,17 @@ const Navbar = () => {
             className="fixed inset-0 z-40 bg-[#070B0D] flex flex-col items-center justify-center pt-20"
           >
             <div className="flex flex-col items-center gap-8 font-barlow text-[24px] font-bold tracking-widest text-white/90 w-full px-6">
-              <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isActive('/') ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>HOME</Link>
-              <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isActive('/about') ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>ABOUT US</Link>
-              <Link to="/packages" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isPackagesActive ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>PACKAGES</Link>
-              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">CONTACT</a>
+              <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isActive('/') ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>{t('home')}</Link>
+              <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isActive('/about') ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>{t('about')}</Link>
+              <Link to="/packages" onClick={() => setIsMobileMenuOpen(false)} className={`uppercase transition-colors ${isPackagesActive ? 'text-[#F97818]' : 'hover:text-[#F97818]'}`}>{t('packages')}</Link>
+              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="uppercase hover:text-[#F97818] transition-colors">{t('contact')}</Link>
               
               <button 
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="mt-8 bg-[#F97818] hover:bg-[#FF8A28] text-[#070B0D] px-8 py-4 font-bold text-sm tracking-widest uppercase flex items-center justify-center gap-3 w-full max-w-[300px] transition-colors duration-300"
                 style={{ clipPath: 'polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%)' }}
               >
-                BOOK YOUR RIDE
+                {t('book')}
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>
