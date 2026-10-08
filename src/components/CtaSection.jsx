@@ -40,7 +40,7 @@ const CtaSection = () => {
           className="flex items-center gap-4 mb-6"
         >
 
-          <span className="font-inter text-[16px] md:text-[18px] font-bold tracking-[0.35em] uppercase text-[#F97818]">
+          <span className="font-inter text-[16px] md:text-[18px] font-bold tracking-[0.35em] uppercase text-white">
             YOUR NEXT ADVENTURE
           </span>
 
