@@ -120,7 +120,7 @@ const TestimonialsSection = () => {
         </svg>
       </div>
 
-      <div className="relative z-10 max-w-[1600px] mx-auto w-full h-full flex flex-col xl:flex-row items-center xl:items-start justify-between">
+      <div className="relative z-10 max-w-[1600px] mx-auto w-full h-full flex flex-col 2xl:flex-row items-center 2xl:items-start justify-between">
         
         {/* LEFT AREA: Titles & Intro (~24%) */}
         <motion.div 
@@ -128,7 +128,7 @@ const TestimonialsSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="w-full xl:w-[24%] flex flex-col mb-12 xl:mb-0 relative z-40"
+          className="w-full 2xl:w-[24%] flex flex-col mb-12 2xl:mb-0 relative z-40"
         >
           <div className="flex items-center gap-4 mb-[20px]">
             <span className="font-inter text-[13px] font-bold tracking-[0.35em] uppercase text-ink">
@@ -183,7 +183,7 @@ const TestimonialsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="w-full xl:w-[58%] flex flex-col items-center justify-center relative min-h-[500px] md:min-h-[650px] z-30"
+          className="w-full 2xl:w-[58%] flex flex-col items-center justify-center relative min-h-[500px] md:min-h-[650px] z-30"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -209,7 +209,7 @@ const TestimonialsSection = () => {
           </div>
 
           {/* Deck Clipping Wrapper */}
-          <div className="relative w-full max-w-[850px] h-[500px] md:h-[650px] overflow-hidden flex items-center justify-center rounded-lg mt-4 md:mt-10 xl:mt-0">
+          <div className="relative w-full max-w-[850px] h-[500px] md:h-[650px] overflow-hidden flex items-center justify-center rounded-lg mt-4 md:mt-10 2xl:mt-0">
             
             {/* Deck Container */}
             <div className="relative w-[85vw] md:w-[450px] h-[500px] md:h-[570px] flex items-center justify-center perspective-[1000px]">
@@ -262,7 +262,7 @@ const TestimonialsSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="hidden xl:flex w-[18%] flex-col relative min-h-[600px] z-20"
+          className="hidden 2xl:flex w-[18%] flex-col relative min-h-[600px] z-20"
         >
           {/* Handwritten message */}
           <div className="absolute top-10 right-0 flex flex-col items-center font-marker -rotate-4 z-30">
