@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, CalendarDays } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CtaSection = () => {
   return (
@@ -82,17 +83,17 @@ const CtaSection = () => {
           className="flex flex-col sm:flex-row items-center gap-5 mt-10"
         >
           {/* Primary CTA */}
-          <button className="group relative flex items-center gap-3 bg-[#F97818] text-[#071116] px-8 py-4 font-inter font-bold tracking-widest text-[14px] uppercase overflow-hidden shadow-2xl shadow-[#F97818]/20 transition-transform duration-300 hover:-translate-y-1">
+          <Link to="/contact" className="group relative flex items-center gap-3 bg-[#F97818] text-[#071116] px-8 py-4 font-inter font-bold tracking-widest text-[14px] uppercase overflow-hidden shadow-2xl shadow-[#F97818]/20 transition-transform duration-300 hover:-translate-y-1">
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
             <CalendarDays size={18} className="relative z-10" />
             <span className="relative z-10">BOOK YOUR RIDE</span>
-          </button>
+          </Link>
 
           {/* Secondary CTA */}
-          <button className="group flex items-center gap-3 bg-transparent border-[1.5px] border-[#F5F3EF]/30 text-[#F5F3EF] px-8 py-4 font-inter font-bold tracking-widest text-[14px] uppercase hover:bg-[#F5F3EF] hover:text-[#071116] transition-all duration-300">
-            <span>EXPLORE ALL TOURS</span>
+          <Link to="/packages" className="group flex items-center gap-3 bg-transparent border-[1.5px] border-[#F5F3EF]/30 text-[#F5F3EF] px-8 py-4 font-inter font-bold tracking-widest text-[14px] uppercase hover:bg-[#F5F3EF] hover:text-[#071116] transition-all duration-300">
+            <span>EXPLORE ALL PACKAGES</span>
             <ArrowRight size={18} className="transform group-hover:translate-x-1 transition-transform duration-300" />
-          </button>
+          </Link>
         </motion.div>
 
 

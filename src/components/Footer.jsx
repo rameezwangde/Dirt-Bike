@@ -50,7 +50,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-3 font-inter text-[14px] text-white/60">
               <li><Link to="/" className="hover:text-[#F97818] transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-[#F97818] transition-colors">About Us</Link></li>
-              <li><Link to="/tours" className="hover:text-[#F97818] transition-colors">Packages</Link></li>
+              <li><Link to="/packages" className="hover:text-[#F97818] transition-colors">Packages</Link></li>
               <li><Link to="/contact" className="hover:text-[#F97818] transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -59,10 +59,10 @@ const Footer = () => {
           <div className="lg:col-span-3 flex flex-col gap-5">
             <h4 className="font-barlow font-black text-[#F97818] uppercase text-[16px] tracking-wider">{t('experiences')}</h4>
             <ul className="flex flex-col gap-3 font-inter text-[14px] text-white/60">
-              <li><Link to="/tours" className="hover:text-[#F97818] transition-colors">Dune Buggy Tours</Link></li>
-              <li><Link to="/tours" className="hover:text-[#F97818] transition-colors">Dirt Bike Tours</Link></li>
-              <li><Link to="/tours" className="hover:text-[#F97818] transition-colors">Quad Biking</Link></li>
-              <li><Link to="/safari" className="hover:text-[#F97818] transition-colors">Desert Safari Tours</Link></li>
+              <li><Link to="/buggy-rental-dubai" className="hover:text-[#F97818] transition-colors">Dune Buggy Tours</Link></li>
+              <li><Link to="/dirt-bike-dubai" className="hover:text-[#F97818] transition-colors">Dirt Bike Tours</Link></li>
+              <li><Link to="/quad-bike-dubai" className="hover:text-[#F97818] transition-colors">Quad Biking</Link></li>
+              <li><Link to="/desert-safari-dubai" className="hover:text-[#F97818] transition-colors">Desert Safari Tours</Link></li>
             </ul>
           </div>
 
