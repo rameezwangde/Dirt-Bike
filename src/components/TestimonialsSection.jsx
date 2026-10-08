@@ -78,7 +78,7 @@ const TestimonialsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="w-full flex flex-col items-center text-center mb-12 md:mb-16 px-[20px]"
+          className="w-full flex flex-col items-center text-center mb-6 md:mb-8 px-[20px]"
         >
           <div className="flex items-center gap-4 mb-4">
             <span className="font-inter text-[13px] font-bold tracking-[0.35em] uppercase text-ink">
