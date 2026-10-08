@@ -5,25 +5,11 @@ import { Star, Quote } from 'lucide-react';
 const TestimonialCard = ({ testimonial }) => {
   return (
     <div
-      className="flex flex-col shadow-2xl overflow-hidden bg-[#071116] text-[#F5F3EF] w-[320px] md:w-[400px] h-[450px] md:h-[500px] shrink-0 mx-4"
+      className="flex flex-col shadow-2xl overflow-hidden bg-[#071116] text-[#F5F3EF] w-[320px] md:w-[400px] h-auto shrink-0 mx-4"
       style={{
         borderRadius: '3px',
       }}
     >
-      {/* Top Image */}
-      <div
-        className="relative w-full h-[200px] overflow-hidden shrink-0"
-        style={{
-          clipPath: 'polygon(0 0, 100% 0, 100% 92%, 0 100%)'
-        }}
-      >
-        <img 
-          src={testimonial.image} 
-          alt={testimonial.name}
-          className="w-full h-full object-cover"
-        />
-      </div>
-
       <div className="flex flex-col flex-1 p-6 md:p-8">
         
         {/* Quote Mark & Stars */}

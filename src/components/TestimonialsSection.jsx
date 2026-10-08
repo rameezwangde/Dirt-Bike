@@ -60,7 +60,7 @@ const marqueeData = [...testimonialsData, ...testimonialsData];
 
 const TestimonialsSection = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-cream pt-[20px] md:pt-[40px] pb-[40px] md:pb-[80px]">
+    <section className="relative w-full overflow-hidden bg-cream pt-[20px] md:pt-[40px] pb-[10px] md:pb-[20px]">
       
       {/* Subtle Background Elements */}
       <div className="absolute inset-0 z-0 pointer-events-none mix-blend-multiply opacity-[0.04]">
@@ -102,8 +102,8 @@ const TestimonialsSection = () => {
         <div className="w-full overflow-hidden flex relative z-30 group pb-8 pt-4">
           
           {/* Gradient Edges for fade effect */}
-          <div className="absolute left-0 top-0 bottom-0 w-[40px] md:w-[150px] bg-gradient-to-r from-cream to-transparent z-40 pointer-events-none opacity-40" />
-          <div className="absolute right-0 top-0 bottom-0 w-[40px] md:w-[150px] bg-gradient-to-l from-cream to-transparent z-40 pointer-events-none opacity-40" />
+          <div className="absolute left-0 top-0 bottom-0 w-[40px] md:w-[150px] bg-gradient-to-r from-cream to-transparent z-40 pointer-events-none opacity-10" />
+          <div className="absolute right-0 top-0 bottom-0 w-[40px] md:w-[150px] bg-gradient-to-l from-cream to-transparent z-40 pointer-events-none opacity-10" />
 
           <motion.div 
             className="flex items-center"
