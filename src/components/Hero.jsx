@@ -3,7 +3,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Navbar from './Navbar';
 import HeroContent from './HeroContent';
 import ExperienceBar from './ExperienceBar';
-import bgImage from '../../Golden Dune Motocross Chase.png';
+import bgImageMobile from '../../dirt_bike_desert_hero.jpg';
+import bgImageDesktop from '../../Golden Dune Motocross Chase.png';
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -12,14 +13,25 @@ const Hero = () => {
   return (
     <section className="relative w-full min-h-[100vh] overflow-hidden bg-[#070B0D]">
       
-      {/* Background Image (z-index: 0) */}
+      {/* Background Image Mobile (z-index: 0) */}
       <motion.img 
-        src={bgImage}
-        className="absolute inset-0 w-full h-full object-cover z-0 object-right md:object-center"
+        src={bgImageMobile}
+        className="absolute inset-0 w-full h-full object-cover z-0 md:hidden"
+        style={{
+          y: backgroundY,
+          objectPosition: '56% center'
+        }}
+        alt="Desert Dirt Bike Mobile"
+      />
+
+      {/* Background Image Desktop (z-index: 0) */}
+      <motion.img 
+        src={bgImageDesktop}
+        className="absolute inset-0 w-full h-full object-cover z-0 object-center hidden md:block"
         style={{
           y: backgroundY
         }}
-        alt="Desert Dirt Bike"
+        alt="Desert Dirt Bike Desktop"
       />
 
       {/* Dark overlay primarily on the LEFT side (z-index: 1) */}

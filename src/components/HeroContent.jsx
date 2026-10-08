@@ -20,7 +20,7 @@ const HeroContent = () => {
 
       {/* Headline */}
       <div 
-        className="font-barlow font-black uppercase flex flex-col text-[65px] md:text-[clamp(55px,12vw,125px)] leading-[0.85] md:leading-[0.82] tracking-[-0.035em] w-full"
+        className="font-barlow font-black uppercase flex flex-col text-[13vw] sm:text-[65px] md:text-[clamp(55px,12vw,125px)] leading-[0.85] md:leading-[0.82] tracking-[-0.035em] w-full"
       >
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -47,14 +47,7 @@ const HeroContent = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.45 }}
-        className="font-inter font-normal"
-        style={{
-          fontSize: '20px',
-          lineHeight: 1.4,
-          color: '#F5F3EF',
-          marginTop: '28px',
-          maxWidth: '620px'
-        }}
+        className="font-inter font-normal text-[16px] sm:text-[20px] mt-[16px] sm:mt-[28px] max-w-[620px] text-[#F5F3EF] leading-[1.4]"
       >
         {t('hero_desc')}
       </motion.div>
@@ -64,15 +57,12 @@ const HeroContent = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.55, ease: "easeOut" }}
-        className="flex items-center"
-        style={{ gap: '34px', marginTop: '32px' }}
+        className="flex items-center gap-[24px] sm:gap-[34px] mt-[24px] sm:mt-[32px]"
       >
         {/* Primary CTA */}
         <button 
-          className="group bg-[#F97818] hover:bg-[#FF8A28] text-[#070B0D] font-barlow font-bold text-base tracking-widest uppercase flex-none transition-colors duration-300 flex items-center justify-center gap-3"
+          className="group bg-[#F97818] hover:bg-[#FF8A28] text-[#070B0D] font-barlow font-bold text-sm sm:text-base tracking-widest uppercase flex-none transition-colors duration-300 flex items-center justify-center gap-2 sm:gap-3 w-[220px] sm:w-[265px] h-[56px] sm:h-[64px]"
           style={{
-            width: '265px',
-            height: '64px',
             clipPath: 'polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%)'
           }}
         >

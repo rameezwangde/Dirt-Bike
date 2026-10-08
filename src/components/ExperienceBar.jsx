@@ -11,7 +11,7 @@ const ExperienceBar = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.65, ease: "easeOut" }}
-      className="absolute z-30 left-0 right-0 lg:left-[40px] lg:right-[40px] bottom-[20px] lg:bottom-[25px] flex overflow-x-auto md:grid md:grid-cols-3 lg:grid-cols-[1fr_1.25fr_1.1fr] h-auto lg:h-[112px] snap-x snap-mandatory hide-scrollbar border-y lg:border border-white/16"
+      className="absolute z-30 left-0 right-0 lg:left-[40px] lg:right-[40px] bottom-[80px] lg:bottom-[25px] flex overflow-x-auto md:grid md:grid-cols-3 lg:grid-cols-[1fr_1.25fr_1.1fr] h-auto lg:h-[112px] snap-x snap-mandatory hide-scrollbar border-y lg:border border-white/16"
       style={{
         background: 'rgba(5,8,9,0.90)',
       }}
