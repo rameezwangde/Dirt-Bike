@@ -9,7 +9,7 @@ const packageTours = [
   {
     number: "01",
     title: "DIRT BIKE\nDUBAI",
-    image: "/images/dirt-bike-tour.jpg",
+    image: "/images/dirt-bike-dubai-cover.jpg",
     description: "Ride powerful KTM 450cc dirt bikes through Dubai's stunning dunes. Guided tours, safety gear, and beginner lessons for an unforgettable desert adventure.",
     ctaText: "EXPLORE DIRT BIKES",
     link: "/dirt-bike-dubai",

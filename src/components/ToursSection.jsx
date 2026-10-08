@@ -8,7 +8,7 @@ const tours = [
   {
     number: "01",
     title: "DIRT BIKE\nADVENTURES",
-    image: "/images/dirt-bike-tour.jpg",
+    image: "/images/dirt-bike-dubai-cover.jpg",
     description: (
       <>
         Ride powerful <span className="text-[#F97818] font-semibold">KTM 450cc</span> dirt bikes through Dubai's stunning dunes. Guided tours, safety gear, and beginner lessons for an unforgettable desert adventure.
