@@ -7,27 +7,11 @@ import { useCurrency } from '../context/CurrencyContext';
 const packages = [
   {
     id: 1,
-    title: "Evening - Desert Safari",
+    title: "Polarize 1000 cc",
     location: "Dubai",
-    priceType: "Per Person",
-    price: 150,
-    image: "/images/safari-adventure.jpg"
-  },
-  {
-    id: 2,
-    title: "Private - Evening Safari",
-    location: "Dubai",
-    priceType: "Per Car",
-    price: 850,
-    image: "/images/safari-4x4.jpg"
-  },
-  {
-    id: 3,
-    title: "Evening Safari + Quad Bike",
-    location: "Dubai",
-    priceType: "Per Person",
-    price: 250,
-    image: "/images/safari-delights.jpg"
+    priceType: "Per Buggy",
+    price: "?",
+    image: "/images/polarize-1000.jpeg"
   }
 ];
 
@@ -47,17 +31,17 @@ const DesertSafari = () => {
           Best Desert Safari Tours in Dubai
         </motion.h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {packages.map((pkg, idx) => (
             <motion.div 
               key={pkg.id}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
-              className="bg-white rounded-2xl overflow-hidden flex flex-col shadow-lg"
+              className="bg-white rounded-2xl overflow-hidden flex flex-col sm:flex-row shadow-lg"
             >
               {/* Image side */}
-              <div className="w-full h-[250px] relative">
+              <div className="w-full sm:w-[45%] h-[300px] sm:h-auto relative">
                 <img 
                   src={pkg.image} 
                   alt={pkg.title} 
@@ -66,7 +50,7 @@ const DesertSafari = () => {
               </div>
               
               {/* Content side */}
-              <div className="p-6 md:p-8 flex flex-col justify-center flex-grow">
+              <div className="p-6 md:p-8 flex flex-col justify-center flex-grow sm:w-[55%]">
                 <h3 className="text-[22px] font-bold text-[#11161A] mb-4 font-barlow">
                   {pkg.title}
                 </h3>
@@ -83,8 +67,10 @@ const DesertSafari = () => {
 
                 <div className="mb-6 mt-auto flex items-end gap-2">
                   <div className="flex items-start">
-                    <span className="text-[#F97818] font-bold text-sm mt-1 mr-1">{currency.code}</span>
-                    <span className="text-[#11161A] font-barlow font-black text-4xl leading-none">{convertPrice(pkg.price)}</span>
+                    {pkg.price !== "?" && <span className="text-[#F97818] font-bold text-sm mt-1 mr-1">{currency.code}</span>}
+                    <span className="text-[#11161A] font-barlow font-black text-4xl leading-none">
+                      {pkg.price === "?" ? "?" : convertPrice(pkg.price)}
+                    </span>
                   </div>
                   <span className="text-gray-500 text-sm font-medium mb-1">/ {pkg.priceType.replace('Per ', '')}</span>
                 </div>
