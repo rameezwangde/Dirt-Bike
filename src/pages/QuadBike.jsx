@@ -28,6 +28,14 @@ const packages = [
     seats: "1",
     price: "?",
     image: "/images/kimko-3.jpeg"
+  },
+  {
+    id: 6,
+    title: "Raptor 700 cc",
+    duration: "1-Hour",
+    seats: "1",
+    price: "?",
+    image: "/images/raptor-700.jpeg"
   }
 ];
 
