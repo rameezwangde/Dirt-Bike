@@ -196,11 +196,11 @@ const ToursSection = () => {
 
         {/* Tour Cards Grid */}
         <div 
-          className="grid grid-cols-1 lg:grid-cols-3 w-full mx-auto"
+          className="grid grid-cols-1 w-full mx-auto"
           style={{
-            gap: '24px',
+            gap: '32px',
             alignItems: 'stretch',
-            maxWidth: '1450px'
+            maxWidth: '1200px'
           }}
         >
           {tours.map((tour, index) => (

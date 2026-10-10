@@ -1,11 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Mountain } from 'lucide-react';
-import mainImg from '../../Golden Dune Motocross Chase.png';
 
 const AboutCollage = () => {
   return (
-    <div className="relative w-full max-w-[700px] h-[450px] md:h-[600px] mx-auto flex items-center justify-center">
+    <div className="relative w-full max-w-[700px] h-[500px] md:h-[750px] mx-auto flex items-center justify-center">
       
       {/* Main Photograph */}
       <motion.div
@@ -13,14 +12,14 @@ const AboutCollage = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8 }}
-        className="absolute w-[80vw] sm:w-[500px] md:w-[650px] h-[320px] sm:h-[400px] md:h-[490px] z-10 hover:scale-[1.015] transition-transform duration-500 origin-center left-1/2 -translate-x-1/2 md:translate-x-0 md:left-[50px] top-[90px]"
+        className="absolute w-[80vw] sm:w-[400px] md:w-[450px] h-[450px] sm:h-[550px] md:h-[650px] z-10 hover:scale-[1.015] transition-transform duration-500 origin-center left-1/2 -translate-x-1/2 md:translate-x-0 md:left-[80px] top-[50px] md:top-[50px]"
         style={{
           maskImage: 'polygon(2% 4%, 98% 0%, 100% 95%, 4% 98%)',
           WebkitMaskImage: 'polygon(2% 4%, 98% 0%, 100% 95%, 4% 98%)',
         }}
       >
         <img 
-          src={mainImg} 
+          src="/images/ktm-450-1hr.jpeg" 
           alt="Enduro Bike Dubai Experience" 
           className="w-full h-full object-cover"
         />

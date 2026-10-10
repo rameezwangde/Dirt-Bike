@@ -10,7 +10,7 @@ const TourCard = ({ tour, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.7, delay: index * 0.12 }}
-      className="relative flex flex-col w-full h-full min-h-[590px] group transition-transform duration-400 ease-out hover:-translate-y-[5px]"
+      className="relative flex flex-col lg:flex-row w-full h-full lg:min-h-[400px] group transition-transform duration-400 ease-out hover:-translate-y-[5px]"
       style={{
         boxShadow: '0 18px 45px rgba(18,16,12,0.10)',
         borderRadius: '2px', // almost 0 radius
@@ -18,12 +18,12 @@ const TourCard = ({ tour, index }) => {
       }}
     >
       
-      {/* Top Image Area */}
+      {/* Top/Left Image Area */}
       <div 
-        className="relative w-full h-[275px] overflow-hidden z-10"
+        className="relative w-full lg:w-[50%] h-[300px] lg:h-auto overflow-hidden z-10"
         style={{
-          // Cleaner angled transition to the bottom panel
-          clipPath: 'polygon(0 0, 100% 0, 100% 82%, 75% 91%, 45% 96%, 20% 91%, 0 84%)'
+          // Straight angled clip path for desktop, flat for mobile
+          clipPath: 'polygon(0 0, 100% 0, 92% 100%, 0 100%)'
         }}
       >
         <div className="absolute inset-0 w-full h-full transition-transform duration-400 ease-out group-hover:scale-[1.025]">
@@ -43,10 +43,10 @@ const TourCard = ({ tour, index }) => {
         </div>
       </div>
 
-      {/* Bottom Information Panel */}
+      {/* Bottom/Right Information Panel */}
       <div 
-        className="relative w-full flex-grow bg-[#071116] z-0 flex flex-col"
-        style={{ padding: '28px 34px 30px' }}
+        className="relative w-full lg:w-[50%] flex-grow bg-[#071116] z-0 flex flex-col justify-center lg:-ml-[8%]"
+        style={{ padding: '40px 40px 40px 8%' }}
       >
         
         {/* Tire track texture (decorative) */}
@@ -69,12 +69,12 @@ const TourCard = ({ tour, index }) => {
           </div>
 
           {/* Title Area */}
-          <div className="relative w-full">
+          <div className="relative w-full mt-2 mb-4">
             <h3 
               className="font-barlow font-black text-[#F5F3EF] uppercase whitespace-pre-line pr-[50px]"
               style={{
-                fontSize: 'clamp(38px, 2.7vw, 48px)',
-                lineHeight: 0.88,
+                fontSize: 'clamp(32px, 3vw, 42px)',
+                lineHeight: 0.9,
                 letterSpacing: '-0.015em'
               }}
             >

@@ -109,7 +109,7 @@ const WhyChooseUs = () => {
                 Ideally, the PNG itself has the rough edge. */}
             <div className="w-full h-full relative" style={{ maskImage: 'radial-gradient(ellipse at center, black 40%, transparent 70%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 40%, transparent 70%)' }}>
               <img 
-                src="/images/why-choose-dirt-bike.png" 
+                src="/images/ktm-450-2hr.jpeg" 
                 alt="Dirt Bike Action" 
                 className="w-full h-full object-cover transform rotate-[5deg] scale-110" 
                 onError={(e) => {
