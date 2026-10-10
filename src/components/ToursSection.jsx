@@ -7,14 +7,11 @@ import { useLanguage } from '../context/LanguageContext';
 const tours = [
   {
     number: "01",
-    title: "DIRT BIKE\nADVENTURES",
+    title: "DIRT BIKE\nDUBAI",
     image: "/images/dirt-bike-dubai-cover.jpg",
-    description: (
-      <>
-        Ride powerful <span className="text-[#F97818] font-semibold">KTM 450cc</span> dirt bikes through Dubai's stunning dunes. Guided tours, safety gear, and beginner lessons for an unforgettable desert adventure.
-      </>
-    ),
+    description: "Ride powerful KTM 450cc dirt bikes through Dubai's stunning dunes. Guided tours, safety gear, and beginner lessons for an unforgettable desert adventure.",
     ctaText: "EXPLORE DIRT BIKES",
+    link: "/packages",
     iconSvg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
         <path d="M12 2C7 2 3 6 3 11v5a2 2 0 0 0 2 2h2" />
@@ -26,10 +23,11 @@ const tours = [
   },
   {
     number: "02",
-    title: "DUNE BUGGY\nEXCURSIONS",
+    title: "BUGGY RENTAL\nDUBAI",
     image: "/images/buggy-rental-dubai-cover.jpg",
     description: "Experience Dubai's desert like never before with our high-performance dune buggies. Perfect for families, groups, and thrill-seekers of all levels.",
     ctaText: "EXPLORE BUGGIES",
+    link: "/packages",
     iconSvg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
         <path d="M3 12h18" />
@@ -42,10 +40,25 @@ const tours = [
   },
   {
     number: "03",
-    title: "QUAD BIKING\nEXPERIENCES",
+    title: "DESERT SAFARI\nDUBAI",
+    image: "/images/safari-adventure.jpg", 
+    description: "Immerse yourself in a complete desert experience. Enjoy dune bashing, camel rides, sandboarding, and an authentic Bedouin camp dinner.",
+    ctaText: "EXPLORE SAFARI",
+    link: "/packages",
+    iconSvg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
+        <path d="M4 14l8-9 8 9" />
+        <path d="M4 14v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7" />
+      </svg>
+    )
+  },
+  {
+    number: "04",
+    title: "QUAD BIKE\nDUBAI",
     image: "/images/quad-bike-tour.jpg",
-    description: "Get ready for an adrenaline-packed quad biking adventure across the golden dunes. Ideal for solo riders, friends, and families looking for pure desert excitement.",
+    description: "Get ready for an adrenaline-packed quad biking adventure across the golden dunes. Ideal for solo riders, friends, and families.",
     ctaText: "EXPLORE QUADS",
+    link: "/packages",
     iconSvg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
         <rect x="5" y="10" width="14" height="6" rx="1" />

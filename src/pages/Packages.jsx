@@ -111,11 +111,11 @@ const Packages = () => {
           </motion.div>
 
           <div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full mx-auto"
+            className="grid grid-cols-1 w-full mx-auto"
             style={{
-              gap: '24px',
+              gap: '32px',
               alignItems: 'stretch',
-              maxWidth: '1450px'
+              maxWidth: '1200px'
             }}
           >
             {packageTours.map((tour, index) => (
