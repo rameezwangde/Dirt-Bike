@@ -56,7 +56,7 @@ const packageTours = [
   {
     number: "04",
     title: "QUAD BIKE\nDUBAI",
-    image: "/images/quad-bike-tour.jpg",
+    image: "/images/kimko-1.jpeg",
     description: "Get ready for an adrenaline-packed quad biking adventure across the golden dunes. Ideal for solo riders, friends, and families.",
     ctaText: "EXPLORE QUADS",
     link: "/quad-bike-dubai",
