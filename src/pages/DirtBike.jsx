@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
@@ -118,9 +119,14 @@ const DirtBike = () => {
                   <span className="text-gray-500 text-sm font-medium mb-1">/ Per Bike</span>
                 </div>
 
-                <a href="https://wa.me/971504799258" target="_blank" rel="noopener noreferrer" className="bg-[#cf8144] hover:bg-[#b56e36] text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit inline-block">
-                  Book Now
-                </a>
+                <div className="flex items-center gap-4">
+                  <a href="https://wa.me/971504799258" target="_blank" rel="noopener noreferrer" className="bg-[#cf8144] hover:bg-[#b56e36] text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit inline-block">
+                    Book Now
+                  </a>
+                  <Link to="/packages" className="border border-[#cf8144] text-[#cf8144] hover:bg-[#cf8144] hover:text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit inline-block text-center">
+                    Back
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}
