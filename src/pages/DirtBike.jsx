@@ -11,7 +11,7 @@ const packages = [
     duration: "1-Hour",
     seats: 1,
     price: 400,
-    image: "/images/dirt-bike-tour.jpg"
+    image: "/images/ktm-450-1hr.jpeg"
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const packages = [
     duration: "2-Hour",
     seats: 1,
     price: 649,
-    image: "/images/dirt-bike.jpg"
+    image: "/images/ktm-450-2hr.jpeg"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const packages = [
     duration: "3-Hour",
     seats: 1,
     price: 799,
-    image: "/images/dirt-bike-tour.jpg"
+    image: "/images/ktm-450-3hr.jpeg"
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const packages = [
     duration: "4-Hour",
     seats: 1,
     price: 1000,
-    image: "/images/dirt-bike.jpg"
+    image: "/images/ktm-450-2hr.jpeg"
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const packages = [
     duration: "1-Day",
     seats: 1,
     price: 1550,
-    image: "/images/dirt-bike-tour.jpg"
+    image: "/images/ktm-450-1hr.jpeg"
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const packages = [
     duration: "3-Days",
     seats: 1,
     price: 3850,
-    image: "/images/dirt-bike.jpg"
+    image: "/images/ktm-450-3hr.jpeg"
   }
 ];
 

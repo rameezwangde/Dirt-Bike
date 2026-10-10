@@ -25,7 +25,7 @@ const packageTours = [
   {
     number: "02",
     title: "BUGGY RENTAL\nDUBAI",
-    image: "/images/dune-buggy-tour.jpg",
+    image: "/images/buggy-rental-dubai-cover.jpg",
     description: "Experience Dubai's desert like never before with our high-performance dune buggies. Perfect for families, groups, and thrill-seekers of all levels.",
     ctaText: "EXPLORE BUGGIES",
     link: "/buggy-rental-dubai",
