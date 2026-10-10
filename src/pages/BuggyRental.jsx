@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
@@ -11,7 +12,7 @@ const packages = [
     duration: "1-Hour",
     seats: 2,
     price: 850,
-    image: "/images/dune-buggy.jpg"
+    image: "/images/polaris.jpeg"
   },
   {
     id: 2,
@@ -19,7 +20,7 @@ const packages = [
     duration: "1-Hour",
     seats: 2,
     price: 1000,
-    image: "/images/dune-buggy-tour.jpg"
+    image: "/images/polaris-2.jpeg"
   },
   {
     id: 3,
@@ -27,7 +28,7 @@ const packages = [
     duration: "2-Hour",
     seats: 2,
     price: 1250,
-    image: "/images/dune-buggy.jpg"
+    image: "/images/polaris-3.jpeg"
   },
   {
     id: 4,
@@ -35,7 +36,7 @@ const packages = [
     duration: "2-Hour",
     seats: 2,
     price: 1450,
-    image: "/images/dune-buggy-tour.jpg"
+    image: "/images/polaris-1000cc.jpeg"
   },
   {
     id: 5,
@@ -43,7 +44,7 @@ const packages = [
     duration: "3-Hour",
     seats: 2,
     price: 1800,
-    image: "/images/dune-buggy.jpg"
+    image: "/images/polaris.jpeg"
   },
   {
     id: 6,
@@ -51,7 +52,7 @@ const packages = [
     duration: "1-Hour",
     seats: 1,
     price: 750,
-    image: "/images/dune-buggy-tour.jpg"
+    image: "/images/polaris-2.jpeg"
   },
   {
     id: 7,
@@ -59,7 +60,7 @@ const packages = [
     duration: "2-Hour",
     seats: 1,
     price: 1250,
-    image: "/images/dune-buggy.jpg"
+    image: "/images/polaris-3.jpeg"
   },
   {
     id: 8,
@@ -67,7 +68,7 @@ const packages = [
     duration: "3-Hour",
     seats: 1,
     price: 1550,
-    image: "/images/dune-buggy-tour.jpg"
+    image: "/images/polaris-1000cc.jpeg"
   },
   {
     id: 9,
@@ -75,7 +76,7 @@ const packages = [
     duration: "2-Hour",
     seats: 1,
     price: 1150,
-    image: "/images/dune-buggy.jpg"
+    image: "/images/polaris.jpeg"
   },
   {
     id: 10,
@@ -83,7 +84,7 @@ const packages = [
     duration: "1-Hour",
     seats: 2,
     price: 1150,
-    image: "/images/dune-buggy-tour.jpg"
+    image: "/images/polaris-2.jpeg"
   },
   {
     id: 11,
@@ -91,7 +92,7 @@ const packages = [
     duration: "1-Hour",
     seats: 2,
     price: 1350,
-    image: "/images/dune-buggy.jpg"
+    image: "/images/polaris-3.jpeg"
   },
   {
     id: 12,
@@ -99,7 +100,7 @@ const packages = [
     duration: "2-Hour",
     seats: 2,
     price: 1750,
-    image: "/images/dune-buggy-tour.jpg"
+    image: "/images/polaris-1000cc.jpeg"
   },
   {
     id: 13,
@@ -107,7 +108,7 @@ const packages = [
     duration: "2-Hour",
     seats: 2,
     price: 2150,
-    image: "/images/dune-buggy.jpg"
+    image: "/images/polaris.jpeg"
   },
   {
     id: 14,
@@ -115,7 +116,7 @@ const packages = [
     duration: "1-Hour",
     seats: 4,
     price: 1200,
-    image: "/images/dune-buggy-tour.jpg"
+    image: "/images/polaris-2.jpeg"
   },
   {
     id: 15,
@@ -123,7 +124,7 @@ const packages = [
     duration: "1-Hour",
     seats: 4,
     price: 1300,
-    image: "/images/dune-buggy.jpg"
+    image: "/images/polaris-3.jpeg"
   }
 ];
 
@@ -152,18 +153,18 @@ const BuggyRental = () => {
           We have many Dune buggy tour packages to accommodate your needs and the time you plan or have for your trips. Here's a brief review of our top packages:
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {packages.map((pkg, idx) => (
             <motion.div 
               key={pkg.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: (idx % 3) * 0.1 }}
-              className="bg-white rounded-2xl overflow-hidden flex flex-col shadow-lg"
+              transition={{ delay: (idx % 2) * 0.1 }}
+              className="bg-white rounded-2xl overflow-hidden flex flex-col sm:flex-row shadow-lg"
             >
               {/* Image side */}
-              <div className="w-full h-[250px] relative">
+              <div className="sm:w-[45%] h-[250px] sm:h-auto relative">
                 <img 
                   src={pkg.image} 
                   alt={pkg.title} 
@@ -172,7 +173,7 @@ const BuggyRental = () => {
               </div>
               
               {/* Content side */}
-              <div className="p-6 md:p-8 flex flex-col justify-center flex-grow">
+              <div className="sm:w-[55%] p-6 md:p-8 flex flex-col justify-center flex-grow">
                 <h3 className="text-[20px] font-bold text-[#11161A] mb-4 font-barlow uppercase">
                   {pkg.title}
                 </h3>
@@ -200,9 +201,14 @@ const BuggyRental = () => {
                   <span className="text-gray-500 text-sm font-medium mb-1">/ Per Buggy</span>
                 </div>
 
-                <a href="https://wa.me/971504799258" target="_blank" rel="noopener noreferrer" className="bg-[#cf8144] hover:bg-[#b56e36] text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit inline-block">
-                  Book Now
-                </a>
+                <div className="flex items-center gap-4">
+                  <a href="https://wa.me/971504799258" target="_blank" rel="noopener noreferrer" className="bg-[#cf8144] hover:bg-[#b56e36] text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit inline-block">
+                    Book Now
+                  </a>
+                  <Link to="/packages" className="border border-[#cf8144] text-[#cf8144] hover:bg-[#cf8144] hover:text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit inline-block text-center">
+                    Back
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}
