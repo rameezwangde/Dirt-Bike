@@ -12,6 +12,14 @@ const packages = [
     priceType: "Per Buggy",
     price: "?",
     image: "/images/polarize-1000.jpeg"
+  },
+  {
+    id: 2,
+    title: "Can Am Maverick XR",
+    location: "Dubai",
+    priceType: "Per Buggy",
+    price: "?",
+    image: "/images/maverick-xr.jpeg"
   }
 ];
 
