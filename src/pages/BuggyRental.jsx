@@ -84,7 +84,7 @@ const packages = [
     duration: "1-Hour",
     seats: 2,
     price: 1150,
-    image: "/images/polaris-2.jpeg"
+    image: "/images/x3.jpeg"
   },
   {
     id: 11,
@@ -92,7 +92,7 @@ const packages = [
     duration: "1-Hour",
     seats: 2,
     price: 1350,
-    image: "/images/polaris-3.jpeg"
+    image: "/images/x3.jpeg"
   },
   {
     id: 12,
@@ -100,7 +100,7 @@ const packages = [
     duration: "2-Hour",
     seats: 2,
     price: 1750,
-    image: "/images/polaris-1000cc.jpeg"
+    image: "/images/x3.jpeg"
   },
   {
     id: 13,
@@ -108,7 +108,7 @@ const packages = [
     duration: "2-Hour",
     seats: 2,
     price: 2150,
-    image: "/images/polaris.jpeg"
+    image: "/images/x3.jpeg"
   },
   {
     id: 14,
@@ -116,7 +116,7 @@ const packages = [
     duration: "1-Hour",
     seats: 4,
     price: 1200,
-    image: "/images/polaris-2.jpeg"
+    image: "/images/x3.jpeg"
   },
   {
     id: 15,
@@ -124,7 +124,7 @@ const packages = [
     duration: "1-Hour",
     seats: 4,
     price: 1300,
-    image: "/images/polaris-3.jpeg"
+    image: "/images/x3.jpeg"
   }
 ];
 
