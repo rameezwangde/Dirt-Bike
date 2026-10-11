@@ -41,7 +41,8 @@ const tours = [
   {
     number: "03",
     title: "DESERT SAFARI\nDUBAI",
-    image: "/images/safari-adventure.jpg", 
+    image: "/images/polarize-1000.jpeg",
+    imagePosition: "object-[center_70%]",
     description: "Immerse yourself in a complete desert experience. Enjoy dune bashing, camel rides, sandboarding, and an authentic Bedouin camp dinner.",
     ctaText: "EXPLORE SAFARI",
     link: "/packages",
