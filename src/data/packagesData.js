@@ -524,33 +524,5 @@ export const allPackages = [
       'Camel ride, henna painting & falcon photography',
       'All safety gear & guide included'
     ]
-  },
-  {
-    id: 'safari-3',
-    category: 'safari',
-    categoryLabel: 'DESERT SAFARI',
-    title: 'EVENING DESERT SAFARI WITH QUAD BIKE COMBO',
-    price: 300,
-    priceRates: 'Combo Package: 300 AED',
-    duration: '6 Hours',
-    seats: '1 Quad / 4x4',
-    transfer: 'Included',
-    highlight: 'HOTEL PICKUP · QUAD RIDE · FIRE SHOW & DINNER',
-    description: 'All-inclusive evening desert adventure with hotel pickup, quad bike ride, 4x4 dune bashing, camel trek and dinner show.',
-    image: '/images/safari-adventure.jpg',
-    specs: {
-      vehicle: 'ATV Quad Bike + 4x4 Dune Cruiser',
-      duration: '6 Hours (3:00 PM to 9:00 PM)',
-      camp: 'Bedouin Oasis Camp',
-      food: 'Live BBQ Buffet with Sweets & Salads',
-      entertainment: 'Fire Show, Tanoura Dance & Arabic Music'
-    },
-    inclusions: [
-      'Round-trip 4x4 pickup & drop-off from Dubai/Sharjah hotels',
-      'Dedicated quad bike desert riding session',
-      'High-energy dune bashing on Al Lahbab red dunes',
-      'Sunset photography stop on high dunes',
-      'Camel ride, sandboarding, BBQ dinner and cultural shows'
-    ]
   }
 ];
