@@ -211,9 +211,9 @@ const Packages = () => {
                   </span>
                 </div>
 
-                {/* 3-Column Grid of Package Cards */}
+                {/* Horizontal Package Cards Grid (Image on Left) */}
                 {categorySection.packages.length > 0 ? (
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                     {categorySection.packages.map((pkg, idx) => (
                       <PackageCard
                         key={pkg.id}

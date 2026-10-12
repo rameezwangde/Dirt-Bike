@@ -76,7 +76,8 @@ export const allPackages = [
     transfer: '300 AED',
     highlight: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
     description: 'Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC, 1 hr: 400 AED | 2 hrs: 700 AED.',
-    image: '/images/polaris-1000cc.jpeg',
+    image: '/images/polarize-1000.jpeg',
+    imagePosition: 'object-[center_72%]',
     specs: {
       horsepower: '145 HP ProStar 1000',
       engine: '999cc 4-Stroke DOHC Twin Cylinder',
@@ -105,6 +106,7 @@ export const allPackages = [
     highlight: 'SUNRISE SPECIAL · FRESH UNTOUCHED DUNES',
     description: 'Experience Dubai dunes at dawn with cooler temperatures and magical sunrise photo stops.',
     image: '/images/polaris.jpeg',
+    imagePosition: 'object-[center_68%]',
     specs: {
       horsepower: '110 HP ProStar',
       engine: '1000cc Dual Cylinder EFI',
@@ -133,6 +135,7 @@ export const allPackages = [
     highlight: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
     description: 'Conquer the most demanding desert ridges with top-tier turbo torque and 72-inch wide track stability.',
     image: '/images/polaris-3.jpeg',
+    imagePosition: 'object-[center_65%]',
     specs: {
       horsepower: '168 HP Turbo',
       engine: 'ProStar Turbo HO',
@@ -161,6 +164,7 @@ export const allPackages = [
     highlight: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
     description: 'The ultimate solo desert kart with central-cockpit agility and razor-sharp steering.',
     image: '/images/polaris-2.jpeg',
+    imagePosition: 'object-[center_70%]',
     specs: {
       horsepower: '110 HP ProStar HO',
       engine: 'Single Seater Center Cockpit',
@@ -189,6 +193,7 @@ export const allPackages = [
     highlight: 'HISTORIC EXPEDITION · FOSSIL & CAMEL ROCK',
     description: 'A 3-hour legendary desert safari from Al Badayer across deep red dunes to ancient Fossil Rock.',
     image: '/images/buggy-rental-dubai-cover.jpg',
+    imagePosition: 'object-[center_65%]',
     specs: {
       horsepower: '145 HP ProStar',
       engine: '1000cc Dual Cylinder',
