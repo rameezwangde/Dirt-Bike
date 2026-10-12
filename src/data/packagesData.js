@@ -1,26 +1,179 @@
 export const packageCategories = [
-  { id: 'all', name: 'ALL TOURS', countKey: 'all' },
-  { id: 'buggy', name: 'BUGGY TOURS', countKey: 'buggy' },
-  { id: 'dirt-bike', name: 'DIRT BIKE TOURS', countKey: 'dirt-bike' },
-  { id: 'quad-bike', name: 'QUAD BIKE TOURS', countKey: 'quad-bike' },
-  { id: 'safari', name: 'DESERT SAFARI', countKey: 'safari' }
+  { id: 'all', name: 'ALL TOURS' },
+  { id: 'dirt-bike', name: 'DIRT BIKES' },
+  { id: 'can-am', name: 'CAN-AM BUGGIES' },
+  { id: 'polaris', name: 'POLARIS RZR BUGGIES' },
+  { id: 'quad-bike', name: 'QUAD BIKES' },
+  { id: 'safari', name: 'DESERT SAFARI & PRIVATE TOURS' }
 ];
 
 export const allPackages = [
-  // --- BUGGY TOURS ---
+  // ==========================================
+  // 1ST: DIRT BIKES
+  // ==========================================
   {
-    id: 'buggy-1',
-    category: 'buggy',
-    categoryLabel: 'BUGGY TOURS',
+    id: 'dirt-1',
+    category: 'dirt-bike',
+    categoryLabel: 'DIRT BIKES',
+    title: 'KTM 450CC DIRT BIKE - 1 HOUR TOUR',
+    price: 400,
+    priceRates: '1 hr: 400 AED',
+    duration: '1-Hour',
+    seats: '1 Rider',
+    transfer: '300 AED Two-Way',
+    highlight: 'FULL PRO GEAR · UNLIMITED FUEL INCLUDED',
+    description: "Feel the adrenaline on a competition-ready KTM 450cc dirt bike across Dubai's sweeping sand dunes.",
+    image: '/images/ktm-450-1hr.jpeg',
+    imagePosition: 'object-center',
+    specs: {
+      horsepower: '63 HP Motocross Power',
+      engine: '450cc 4-Stroke SOHC Single',
+      transmission: '5-Speed Manual Clutch',
+      suspension: 'WP XACT Air Forks',
+      terrain: 'Desert Motocross Dunes'
+    },
+    inclusions: [
+      'KTM 450 SX-F / EXC-F Pro Motocross Bike',
+      'Alpinestars / Fox body armor, helmet, boots & gloves',
+      'Desert riding guide & coaching for all levels',
+      'Full tank of high-octane fuel',
+      'Hydration pack & cold bottled water'
+    ]
+  },
+  {
+    id: 'dirt-2',
+    category: 'dirt-bike',
+    categoryLabel: 'DIRT BIKES',
+    title: 'KTM 450CC DIRT BIKE - 2 HOUR EXPEDITION',
+    price: 649,
+    priceRates: '2 hrs: 649 AED',
+    duration: '2-Hour',
+    seats: '1 Rider',
+    transfer: '300 AED Two-Way',
+    highlight: 'BIG RED DUNES · ADVANCED TECHNIQUE DRILLS',
+    description: 'Tackle the iconic Big Red dunes, learn sand berm drifting and climb steep desert slopes.',
+    image: '/images/ktm-450-2hr.jpeg',
+    imagePosition: 'object-center',
+    specs: {
+      horsepower: '63 HP Motocross Power',
+      engine: '450cc Liquid-Cooled SOHC',
+      transmission: '5-Speed Competition',
+      suspension: 'WP XACT Fully Adjustable',
+      terrain: 'High Red Sand Dunes & Bowls'
+    },
+    inclusions: [
+      '2 Full hours of intense desert riding',
+      'Pro coaching on sand balance and throttle management',
+      'Complete protective body armor, boots & gear',
+      'High-speed guided trails matching rider ability',
+      'Hydration and energy snacks'
+    ]
+  },
+  {
+    id: 'dirt-3',
+    category: 'dirt-bike',
+    categoryLabel: 'DIRT BIKES',
+    title: 'KTM 450CC DIRT BIKE - 3 HOUR ENDURO TOUR',
+    price: 799,
+    priceRates: '3 hrs: 799 AED',
+    duration: '3-Hour',
+    seats: '1 Rider',
+    transfer: '300 AED Two-Way',
+    highlight: 'DEEP DESERT ENDURO · TECHNICAL DUNES',
+    description: 'Extended backcountry desert trek testing your stamina through untouched dunes and rocky desert fringes.',
+    image: '/images/ktm-450-3hr.jpeg',
+    imagePosition: 'object-center',
+    specs: {
+      horsepower: '63 HP Enduro Setup',
+      engine: '450cc High Performance',
+      transmission: '5-Speed Manual',
+      suspension: 'WP XACT Enduro Tuned',
+      terrain: 'Enduro & Dune Cross-Country'
+    },
+    inclusions: [
+      '3-Hour technical ride through remote desert paths',
+      'Lead and sweep desert guide escorts',
+      'Premium brand protective gear from head to toe',
+      'Multiple scenic viewpoints with photo stops',
+      'Energy refreshments and mineral water'
+    ]
+  },
+  {
+    id: 'dirt-4',
+    category: 'dirt-bike',
+    categoryLabel: 'DIRT BIKES',
+    title: 'KTM 450CC DIRT BIKE - 4 HOUR (HALF-DAY)',
+    price: 1000,
+    priceRates: '4 hrs: 1000 AED',
+    duration: '4-Hour',
+    seats: '1 Rider',
+    transfer: 'Included',
+    highlight: 'HALF-DAY RALLY · FREE HOTEL TRANSFER',
+    description: 'The ultimate half-day desert motocross immersion with custom rest stops and technical riding tips.',
+    image: '/images/dirt-bike.jpg',
+    imagePosition: 'object-center',
+    specs: {
+      horsepower: '63 HP Dakar Ready',
+      engine: '450cc 4-Stroke',
+      transmission: '5-Speed Heavy Duty',
+      suspension: 'WP Suspension',
+      terrain: 'Open Wilderness Desert'
+    },
+    inclusions: [
+      'Complimentary hotel pickup & drop-off',
+      '4 Hours of premium desert motocross freedom',
+      'Full kit: Boots, knee guards, chest armor, goggles, helmet',
+      'Fuel refills and technical trail backup team',
+      'Snacks, electrolytes, and refreshments'
+    ]
+  },
+  {
+    id: 'dirt-5',
+    category: 'dirt-bike',
+    categoryLabel: 'DIRT BIKES',
+    title: 'KTM 450CC - FULL DAY DESERT RALLY SAFARI',
+    price: 1550,
+    priceRates: '1 Day: 1550 AED',
+    duration: '1-Day',
+    seats: '1 Rider',
+    transfer: 'Included',
+    highlight: 'AUTHENTIC DAKAR EXPERIENCE · LUNCH INCLUDED',
+    description: 'Spend an entire day living the Dakar dream navigating Dubai’s boundless ocean of golden sand.',
+    image: '/images/dirt-bike-dubai-cover.jpg',
+    imagePosition: 'object-center',
+    specs: {
+      horsepower: '63 HP Pro Rally',
+      engine: '450cc Enduro Champion',
+      transmission: 'Manual 5-Speed',
+      suspension: 'Competition WP Set-Up',
+      terrain: 'Full Desert Traverse'
+    },
+    inclusions: [
+      'Full day trail riding with pro instructor',
+      'Complimentary luxury private hotel transfers',
+      'Gourmet lunch break & desert lounge rest',
+      'Complete motocross kit & unlimited fuel',
+      'GoPro action photos & video moments'
+    ]
+  },
+
+  // ==========================================
+  // 2ND: CAN-AM BUGGIES
+  // ==========================================
+  {
+    id: 'canam-1',
+    category: 'can-am',
+    categoryLabel: 'CAN-AM BUGGIES',
     title: 'CAN-AM MAVERICK XR (245 HP STAGE 4) (2 SEATER)',
     price: 1000,
     priceRates: '1 hr: 1000 AED | 2 hrs: 1800 AED',
     duration: '1-2 Hours',
     seats: '2 Seaters',
-    transfer: '300 AED',
+    transfer: '300 AED Two-Way',
     highlight: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
     description: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR, 1 hr: 1000 AED | 2 hrs: 1800 AED.",
     image: '/images/maverick-xr.jpeg',
+    imagePosition: 'object-center',
     specs: {
       horsepower: '245 HP Stage 4',
       engine: 'Rotax ACE 900cc Turbo RR',
@@ -37,18 +190,19 @@ export const allPackages = [
     ]
   },
   {
-    id: 'buggy-2',
-    category: 'buggy',
-    categoryLabel: 'BUGGY TOURS',
+    id: 'canam-2',
+    category: 'can-am',
+    categoryLabel: 'CAN-AM BUGGIES',
     title: 'CAN-AM MAVERICK XR (245 HP STAGE 4) (MAX FOR 4 SEATER)',
     price: 1000,
     priceRates: '1 hr: 1000 AED | 2 hrs: 1800 AED',
     duration: '1-2 Hours',
     seats: '4 Seaters',
-    transfer: '300 AED',
+    transfer: '300 AED Two-Way',
     highlight: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
     description: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR, 1 hr: 1000 AED | 2 hrs: 1800 AED.",
     image: '/images/x3.jpeg',
+    imagePosition: 'object-center',
     specs: {
       horsepower: '245 HP Stage 4',
       engine: 'Rotax ACE 900cc Turbo RR',
@@ -65,15 +219,77 @@ export const allPackages = [
     ]
   },
   {
-    id: 'buggy-3',
-    category: 'buggy',
-    categoryLabel: 'BUGGY TOURS',
+    id: 'canam-3',
+    category: 'can-am',
+    categoryLabel: 'CAN-AM BUGGIES',
+    title: 'CAN-AM MAVERICK X3 TURBO (2 SEATER)',
+    price: 1350,
+    priceRates: '1 hr: 1350 AED | 2 hrs: 2150 AED',
+    duration: '1-2 Hours',
+    seats: '2 Seaters',
+    transfer: '300 AED Two-Way',
+    highlight: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
+    description: 'High-performance Can-Am Maverick X3 Turbo engineered for high dune carving and open throttle desert runs.',
+    image: '/images/x3.jpeg',
+    imagePosition: 'object-center',
+    specs: {
+      horsepower: '195 HP Turbo RR',
+      engine: 'Rotax ACE 900cc Turbocharged',
+      transmission: 'QRS-X CVT',
+      suspension: 'FOX 2.5 PODIUM QS3',
+      terrain: 'Open Dunes & Sand Bowls'
+    },
+    inclusions: [
+      'Unrestricted open key ride experience',
+      'Expert desert guide leading trail',
+      'Helmets, goggles, and gloves included',
+      'Sandboarding gear available',
+      'Cold water & soft drinks'
+    ]
+  },
+  {
+    id: 'canam-4',
+    category: 'can-am',
+    categoryLabel: 'CAN-AM BUGGIES',
+    title: 'CAN-AM MAVERICK X3 TURBO 4 SEATER',
+    price: 1200,
+    priceRates: '1 hr: 1200 AED | 2 hrs: 1950 AED',
+    duration: '1-2 Hours',
+    seats: '4 Seaters',
+    transfer: '300 AED Two-Way',
+    highlight: 'FAMILY & FRIENDS EXPEDITION · OPEN POWER',
+    description: 'Bring family or friends together for the ultimate adrenaline rush in the dunes with 4 comfortable bucket seats.',
+    image: '/images/buggy-rental-dubai-cover.jpg',
+    imagePosition: 'object-[center_65%]',
+    specs: {
+      horsepower: '195 HP Turbo',
+      engine: 'Rotax ACE 900cc Triple-Cylinder',
+      transmission: 'Automatic CVT with High/Low',
+      suspension: 'FOX Long-Travel Suspension',
+      terrain: 'High Dunes & Open Deserts'
+    },
+    inclusions: [
+      '4-Seater buggy with 4-point racing harnesses',
+      'Full open key power',
+      'Safety equipment for all 4 riders',
+      'Photo opportunities on top of high dunes',
+      'Unlimited refreshments'
+    ]
+  },
+
+  // ==========================================
+  // 3RD: POLARIS RZR BUGGIES
+  // ==========================================
+  {
+    id: 'polaris-1',
+    category: 'polaris',
+    categoryLabel: 'POLARIS RZR BUGGIES',
     title: 'POLARIS RZR 1000 CC (145 HP) (2 SEATER)',
     price: 400,
     priceRates: '1 hr: 400 AED | 2 hrs: 700 AED',
     duration: '1-2 Hours',
     seats: '2 Seaters',
-    transfer: '300 AED',
+    transfer: '300 AED Two-Way',
     highlight: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
     description: 'Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC, 1 hr: 400 AED | 2 hrs: 700 AED.',
     image: '/images/polarize-1000.jpeg',
@@ -94,15 +310,15 @@ export const allPackages = [
     ]
   },
   {
-    id: 'buggy-4',
-    category: 'buggy',
-    categoryLabel: 'BUGGY TOURS',
+    id: 'polaris-2',
+    category: 'polaris',
+    categoryLabel: 'POLARIS RZR BUGGIES',
     title: 'POLARIS RZR 2 SEATER (EARLY MORNING SPECIAL)',
     price: 850,
     priceRates: '1 hr: 850 AED',
     duration: '1-Hour',
     seats: '2 Seaters',
-    transfer: '300 AED',
+    transfer: '300 AED Two-Way',
     highlight: 'SUNRISE SPECIAL · FRESH UNTOUCHED DUNES',
     description: 'Experience Dubai dunes at dawn with cooler temperatures and magical sunrise photo stops.',
     image: '/images/polaris.jpeg',
@@ -123,15 +339,15 @@ export const allPackages = [
     ]
   },
   {
-    id: 'buggy-5',
-    category: 'buggy',
-    categoryLabel: 'BUGGY TOURS',
+    id: 'polaris-3',
+    category: 'polaris',
+    categoryLabel: 'POLARIS RZR BUGGIES',
     title: 'POLARIS RZR TURBO S (2 SEATER)',
     price: 1250,
     priceRates: '2 hrs: 1250 AED',
     duration: '2-Hour',
     seats: '2 Seaters',
-    transfer: '300 AED',
+    transfer: '300 AED Two-Way',
     highlight: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
     description: 'Conquer the most demanding desert ridges with top-tier turbo torque and 72-inch wide track stability.',
     image: '/images/polaris-3.jpeg',
@@ -152,15 +368,15 @@ export const allPackages = [
     ]
   },
   {
-    id: 'buggy-6',
-    category: 'buggy',
-    categoryLabel: 'BUGGY TOURS',
+    id: 'polaris-4',
+    category: 'polaris',
+    categoryLabel: 'POLARIS RZR BUGGIES',
     title: 'SINGLE SEATER POLARIS RS1 (SOLO RACER)',
     price: 750,
     priceRates: '1 hr: 750 AED | 2 hrs: 1250 AED',
     duration: '1-2 Hours',
     seats: '1 Seater',
-    transfer: '300 AED',
+    transfer: '300 AED Two-Way',
     highlight: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
     description: 'The ultimate solo desert kart with central-cockpit agility and razor-sharp steering.',
     image: '/images/polaris-2.jpeg',
@@ -181,9 +397,9 @@ export const allPackages = [
     ]
   },
   {
-    id: 'buggy-7',
-    category: 'buggy',
-    categoryLabel: 'BUGGY TOURS',
+    id: 'polaris-5',
+    category: 'polaris',
+    categoryLabel: 'POLARIS RZR BUGGIES',
     title: 'POLARIS RZR FOSSIL ROCK SAFARI TOUR',
     price: 1800,
     priceRates: '3 hrs: 1800 AED',
@@ -192,8 +408,8 @@ export const allPackages = [
     transfer: 'Included',
     highlight: 'HISTORIC EXPEDITION · FOSSIL & CAMEL ROCK',
     description: 'A 3-hour legendary desert safari from Al Badayer across deep red dunes to ancient Fossil Rock.',
-    image: '/images/buggy-rental-dubai-cover.jpg',
-    imagePosition: 'object-[center_65%]',
+    image: '/images/dune-buggy.jpg',
+    imagePosition: 'object-center',
     specs: {
       horsepower: '145 HP ProStar',
       engine: '1000cc Dual Cylinder',
@@ -210,162 +426,81 @@ export const allPackages = [
     ]
   },
 
-  // --- DIRT BIKE TOURS ---
-  {
-    id: 'dirt-1',
-    category: 'dirt-bike',
-    categoryLabel: 'DIRT BIKE TOURS',
-    title: 'KTM 450CC DIRT BIKE - 1 HOUR TOUR',
-    price: 400,
-    priceRates: '1 hr: 400 AED',
-    duration: '1-Hour',
-    seats: '1 Rider',
-    transfer: 'Available',
-    highlight: 'FULL PRO GEAR · UNLIMITED FUEL INCLUDED',
-    description: "Feel the adrenaline on a competition-ready KTM 450cc dirt bike across Dubai's sweeping sand dunes.",
-    image: '/images/ktm-450-1hr.jpeg',
-    specs: {
-      horsepower: '63 HP Motocross Power',
-      engine: '450cc 4-Stroke SOHC Single',
-      transmission: '5-Speed Manual Clutch',
-      suspension: 'WP XACT Air Forks',
-      terrain: 'Desert Motocross Dunes'
-    },
-    inclusions: [
-      'KTM 450 SX-F / EXC-F Pro Motocross Bike',
-      'Alpinestars / Fox body armor, helmet, boots & gloves',
-      'Desert riding guide & coaching for all levels',
-      'Full tank of high-octane fuel',
-      'Hydration pack & cold bottled water'
-    ]
-  },
-  {
-    id: 'dirt-2',
-    category: 'dirt-bike',
-    categoryLabel: 'DIRT BIKE TOURS',
-    title: 'KTM 450CC DIRT BIKE - 2 HOUR EXPEDITION',
-    price: 649,
-    priceRates: '2 hrs: 649 AED',
-    duration: '2-Hour',
-    seats: '1 Rider',
-    transfer: 'Available',
-    highlight: 'BIG RED DUNES · ADVANCED TECHNIQUE DRILLS',
-    description: 'Tackle the iconic Big Red dunes, learn sand berm drifting and climb steep desert slopes.',
-    image: '/images/ktm-450-2hr.jpeg',
-    specs: {
-      horsepower: '63 HP Motocross Power',
-      engine: '450cc Liquid-Cooled SOHC',
-      transmission: '5-Speed Competition',
-      suspension: 'WP XACT Fully Adjustable',
-      terrain: 'High Red Sand Dunes & Bowls'
-    },
-    inclusions: [
-      '2 Full hours of intense desert riding',
-      'Pro coaching on sand balance and throttle management',
-      'Complete protective body armor, boots & gear',
-      'High-speed guided trails matching rider ability',
-      'Hydration and energy snacks'
-    ]
-  },
-  {
-    id: 'dirt-3',
-    category: 'dirt-bike',
-    categoryLabel: 'DIRT BIKE TOURS',
-    title: 'KTM 450CC DIRT BIKE - 3 HOUR ENDURO TOUR',
-    price: 799,
-    priceRates: '3 hrs: 799 AED',
-    duration: '3-Hour',
-    seats: '1 Rider',
-    transfer: 'Available',
-    highlight: 'DEEP DESERT ENDURO · TECHNICAL DUNES',
-    description: 'Extended backcountry desert trek testing your stamina through untouched dunes and rocky desert fringes.',
-    image: '/images/ktm-450-3hr.jpeg',
-    specs: {
-      horsepower: '63 HP Enduro Setup',
-      engine: '450cc High Performance',
-      transmission: '5-Speed Manual',
-      suspension: 'WP XACT Enduro Tuned',
-      terrain: 'Enduro & Dune Cross-Country'
-    },
-    inclusions: [
-      '3-Hour technical ride through remote desert paths',
-      'Lead and sweep desert guide escorts',
-      'Premium brand protective gear from head to toe',
-      'Multiple scenic viewpoints with photo stops',
-      'Energy refreshments and mineral water'
-    ]
-  },
-  {
-    id: 'dirt-4',
-    category: 'dirt-bike',
-    categoryLabel: 'DIRT BIKE TOURS',
-    title: 'KTM 450CC DIRT BIKE - 4 HOUR (HALF-DAY)',
-    price: 1000,
-    priceRates: '4 hrs: 1000 AED',
-    duration: '4-Hour',
-    seats: '1 Rider',
-    transfer: 'Included',
-    highlight: 'HALF-DAY RALLY · FREE HOTEL TRANSFER',
-    description: 'The ultimate half-day desert motocross immersion with custom rest stops and technical riding tips.',
-    image: '/images/dirt-bike.jpg',
-    specs: {
-      horsepower: '63 HP Dakar Ready',
-      engine: '450cc 4-Stroke',
-      transmission: '5-Speed Heavy Duty',
-      suspension: 'WP Suspension',
-      terrain: 'Open Wilderness Desert'
-    },
-    inclusions: [
-      'Complimentary hotel pickup & drop-off',
-      '4 Hours of premium desert motocross freedom',
-      'Full kit: Boots, knee guards, chest armor, goggles, helmet',
-      'Fuel refills and technical trail backup team',
-      'Snacks, electrolytes, and refreshments'
-    ]
-  },
-  {
-    id: 'dirt-5',
-    category: 'dirt-bike',
-    categoryLabel: 'DIRT BIKE TOURS',
-    title: 'KTM 450CC - FULL DAY DESERT RALLY SAFARI',
-    price: 1550,
-    priceRates: '1 Day: 1550 AED',
-    duration: '1-Day',
-    seats: '1 Rider',
-    transfer: 'Included',
-    highlight: 'AUTHENTIC DAKAR EXPERIENCE · LUNCH INCLUDED',
-    description: 'Spend an entire day living the Dakar dream navigating Dubai’s boundless ocean of golden sand.',
-    image: '/images/dirt-bike-dubai-cover.jpg',
-    specs: {
-      horsepower: '63 HP Pro Rally',
-      engine: '450cc Enduro Champion',
-      transmission: 'Manual 5-Speed',
-      suspension: 'Competition WP Set-Up',
-      terrain: 'Full Desert Traverse'
-    },
-    inclusions: [
-      'Full day trail riding with pro instructor',
-      'Complimentary luxury private hotel transfers',
-      'Gourmet lunch break & desert lounge rest',
-      'Complete motocross kit & unlimited fuel',
-      'GoPro action photos & video moments'
-    ]
-  },
-
-  // --- QUAD BIKE TOURS ---
+  // ==========================================
+  // 4TH: QUAD BIKES
+  // ==========================================
   {
     id: 'quad-1',
     category: 'quad-bike',
-    categoryLabel: 'QUAD BIKE TOURS',
-    title: '250CC - 350CC KYMCO QUAD (1 HOUR)',
+    categoryLabel: 'QUAD BIKES',
+    title: '01 YAMAHA RAPTOR 700CC (MANUAL BEAST)',
+    price: 600,
+    priceRates: '1 hr: 600 AED | 2 hrs: 1100 AED',
+    duration: '1-Hour',
+    seats: '1 Rider',
+    transfer: '300 AED Two-Way',
+    highlight: '700CC MANUAL POWER · RACE TUNED',
+    description: 'Pure performance with the aggressive Yamaha Raptor 700cc manual transmission for skilled ATV adrenaline junkies.',
+    image: '/images/raptor-700.jpeg',
+    imagePosition: 'object-center',
+    specs: {
+      engine: '686cc Liquid-Cooled SOHC 4-Valve',
+      transmission: '5-Speed Manual with Reverse',
+      drive: 'Heavy-Duty 2WD Chain Drive',
+      suspension: 'Piggyback High/Low Speed Shocks',
+      terrain: 'Steep Dunes & High Speed Sand Flats'
+    },
+    inclusions: [
+      'High-performance 700cc Raptor with open power',
+      'Racing helmet, goggles and safety gear',
+      'Guided high-speed trail with experienced rider',
+      'Unlimited fuel for session',
+      'Cold beverages and water'
+    ]
+  },
+  {
+    id: 'quad-2',
+    category: 'quad-bike',
+    categoryLabel: 'QUAD BIKES',
+    title: '02 570CC USA 🇺🇸 4X4 QUAD BIKE (POLARIS SPORTSMAN)',
+    price: 450,
+    priceRates: '1 hr: 450 AED | 2 hrs: 850 AED',
+    duration: '1-Hour',
+    seats: '1 Rider',
+    transfer: '300 AED Two-Way',
+    highlight: 'USA 🇺🇸 570CC 4X4 · HEAVY DUTY ALL-TERRAIN',
+    description: 'True American 4x4 off-road power with the 570cc Polaris Sportsman ATV. Unstoppable traction through massive sand dunes.',
+    image: '/images/quad-bike.jpg',
+    imagePosition: 'object-center',
+    specs: {
+      engine: '570cc ProStar 4-Stroke DOHC EFI',
+      drive: 'True On-Demand AWD / 4x4 / 2WD',
+      transmission: 'Automatic PVT (P/R/N/L/H)',
+      suspension: 'Independent Rear Suspension (IRS) with 9.5" Travel',
+      terrain: 'Steep Dunes, Soft Sand & Rocky Basins'
+    },
+    inclusions: [
+      'Heavy-duty 570cc 4x4 all-wheel drive quad bike',
+      'Full protective helmet, safety goggles & gloves',
+      'Desert leader escorting through scenic dunes',
+      'Fuel & hydration included throughout ride',
+      'Sandboarding and scenic photo stop'
+    ]
+  },
+  {
+    id: 'quad-3',
+    category: 'quad-bike',
+    categoryLabel: 'QUAD BIKES',
+    title: '03 KYMCO 250CC TO 350CC QUAD BIKE (1 HOUR)',
     price: 350,
     priceRates: '1 hr: 350 AED',
     duration: '1-Hour',
     seats: '1 Rider',
-    transfer: '300 AED',
+    transfer: '300 AED Two-Way',
     highlight: 'AUTOMATIC TRANSMISSION · BEGINNER FRIENDLY',
-    description: 'Hop onto an automatic four-wheeler quad bike and drift across gentle rolling desert dunes with ease.',
+    description: 'Hop onto an automatic four-wheeler Kymco quad bike and drift across gentle rolling desert dunes with ease.',
     image: '/images/kimko-1.jpeg',
+    imagePosition: 'object-center',
     specs: {
       engine: '300cc 4-Stroke Liquid Cooled',
       transmission: 'Automatic CVT (F-N-R)',
@@ -382,18 +517,19 @@ export const allPackages = [
     ]
   },
   {
-    id: 'quad-2',
+    id: 'quad-4',
     category: 'quad-bike',
-    categoryLabel: 'QUAD BIKE TOURS',
-    title: '250CC - 350CC KYMCO QUAD (2 HOURS)',
+    categoryLabel: 'QUAD BIKES',
+    title: 'KYMCO 250CC TO 350CC QUAD BIKE (2 HOURS)',
     price: 550,
     priceRates: '2 hrs: 550 AED',
     duration: '2-Hour',
     seats: '1 Rider',
-    transfer: '300 AED',
+    transfer: '300 AED Two-Way',
     highlight: 'OPEN DESERT TRAILS · HIGH DUNE CLIMB',
     description: 'Double the excitement with a 2-hour guided quad trek navigating bigger dunes and desert valleys.',
     image: '/images/kimko-2.jpeg',
+    imagePosition: 'object-center',
     specs: {
       engine: '350cc High Output EFI',
       transmission: 'Fully Automatic CVT',
@@ -410,18 +546,19 @@ export const allPackages = [
     ]
   },
   {
-    id: 'quad-3',
+    id: 'quad-5',
     category: 'quad-bike',
-    categoryLabel: 'QUAD BIKE TOURS',
-    title: '250CC - 350CC KYMCO QUAD (3 HOURS)',
+    categoryLabel: 'QUAD BIKES',
+    title: 'KYMCO 250CC TO 350CC QUAD BIKE (3 HOURS - SUNSET)',
     price: 750,
     priceRates: '3 hrs: 750 AED',
     duration: '3-Hour',
     seats: '1 Rider',
-    transfer: '300 AED',
+    transfer: '300 AED Two-Way',
     highlight: 'SUNSET EXPEDITION · SANDBOARDING INCLUDED',
     description: 'Comprehensive 3-hour quad safari timed with sunset, offering breathtaking photo opportunities and sand slides.',
     image: '/images/kimko-3.jpeg',
+    imagePosition: 'object-center',
     specs: {
       engine: '350cc Performance Quad',
       transmission: 'Automatic with Reverse',
@@ -437,38 +574,128 @@ export const allPackages = [
       'Cold bottled water and soft drinks'
     ]
   },
+
+  // ==========================================
+  // 5TH: DESERT SAFARI & PRIVATE EXPERIENCES
+  // ==========================================
   {
-    id: 'quad-4',
-    category: 'quad-bike',
-    categoryLabel: 'QUAD BIKE TOURS',
-    title: 'YAMAHA RAPTOR 700CC (MANUAL BEAST)',
-    price: 600,
-    priceRates: '1 hr: 600 AED | 2 hrs: 1100 AED',
-    duration: '1-Hour',
-    seats: '1 Rider',
-    transfer: '300 AED',
-    highlight: '700CC MANUAL POWER · RACE TUNED',
-    description: 'Pure performance with the aggressive Yamaha Raptor 700cc manual transmission for skilled ATV adrenaline junkies.',
-    image: '/images/raptor-700.jpeg',
+    id: 'safari-pvt-1',
+    category: 'safari',
+    categoryLabel: 'DESERT SAFARI',
+    title: 'PRIVATE CAR FOR DUNE DRIVE',
+    price: 500,
+    priceRates: 'Private 4x4 Dune Drive: 500 AED',
+    duration: '3-4 Hours',
+    seats: 'Up to 6 Persons',
+    transfer: 'Included',
+    highlight: 'PRIVATE LUXURY 4X4 · DUNE BASHING & PHOTO STOP',
+    description: 'Exclusive private 4x4 Land Cruiser dune drive with licensed safari driver, sandboarding, and scenic desert photography across Dubai red dunes.',
+    image: '/images/safari-4x4.jpg',
+    imagePosition: 'object-center',
     specs: {
-      engine: '686cc Liquid-Cooled SOHC 4-Valve',
-      transmission: '5-Speed Manual with Reverse',
-      drive: 'Heavy-Duty 2WD Chain Drive',
-      suspension: 'Piggyback High/Low Speed Shocks',
-      terrain: 'Steep Dunes & High Speed Sand Flats'
+      vehicle: 'Private Toyota Land Cruiser 4x4 (Exclusive for your group)',
+      capacity: 'Up to 6 Guests comfortably',
+      activities: 'Extreme Dune Bashing, Sandboarding & High Dune Photo Stop',
+      transport: 'Private Round-Trip Hotel Pickup & Drop-Off Included'
     },
     inclusions: [
-      'High-performance 700cc Raptor with open power',
-      'Racing helmet, goggles and safety gear',
-      'Guided high-speed trail with experienced rider',
-      'Unlimited fuel for session',
-      'Cold beverages and water'
+      'Exclusive private 4x4 car (No sharing with other groups)',
+      'Licensed professional desert safari driver',
+      'Exciting 45-minute dune bashing on high red dunes',
+      'Free sandboarding slides down steep sand dunes',
+      'Sunset photography break at scenic dune peak',
+      'Chilled mineral water & soft drinks provided'
     ]
   },
-
-  // --- DESERT SAFARI TOURS ---
   {
-    id: 'safari-1',
+    id: 'safari-pvt-2',
+    category: 'safari',
+    categoryLabel: 'DESERT SAFARI',
+    title: 'PRIVATE CAR SAFARI AND DINNER SHOW',
+    price: 600,
+    priceRates: 'Standard to VIP Experience: 600 - 900 AED',
+    duration: '6 Hours',
+    seats: 'Up to 6 Persons',
+    transfer: 'Included',
+    highlight: 'PRIVATE 4X4 + DESERT SAFARI + LIVE DINNER SHOW',
+    description: 'Complete private desert safari: private 4x4 hotel transfer, dune bashing, camel rides, international BBQ buffet dinner, belly dance, fire & Tanoura shows.',
+    image: '/images/safari-lifetime.jpg',
+    imagePosition: 'object-center',
+    specs: {
+      vehicle: 'Private 4x4 Land Cruiser',
+      duration: '6 Hours (3:00 PM – 9:00 PM)',
+      dining: 'Full International BBQ Buffet Dinner (Veg & Non-Veg)',
+      entertainment: 'Fire Show, Tanoura Dance & Belly Dance Performance'
+    },
+    inclusions: [
+      'Private 4x4 round-trip transfer from your hotel / residence',
+      'Private 4x4 dune bashing adventure with expert driver',
+      'Camel ride & sandboarding experience',
+      'Delicious BBQ dinner buffet with live cooking stations',
+      'Live cultural stage shows: Belly Dance, Fire Show, Tanoura',
+      'Henna tattooing, Arabic costumes, coffee (Gahwa) & dates'
+    ]
+  },
+  {
+    id: 'safari-pvt-3',
+    category: 'safari',
+    categoryLabel: 'DESERT SAFARI',
+    title: 'PREMIUM CAMP SAFARI DINNER (VIP LUXURY)',
+    price: 1200,
+    priceRates: '5-Star VIP Luxury Experience: 1200 - 1800 AED',
+    duration: '6 Hours VIP',
+    seats: 'Private Booking',
+    transfer: 'Included',
+    highlight: '5-STAR VIP DESERT OASIS · TABLE SERVICE & EXCLUSIVE SHOWS',
+    description: 'Elite 5-star VIP desert camp experience with private luxury transfers, dedicated waiter table service, gourmet dining, and front-row entertainment.',
+    image: '/images/cta-background.jpg',
+    imagePosition: 'object-center',
+    specs: {
+      experience: '5-Star VIP Luxury Desert Camp',
+      dining: 'Gourmet 5-Star International Buffet with Private Table Service',
+      lounge: 'Exclusive VIP Majlis Seating with Panoramic Views',
+      entertainment: 'Front-Row View of Fire, Tanoura & Arabian Shows'
+    },
+    inclusions: [
+      'VIP Luxury private transfer in premium SUV',
+      'Dune bashing in pristine private reserve dunes',
+      'Dedicated private VIP table with personal waiter service',
+      'Gourmet international BBQ dinner including seafood & grills',
+      'Unlimited premium beverages, fresh juices, Arabic tea & coffee',
+      'Camel trekking, falcon encounter & premium shisha lounge'
+    ]
+  },
+  {
+    id: 'safari-pvt-4',
+    category: 'safari',
+    categoryLabel: 'DESERT SAFARI',
+    title: 'PRIVATE DESERT BONFIRE & DINNER SHOW SETUP',
+    price: 500,
+    priceRates: '500 AED Per Person (Min 4 to 5 Persons)',
+    duration: '5-6 Hours',
+    seats: 'Min 4 - 5 Persons',
+    transfer: 'Included',
+    highlight: '🔥 PRIVATE BONFIRE SETUP · DINNER & SHOW IN OPEN DESERT',
+    description: 'Exclusive private desert setup under the stars with a crackling bonfire, luxury Arabian seating, private live dinner buffet, and desert show for your group.',
+    image: '/images/safari-delights.jpg',
+    imagePosition: 'object-center',
+    specs: {
+      setup: 'Private Desert Lounge with Crackling Bonfire 🔥',
+      minimumGroup: 'Minimum 4 to 5 Persons (500 AED / Person with Dinner)',
+      dining: 'Private Live BBQ Dinner Served at Desert Campsite',
+      atmosphere: 'Ambient Lanterns, Low Arabian Sofas, Fire Pit & Music'
+    },
+    inclusions: [
+      'Authentic open desert private camp exclusively for your group',
+      'Live crackling bonfire with marshmallow roasting',
+      'Gourmet live BBQ dinner buffet with chef & attendants',
+      'Live fire show / cultural desert performance at your private setup',
+      'Private 4x4 pickup & drop-off for the entire group',
+      'Unlimited soft drinks, bottled water, Karak tea & Arabic coffee'
+    ]
+  },
+  {
+    id: 'safari-combo-1',
     category: 'safari',
     categoryLabel: 'DESERT SAFARI',
     title: 'POLARIS 1000CC DUNE BUGGY SAFARI COMBO',
@@ -480,6 +707,7 @@ export const allPackages = [
     highlight: 'BUGGY + DUNE BASHING + BBQ CAMP DINNER',
     description: 'The complete Dubai experience: 1 hour self-drive Polaris buggy plus 4x4 dune bashing, camel ride & BBQ buffet.',
     image: '/images/polarize-1000.jpeg',
+    imagePosition: 'object-[center_72%]',
     specs: {
       vehicle: 'Polaris RZR 1000cc + 4x4 Land Cruiser',
       duration: '4 to 6 Hours Total',
@@ -497,7 +725,7 @@ export const allPackages = [
     ]
   },
   {
-    id: 'safari-2',
+    id: 'safari-combo-2',
     category: 'safari',
     categoryLabel: 'DESERT SAFARI',
     title: 'CAN-AM MAVERICK XR DUNE SAFARI VIP',
@@ -509,6 +737,7 @@ export const allPackages = [
     highlight: 'VIP CAMP SEATING · LIVE SHOWS & PRIVATE 4X4',
     description: 'Luxury VIP safari: 1 hour Can-Am Maverick XR ride, private desert transport, VIP table service & Arabian shows.',
     image: '/images/maverick-xr.jpeg',
+    imagePosition: 'object-center',
     specs: {
       vehicle: 'Can-Am Maverick XR 245 HP + Luxury 4x4',
       duration: '4 to 6 Hours VIP',

@@ -20,8 +20,9 @@ const Packages = () => {
 
   // Sync category with URL if query parameter changes
   useEffect(() => {
-    const cat = searchParams.get('category');
-    if (cat && ['all', 'buggy', 'dirt-bike', 'quad-bike', 'safari'].includes(cat)) {
+    let cat = searchParams.get('category');
+    if (cat === 'buggy') cat = 'can-am';
+    if (cat && ['all', 'dirt-bike', 'can-am', 'polaris', 'quad-bike', 'safari'].includes(cat)) {
       setActiveCategory(cat);
     }
   }, [searchParams]);
@@ -83,30 +84,36 @@ const Packages = () => {
       ];
     }
 
-    // Default 'all' view: show sections for each category beforehand
+    // Default 'all' view: show sections in user's exact requested order
     return [
       {
-        id: 'buggy',
-        name: 'BUGGY TOURS',
-        subtitle: 'High performance desert buggies with unrestricted open keys',
-        packages: allPackages.filter((p) => p.category === 'buggy')
-      },
-      {
         id: 'dirt-bike',
-        name: 'DIRT BIKE TOURS',
+        name: 'DIRT BIKES',
         subtitle: 'Pro-grade KTM 450cc motocross machines with pro coaching & full gear',
         packages: allPackages.filter((p) => p.category === 'dirt-bike')
       },
       {
+        id: 'can-am',
+        name: 'CAN-AM BUGGIES',
+        subtitle: 'High-performance Can-Am Maverick X3 & XR buggies with open keys',
+        packages: allPackages.filter((p) => p.category === 'can-am')
+      },
+      {
+        id: 'polaris',
+        name: 'POLARIS RZR BUGGIES',
+        subtitle: 'Nimble Polaris RZR 1000, Turbo S and RS1 solo racer buggies',
+        packages: allPackages.filter((p) => p.category === 'polaris')
+      },
+      {
         id: 'quad-bike',
-        name: 'QUAD BIKE TOURS',
-        subtitle: 'High-octane ATV quad adventures for solo riders and dune seekers',
+        name: 'QUAD BIKES',
+        subtitle: 'Raptor 700cc, USA 570cc 4x4, and Kymco 250-350cc all-terrain quads',
         packages: allPackages.filter((p) => p.category === 'quad-bike')
       },
       {
         id: 'safari',
-        name: 'DESERT SAFARI TOURS',
-        subtitle: 'Complete Arabian desert experience with BBQ dinners and dune adventures',
+        name: 'DESERT SAFARI & PRIVATE TOURS',
+        subtitle: 'Private 4x4 dune drives, dinner shows, VIP camps & bonfire setups',
         packages: allPackages.filter((p) => p.category === 'safari')
       }
     ];
