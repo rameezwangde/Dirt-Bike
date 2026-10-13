@@ -115,7 +115,7 @@ const packages = [
     title: "Can-Am Maverick X3 Turbo 4 Seater (Early Morning)",
     duration: "1-Hour",
     seats: 4,
-    price: 1200,
+    price: 1000,
     image: "/images/x3.jpeg"
   },
   {
