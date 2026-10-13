@@ -121,7 +121,7 @@ const TourDetailsModal = ({ pkg, isOpen, onClose }) => {
                       <Car className="w-4 h-4" />
                       <span className="text-[11px] font-bold text-gray-400 uppercase">Transfer</span>
                     </div>
-                    <span className="text-sm font-bold text-white">{pkg.transfer}</span>
+                    <span className="text-sm font-bold text-white text-center leading-tight">{pkg.transfer}</span>
                   </div>
                 </div>
 

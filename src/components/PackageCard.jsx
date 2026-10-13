@@ -89,7 +89,7 @@ const PackageCard = ({ pkg, onOpenDetails, index = 0 }) => {
                 <Car className="w-3 h-3" />
                 <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400">TRANSFER</span>
               </div>
-              <span className="text-[11px] sm:text-[12px] font-bold text-white tracking-wide">{pkg.transfer}</span>
+              <span className="text-[10px] sm:text-[11px] font-bold text-white tracking-wide text-center leading-tight">{pkg.transfer}</span>
             </div>
           </div>
         </div>
