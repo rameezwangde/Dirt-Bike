@@ -24,7 +24,7 @@ const TourDetailsModal = ({ pkg, isOpen, onClose }) => {
   if (!pkg) return null;
 
   const formattedPrice = convertPrice ? convertPrice(pkg.price) : pkg.price;
-  const whatsappUrl = `https://wa.me/971504799258?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/971544464649?text=${encodeURIComponent(
     `Hello! I want to book "${pkg.title}" (${formattedPrice} ${currency.code}). Please share available slots!`
   )}`;
 
@@ -187,11 +187,11 @@ const TourDetailsModal = ({ pkg, isOpen, onClose }) => {
               </a>
 
               <a
-                href="tel:+971504799258"
+                href="tel:+971544464649"
                 className="bg-[#181D23] hover:bg-white/10 border border-white/20 text-white font-barlow font-bold text-base py-3.5 px-6 rounded-xl flex items-center justify-center gap-2 uppercase tracking-wider transition-colors active:scale-95 text-center"
               >
                 <Phone className="w-4 h-4 text-[#F97818]" />
-                CALL +971 50 479 9258
+                CALL +971 54 446 4649
               </a>
             </div>
           </motion.div>

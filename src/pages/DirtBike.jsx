@@ -120,7 +120,7 @@ const DirtBike = () => {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <a href="https://wa.me/971504799258" target="_blank" rel="noopener noreferrer" className="bg-[#cf8144] hover:bg-[#b56e36] text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit inline-block">
+                  <a href="https://wa.me/971544464649" target="_blank" rel="noopener noreferrer" className="bg-[#cf8144] hover:bg-[#b56e36] text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit inline-block">
                     Book Now
                   </a>
                   <Link to="/packages" className="border border-[#cf8144] text-[#cf8144] hover:bg-[#cf8144] hover:text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit inline-block text-center">

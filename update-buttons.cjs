@@ -14,7 +14,7 @@ for (const page of pages) {
     // Replace <button> Book Now </button> with <a> Book Now </a>
     content = content.replace(
       /<button className="bg-\[#cf8144\] hover:bg-\[#b56e36\] text-white py-2\.5 px-6 rounded text-sm font-medium transition-colors w-fit">(\s*)Book Now(\s*)<\/button>/g,
-      '<a href="https://wa.me/971504799258" target="_blank" rel="noopener noreferrer" className="bg-[#cf8144] hover:bg-[#b56e36] text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit inline-block">\n                  Book Now\n                </a>'
+      '<a href="https://wa.me/971544464649" target="_blank" rel="noopener noreferrer" className="bg-[#cf8144] hover:bg-[#b56e36] text-white py-2.5 px-6 rounded text-sm font-medium transition-colors w-fit inline-block">\n                  Book Now\n                </a>'
     );
     
     fs.writeFileSync(page, content);

@@ -35,7 +35,7 @@ const Footer = () => {
               Premium off-road desert experiences across Dubai and the UAE.
             </p>
             <a 
-              href="https://wa.me/971504799258"
+              href="https://wa.me/971544464649"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#F97818] text-[#11161A] font-barlow font-black uppercase tracking-wider text-[15px] px-6 py-3 w-fit flex items-center gap-2 hover:bg-white transition-colors duration-300 mt-2"
@@ -70,7 +70,7 @@ const Footer = () => {
           <div className="lg:col-span-3 flex flex-col gap-5">
             <h4 className="font-barlow font-black text-[#F97818] uppercase text-[16px] tracking-wider">{t('contact_us')}</h4>
             <ul className="flex flex-col gap-3 font-inter text-[14px] text-white/60">
-              <li>+971 50 479 9258</li>
+              <li>+971 54 446 4649</li>
               <li>info@endurobikedubai.com</li>
               <li className="leading-relaxed">Al Badayer Desert - Dubai-Hatta Rd -<br/>Dubai - United Arab Emirates</li>
             </ul>
@@ -110,7 +110,7 @@ const Footer = () => {
 
       {/* Floating WhatsApp Button */}
       <a 
-        href="https://wa.me/971504799258"
+        href="https://wa.me/971544464649"
         target="_blank"
         rel="noopener noreferrer" 
         className="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 z-50 group"

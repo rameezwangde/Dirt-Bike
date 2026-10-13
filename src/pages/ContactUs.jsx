@@ -45,8 +45,8 @@ const ContactUs = () => {
               <div>
                 <h4 className="font-barlow font-bold text-[#F97818] tracking-widest text-[15px] mb-4">PHONE / WHATSAPP</h4>
                 <div className="font-inter text-white/90 text-[15px] leading-[1.6]">
-                  <a href="https://wa.me/971504799258" target="_blank" rel="noopener noreferrer" className="hover:text-[#F97818] transition-colors">
-                    +971 50 479 9258
+                  <a href="https://wa.me/971544464649" target="_blank" rel="noopener noreferrer" className="hover:text-[#F97818] transition-colors">
+                    +971 54 446 4649
                   </a>
                 </div>
               </div>

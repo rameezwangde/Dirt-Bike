@@ -7,7 +7,7 @@ const PackageCard = ({ pkg, onOpenDetails, index = 0 }) => {
   const { currency, convertPrice } = useCurrency();
 
   const formattedPrice = convertPrice ? convertPrice(pkg.price) : pkg.price;
-  const whatsappUrl = `https://wa.me/971504799258?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/971544464649?text=${encodeURIComponent(
     `Hello! I would like to book the "${pkg.title}" package (${formattedPrice} ${currency.code}).`
   )}`;
 
