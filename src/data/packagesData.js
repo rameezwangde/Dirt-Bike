@@ -230,7 +230,7 @@ export const allPackages = [
     transfer: '300 AED 2-Way Transport',
     highlight: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
     description: 'High-performance Can-Am Maverick X3 Turbo engineered for high dune carving and open throttle desert runs.',
-    image: '/images/x3.jpeg',
+    image: '/images/can-am-4-seater.jpeg',
     imagePosition: 'object-center',
     specs: {
       horsepower: '195 HP Turbo RR',
