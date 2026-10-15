@@ -25,6 +25,7 @@ const tours = [
     number: "02",
     title: "BUGGY RENTAL\nDUBAI",
     image: "/images/raptor-700.jpeg",
+    objectPosition: "center 20%",
     description: "Experience Dubai's desert like never before with our high-performance dune buggies. Perfect for families, groups, and thrill-seekers of all levels.",
     ctaText: "EXPLORE BUGGIES",
     link: "/packages?category=buggy",
@@ -68,6 +69,24 @@ const tours = [
         <circle cx="17" cy="17" r="2" />
         <path d="M9 10V6h6v4" />
         <path d="M7 6V4h10v2" />
+      </svg>
+    )
+  },
+  {
+    number: "05",
+    title: "POLARIS BUGGY\nDUBAI",
+    image: "/images/polarize-1000.jpeg",
+    objectPosition: "center 70%",
+    description: "Conquer the desert terrain in top-tier Polaris RZR buggies. Built for unmatched power, responsive handling, and supreme off-road excitement.",
+    ctaText: "EXPLORE POLARIS",
+    link: "/packages?category=buggy",
+    iconSvg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
+        <path d="M3 12h18" />
+        <path d="M5 12V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4" />
+        <circle cx="7" cy="16" r="3" />
+        <circle cx="17" cy="16" r="3" />
+        <path d="M9 16h6" />
       </svg>
     )
   }

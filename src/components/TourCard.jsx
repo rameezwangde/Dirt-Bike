@@ -21,10 +21,6 @@ const TourCard = ({ tour, index }) => {
       {/* Top/Left Image Area */}
       <div 
         className="relative w-full lg:w-[50%] h-[300px] lg:h-auto overflow-hidden z-10"
-        style={{
-          // Straight angled clip path for desktop, flat for mobile
-          clipPath: 'polygon(0 0, 100% 0, 92% 100%, 0 100%)'
-        }}
       >
         <div className="absolute inset-0 w-full h-full transition-transform duration-400 ease-out group-hover:scale-[1.025]">
           <div className="w-full h-full bg-[#181818] flex items-center justify-center">
@@ -46,8 +42,8 @@ const TourCard = ({ tour, index }) => {
 
       {/* Bottom/Right Information Panel */}
       <div 
-        className="relative w-full lg:w-[50%] flex-grow bg-[#071116] z-0 flex flex-col justify-center lg:-ml-[8%]"
-        style={{ padding: '40px 40px 40px 8%' }}
+        className="relative w-full lg:w-[50%] flex-grow bg-[#071116] z-0 flex flex-col justify-center"
+        style={{ padding: '40px' }}
       >
         
         {/* Tire track texture (decorative) */}
