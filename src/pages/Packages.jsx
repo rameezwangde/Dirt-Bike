@@ -89,7 +89,7 @@ const Packages = () => {
       {
         id: 'dirt-bike',
         name: 'DIRT BIKES',
-        subtitle: 'Pro-grade KTM 450cc motocross machines with pro coaching & full gear',
+        subtitle: 'Pro-grade 450cc motocross machines with pro coaching & full gear',
         packages: allPackages.filter((p) => p.category === 'dirt-bike')
       },
       {
@@ -190,7 +190,7 @@ const Packages = () => {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search vehicle (e.g. Can-Am, KTM)..."
+                placeholder="Search vehicle (e.g. Can-Am, Polaris, 450cc)..."
                 className="w-full bg-[#181D23] border border-white/10 focus:border-[#F97818] text-white text-xs sm:text-sm rounded-xl pl-10 pr-4 py-2.5 outline-none transition-colors placeholder:text-gray-500 font-inter"
               />
             </div>

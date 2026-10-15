@@ -8,7 +8,7 @@ import { useCurrency } from '../context/CurrencyContext';
 const packages = [
   {
     id: 1,
-    title: "KTM 450cc - 1 Hour",
+    title: "450cc - 1 Hour",
     duration: "1-Hour",
     seats: 1,
     price: 400,
@@ -16,7 +16,7 @@ const packages = [
   },
   {
     id: 2,
-    title: "KTM 450cc - 2 Hour",
+    title: "450cc - 2 Hour",
     duration: "2-Hour",
     seats: 1,
     price: 649,
@@ -24,7 +24,7 @@ const packages = [
   },
   {
     id: 3,
-    title: "KTM 450cc - 3-Hour",
+    title: "450cc - 3-Hour",
     duration: "3-Hour",
     seats: 1,
     price: 799,
@@ -32,7 +32,7 @@ const packages = [
   },
   {
     id: 4,
-    title: "KTM 450cc - 4-Hour",
+    title: "450cc - 4-Hour",
     duration: "4-Hour",
     seats: 1,
     price: 1000,
@@ -40,7 +40,7 @@ const packages = [
   },
   {
     id: 5,
-    title: "KTM 450cc - 1-Day",
+    title: "450cc - 1-Day",
     duration: "1-Day",
     seats: 1,
     price: 1550,
@@ -48,7 +48,7 @@ const packages = [
   },
   {
     id: 6,
-    title: "KTM 450cc - 3-Days",
+    title: "450cc - 3-Days",
     duration: "3-Days",
     seats: 1,
     price: 3850,
