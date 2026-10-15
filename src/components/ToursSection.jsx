@@ -24,7 +24,7 @@ const tours = [
   {
     number: "02",
     title: "BUGGY RENTAL\nDUBAI",
-    image: "/images/buggy-rental-dubai-cover.jpg",
+    image: "/images/raptor-700.jpeg",
     description: "Experience Dubai's desert like never before with our high-performance dune buggies. Perfect for families, groups, and thrill-seekers of all levels.",
     ctaText: "EXPLORE BUGGIES",
     link: "/packages?category=buggy",
@@ -41,7 +41,7 @@ const tours = [
   {
     number: "03",
     title: "DESERT SAFARI\nDUBAI",
-    image: "/images/polarize-1000.jpeg",
+    image: "/images/maverick-xr.jpeg",
     imagePosition: "object-[center_70%]",
     description: "Immerse yourself in a complete desert experience. Enjoy dune bashing, camel rides, sandboarding, and an authentic Bedouin camp dinner.",
     ctaText: "EXPLORE SAFARI",
@@ -56,7 +56,8 @@ const tours = [
   {
     number: "04",
     title: "QUAD BIKE\nDUBAI",
-    image: "/images/kimko-1.jpeg",
+    image: "/images/x3.jpeg",
+    objectPosition: "25% 65%",
     description: "Get ready for an adrenaline-packed quad biking adventure across the golden dunes. Ideal for solo riders, friends, and families.",
     ctaText: "EXPLORE QUADS",
     link: "/packages?category=quad-bike",

@@ -33,6 +33,7 @@ const TourCard = ({ tour, index }) => {
               src={tour.image} 
               alt={tour.title.replace('\n', ' ')}
               className={`w-full h-full object-cover ${tour.imagePosition || 'object-center'}`}
+              style={tour.objectPosition ? { objectPosition: tour.objectPosition } : undefined}
               onError={(e) => {
                 // Fallback for placeholder if image not yet created
                 e.target.style.display = 'none';
