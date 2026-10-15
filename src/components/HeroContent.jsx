@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Play, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 const HeroContent = () => {
@@ -60,7 +61,8 @@ const HeroContent = () => {
         className="flex items-center gap-[24px] sm:gap-[34px] mt-[24px] sm:mt-[32px]"
       >
         {/* Primary CTA */}
-        <button 
+        <Link 
+          to="/packages"
           className="group bg-[#F97818] hover:bg-[#FF8A28] text-[#070B0D] font-barlow font-bold text-sm sm:text-base tracking-widest uppercase flex-none transition-colors duration-300 flex items-center justify-center gap-2 sm:gap-3 w-[220px] sm:w-[265px] h-[56px] sm:h-[64px]"
           style={{
             clipPath: 'polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%)'
@@ -68,7 +70,7 @@ const HeroContent = () => {
         >
           {t('explore_rides')}
           <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-[5px]" />
-        </button>
+        </Link>
 
       </motion.div>
 
