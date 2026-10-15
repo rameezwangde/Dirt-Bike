@@ -19,7 +19,7 @@ const packages = [
     title: "450cc - 2 Hour",
     duration: "2-Hour",
     seats: 1,
-    price: 649,
+    price: 700,
     image: "/images/ktm-450-2hr.jpeg"
   },
   {
