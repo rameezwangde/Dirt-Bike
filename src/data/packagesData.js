@@ -230,8 +230,8 @@ export const allPackages = [
     transfer: '300 AED 2-Way Transport',
     highlight: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
     description: 'High-performance Can-Am Maverick X3 Turbo engineered for high dune carving and open throttle desert runs.',
-    image: '/images/can-am-4-seater.jpeg',
-    imagePosition: 'object-center',
+    image: '/images/x3-2-seater.jpeg',
+    imagePosition: 'object-[center_65%]',
     specs: {
       horsepower: '195 HP Turbo RR',
       engine: 'Rotax ACE 900cc Turbocharged',
@@ -412,7 +412,7 @@ export const allPackages = [
     transfer: '300 AED 2-Way Transport',
     highlight: 'USA 🇺🇸 570CC 4X4 · HEAVY DUTY ALL-TERRAIN',
     description: 'True American 4x4 off-road power with the 570cc Polaris Sportsman ATV. Unstoppable traction through massive sand dunes.',
-    image: '/images/quad-bike.jpg',
+    image: '/images/570-cc.jpeg',
     imagePosition: 'object-center',
     specs: {
       engine: '570cc ProStar 4-Stroke DOHC EFI',
