@@ -367,35 +367,6 @@ export const allPackages = [
       'Cold water, isotonic drinks & energy snacks'
     ]
   },
-  {
-    id: 'polaris-4',
-    category: 'polaris',
-    categoryLabel: 'POLARIS RZR BUGGIES',
-    title: 'SINGLE SEATER POLARIS RS1 (SOLO RACER)',
-    price: 750,
-    priceRates: '1 hr: 750 AED | 2 hrs: 1250 AED',
-    duration: '1-2 Hours',
-    seats: '1 Seater',
-    transfer: '300 AED 2-Way Transport',
-    highlight: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
-    description: 'The ultimate solo desert kart with central-cockpit agility and razor-sharp steering.',
-    image: '/images/polaris-2.jpeg',
-    imagePosition: 'object-[center_70%]',
-    specs: {
-      horsepower: '110 HP ProStar HO',
-      engine: 'Single Seater Center Cockpit',
-      transmission: 'Automatic PVT',
-      suspension: 'Walker Evans Velocity Shocks',
-      terrain: 'Technical Sand Bowls & High Peaks'
-    },
-    inclusions: [
-      'True rally driver experience (Center seat position)',
-      'No speed governor restrictions',
-      'Full gear: Pro helmet, goggles, gloves',
-      'Guided route tailored to your driving skills',
-      'Chilled refreshments'
-    ]
-  },
 
   // ==========================================
   // 4TH: QUAD BIKES
