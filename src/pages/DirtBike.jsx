@@ -27,7 +27,7 @@ const packages = [
     title: "450cc - 3-Hour",
     duration: "3-Hour",
     seats: 1,
-    price: 799,
+    price: 900,
     image: "/images/ktm-450-3hr.jpeg"
   },
   {
@@ -35,15 +35,15 @@ const packages = [
     title: "450cc - 4-Hour",
     duration: "4-Hour",
     seats: 1,
-    price: 1000,
+    price: 1200,
     image: "/images/ktm-450-2hr.jpeg"
   },
   {
     id: 5,
-    title: "450cc - 1-Day",
-    duration: "1-Day",
+    title: "450cc - 7-Hour",
+    duration: "7-Hour",
     seats: 1,
-    price: 1550,
+    price: 1500,
     image: "/images/ktm-450-1hr.jpeg"
   },
   {
