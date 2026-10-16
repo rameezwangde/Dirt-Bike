@@ -101,7 +101,7 @@ const Packages = () => {
       {
         id: 'polaris',
         name: 'POLARIS RZR BUGGIES',
-        subtitle: 'Nimble Polaris RZR 1000, Turbo S and RS1 solo racer buggies',
+        subtitle: 'Nimble Polaris RZR 1000 and Turbo S buggies',
         packages: allPackages.filter((p) => p.category === 'polaris')
       },
       {

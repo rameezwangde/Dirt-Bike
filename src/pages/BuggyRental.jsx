@@ -46,38 +46,7 @@ const packages = [
     price: 1800,
     image: "/images/polaris.jpeg"
   },
-  {
-    id: 6,
-    title: "Single Seater Polaris RS1",
-    duration: "1-Hour",
-    seats: 1,
-    price: 750,
-    image: "/images/polaris-2.jpeg"
-  },
-  {
-    id: 7,
-    title: "Single Seater Polaris RS1",
-    duration: "2-Hour",
-    seats: 1,
-    price: 1250,
-    image: "/images/polaris-3.jpeg"
-  },
-  {
-    id: 8,
-    title: "Single Seater Polaris RS1",
-    duration: "3-Hour",
-    seats: 1,
-    price: 1550,
-    image: "/images/polaris-1000cc.jpeg"
-  },
-  {
-    id: 9,
-    title: "Single Seater Polaris RS1 ( Early Morning )",
-    duration: "2-Hour",
-    seats: 1,
-    price: 1150,
-    image: "/images/polaris.jpeg"
-  },
+
   {
     id: 10,
     title: "Can-Am Maverick X3 ( Early Morning )",
