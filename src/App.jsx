@@ -9,10 +9,12 @@ import BuggyRental from './pages/BuggyRental';
 import DesertSafari from './pages/DesertSafari';
 import QuadBike from './pages/QuadBike';
 import ScrollToTop from './components/ScrollToTop';
+import SEO from './components/SEO';
 
 function App() {
   return (
     <>
+      <SEO />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
