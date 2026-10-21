@@ -72,12 +72,17 @@ const Footer = () => {
             <ul className="flex flex-col gap-3 font-inter text-[14px] text-white/60">
               <li>+971 54 446 4649</li>
               <li>info@endurobikedubai.com</li>
-              <li className="leading-relaxed">Al Badayer Desert - Dubai-Hatta Rd -<br/>Dubai - United Arab Emirates</li>
+              <li className="leading-relaxed">XP83+8CW Al Madam - Dubai-Hatta Rd -<br/>Sharjah - United Arab Emirates</li>
             </ul>
             
             <h4 className="font-barlow font-black text-[#F97818] uppercase text-[16px] tracking-wider mt-4">{t('follow')}</h4>
             <div className="flex items-center gap-3 text-white/60 font-inter text-[13px]">
-              <a href="#" className="hover:text-[#F97818] flex items-center gap-1.5 transition-colors">
+              <a 
+                href="https://www.instagram.com/speed_desert/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-[#F97818] flex items-center gap-1.5 transition-colors"
+              >
                 <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -86,9 +91,23 @@ const Footer = () => {
                 Instagram
               </a>
               <span className="text-white/20">/</span>
-              <a href="#" className="hover:text-[#F97818] transition-colors">Snapchat</a>
+              <a 
+                href="https://www.snapchat.com/add/speed_desert" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-[#F97818] transition-colors"
+              >
+                Snapchat
+              </a>
               <span className="text-white/20">/</span>
-              <a href="#" className="hover:text-[#F97818] transition-colors">TikTok</a>
+              <a 
+                href="https://www.tiktok.com/@speed_desert_team/video/7598941408258510088" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-[#F97818] transition-colors"
+              >
+                TikTok
+              </a>
             </div>
           </div>
 
