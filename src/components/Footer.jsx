@@ -25,12 +25,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-6 mb-8">
           
           {/* Column 1: Brand & Description */}
-          <div className="lg:col-span-4 flex flex-col gap-6">
-            <div className="flex flex-col items-start gap-1">
-              <span className="font-barlow font-black text-[32px] tracking-tight uppercase leading-none">
-                ENDURO BIKE <span className="text-[#F97818]">DUBAI</span>
-              </span>
-            </div>
+          <div className="lg:col-span-4 flex flex-col gap-5">
+            <Link to="/" className="flex items-center gap-3 w-fit group">
+              <img 
+                src="/images/logo.png" 
+                alt="Dirt Bike Dubai" 
+                className="h-[60px] md:h-[72px] w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+            </Link>
             <p className="font-inter text-[14px] text-white/50 leading-relaxed max-w-[320px]">
               Premium off-road desert experiences across Dubai and the UAE.
             </p>

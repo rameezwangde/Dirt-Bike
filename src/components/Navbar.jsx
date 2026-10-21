@@ -55,11 +55,13 @@ const Navbar = () => {
         >
           
           {/* LEFT: Logo */}
-          <div className="flex items-center relative z-[60]">
-            <div className={`font-barlow font-bold text-2xl tracking-widest ${logoColor}`}>
-              YOUR LOGO
-            </div>
-          </div>
+          <Link to="/" className="flex items-center relative z-[60] group">
+            <img 
+              src="/images/logo.png" 
+              alt="Dirt Bike Dubai" 
+              className="h-[55px] md:h-[68px] w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            />
+          </Link>
 
           {/* CENTER: Navigation Links */}
           <div className={`hidden lg:flex items-center font-barlow text-[13px] xl:text-[15px] font-semibold tracking-wider xl:tracking-widest ${defaultTextColor} whitespace-nowrap gap-4 lg:gap-6 xl:gap-[45px]`}>
