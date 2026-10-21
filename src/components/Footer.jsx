@@ -70,8 +70,16 @@ const Footer = () => {
           <div className="lg:col-span-3 flex flex-col gap-5">
             <h4 className="font-barlow font-black text-[#F97818] uppercase text-[16px] tracking-wider">{t('contact_us')}</h4>
             <ul className="flex flex-col gap-3 font-inter text-[14px] text-white/60">
-              <li>+971 54 446 4649</li>
-              <li>info@endurobikedubai.com</li>
+              <li>
+                <a href="tel:+971544464649" className="hover:text-[#F97818] transition-colors">
+                  +971 54 446 4649
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@endurobikedubai.com" className="hover:text-[#F97818] transition-colors">
+                  info@endurobikedubai.com
+                </a>
+              </li>
               <li className="leading-relaxed">XP83+8CW Al Madam - Dubai-Hatta Rd -<br/>Sharjah - United Arab Emirates</li>
             </ul>
             

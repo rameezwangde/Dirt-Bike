@@ -44,9 +44,13 @@ const ContactUs = () => {
               {/* Phone */}
               <div>
                 <h4 className="font-barlow font-bold text-[#F97818] tracking-widest text-[15px] mb-4">PHONE / WHATSAPP</h4>
-                <div className="font-inter text-white/90 text-[15px] leading-[1.6]">
-                  <a href="https://wa.me/971544464649" target="_blank" rel="noopener noreferrer" className="hover:text-[#F97818] transition-colors">
+                <div className="font-inter text-white/90 text-[15px] leading-[1.6] flex flex-wrap items-center gap-x-3 gap-y-1">
+                  <a href="tel:+971544464649" className="hover:text-[#F97818] transition-colors">
                     +971 54 446 4649
+                  </a>
+                  <span className="text-white/30">|</span>
+                  <a href="https://wa.me/971544464649" target="_blank" rel="noopener noreferrer" className="hover:text-[#F97818] text-[#F97818]/90 text-[13px] font-semibold transition-colors">
+                    WhatsApp Chat ↗
                   </a>
                 </div>
               </div>
