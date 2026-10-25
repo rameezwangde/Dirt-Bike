@@ -9,6 +9,7 @@ import BuggyRental from './pages/BuggyRental';
 import DesertSafari from './pages/DesertSafari';
 import QuadBike from './pages/QuadBike';
 import TermsAndConditions from './pages/TermsAndConditions';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import ScrollToTop from './components/ScrollToTop';
 import SEO from './components/SEO';
 
@@ -28,6 +29,8 @@ function App() {
         <Route path="/quad-bike-dubai" element={<QuadBike />} />
         <Route path="/terms" element={<TermsAndConditions />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </>
   );

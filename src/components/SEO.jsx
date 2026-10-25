@@ -61,6 +61,18 @@ const SEO_DATA = {
     description: 'Read the Terms and Conditions for Enduro Bike Dubai. Information on bookings, cancellations, safety guidelines, equipment, and off-road desert experiences.',
     keywords: 'terms and conditions, enduro bike dubai terms, desert safari booking policy, cancellation terms',
     canonical: 'https://endurobikedubai.com/terms-and-conditions'
+  },
+  '/privacy': {
+    title: 'Privacy Policy | Enduro Bike Dubai Desert Tours',
+    description: 'Privacy Policy for Enduro Bike Dubai. Learn how we collect, protect, and handle your personal and booking information in accordance with UAE data protection regulations.',
+    keywords: 'privacy policy, enduro bike dubai privacy, data protection, personal information uae',
+    canonical: 'https://endurobikedubai.com/privacy'
+  },
+  '/privacy-policy': {
+    title: 'Privacy Policy | Enduro Bike Dubai Desert Tours',
+    description: 'Privacy Policy for Enduro Bike Dubai. Learn how we collect, protect, and handle your personal and booking information in accordance with UAE data protection regulations.',
+    keywords: 'privacy policy, enduro bike dubai privacy, data protection, personal information uae',
+    canonical: 'https://endurobikedubai.com/privacy-policy'
   }
 };
 
