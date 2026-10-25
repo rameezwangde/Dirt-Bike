@@ -12,12 +12,14 @@ import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import ScrollToTop from './components/ScrollToTop';
 import SEO from './components/SEO';
+import CookieBanner from './components/CookieBanner';
 
 function App() {
   return (
     <>
       <SEO />
       <ScrollToTop />
+      <CookieBanner />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />

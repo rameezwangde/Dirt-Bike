@@ -129,9 +129,18 @@ const Footer = () => {
             <span className="tracking-widest uppercase font-bold text-white/30">25.2048° N / 55.2708° E — DUBAI, UAE</span>
             <span>&copy; {new Date().getFullYear()} Enduro Bike Dubai. All rights reserved.</span>
           </div>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-6 items-center">
             <Link to="/terms" className="hover:text-white transition-colors">Terms & Conditions</Link>
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <button 
+              onClick={() => {
+                localStorage.removeItem('enduro_cookie_consent_v1');
+                window.dispatchEvent(new Event('open_cookie_preferences'));
+              }}
+              className="hover:text-white transition-colors cursor-pointer text-left"
+            >
+              Cookie Settings
+            </button>
           </div>
         </div>
 
