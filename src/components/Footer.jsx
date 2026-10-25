@@ -130,7 +130,7 @@ const Footer = () => {
             <span>&copy; {new Date().getFullYear()} Enduro Bike Dubai. All rights reserved.</span>
           </div>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>
+            <Link to="/terms" className="hover:text-white transition-colors">Terms & Conditions</Link>
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
           </div>
         </div>

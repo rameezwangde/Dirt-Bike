@@ -49,6 +49,18 @@ const SEO_DATA = {
     description: 'Contact Enduro Bike Dubai for instant bookings, inquiries, and custom packages. Located at XP83+8CW Al Madam, Dubai-Hatta Rd. Call or WhatsApp +971 54 446 4649.',
     keywords: 'contact dirt bike dubai, enduro dubai phone number, desert adventure location dubai',
     canonical: 'https://endurobikedubai.com/contact'
+  },
+  '/terms': {
+    title: 'Terms & Conditions | Enduro Bike Dubai Desert Tours',
+    description: 'Read the Terms and Conditions for Enduro Bike Dubai. Information on bookings, cancellations, safety guidelines, equipment, and off-road desert experiences.',
+    keywords: 'terms and conditions, enduro bike dubai terms, desert safari booking policy, cancellation terms',
+    canonical: 'https://endurobikedubai.com/terms'
+  },
+  '/terms-and-conditions': {
+    title: 'Terms & Conditions | Enduro Bike Dubai Desert Tours',
+    description: 'Read the Terms and Conditions for Enduro Bike Dubai. Information on bookings, cancellations, safety guidelines, equipment, and off-road desert experiences.',
+    keywords: 'terms and conditions, enduro bike dubai terms, desert safari booking policy, cancellation terms',
+    canonical: 'https://endurobikedubai.com/terms-and-conditions'
   }
 };
 
