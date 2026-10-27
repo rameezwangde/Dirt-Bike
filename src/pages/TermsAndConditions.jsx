@@ -53,7 +53,7 @@ const TermsAndConditions = () => {
                 In these Terms, “we”, “us” and “our” refer to the business operating as endurbikedubai.net. “You” means the person making a booking and, where applicable, each participant.
               </p>
               <div className="bg-[#0B171E] border border-white/10 rounded-lg p-5 mt-4 space-y-2 text-sm text-white/90">
-                <div><strong className="text-[#F97818]">Email:</strong> <a href="mailto:info@endurobikedubai.com" className="hover:text-[#F97818] transition-colors">info@endurobikedubai.com</a></div>
+                <div><strong className="text-[#F97818]">Email:</strong> <a href="mailto:info@endurobikedubai.net" className="hover:text-[#F97818] transition-colors">info@endurobikedubai.net</a></div>
                 <div><strong className="text-[#F97818]">Telephone and WhatsApp:</strong> <a href="https://wa.me/971544464649" target="_blank" rel="noopener noreferrer" className="hover:text-[#F97818] transition-colors">+971 54 446 4649</a></div>
                 <div><strong className="text-[#F97818]">Riding base:</strong> XP83+8CW Al Madam - Dubai-Hatta Rd - Sharjah</div>
               </div>
@@ -551,7 +551,7 @@ const TermsAndConditions = () => {
             </h2>
             <div className="space-y-4">
               <p>
-                Raise an operational concern with the guide promptly so we can try to resolve it safely. You may also contact <a href="mailto:info@endurobikedubai.com" className="text-[#F97818] hover:underline">info@endurobikedubai.com</a> with your booking reference and details.
+                Raise an operational concern with the guide promptly so we can try to resolve it safely. You may also contact <a href="mailto:info@endurobikedubai.net" className="text-[#F97818] hover:underline">info@endurobikedubai.net</a> with your booking reference and details.
               </p>
               <p>
                 We aim to acknowledge complaints within <strong className="text-white">24 to 48 hours</strong> and provide a substantive response within <strong className="text-white">5 to 7 business days</strong>. These service targets do not shorten any legal claim period.

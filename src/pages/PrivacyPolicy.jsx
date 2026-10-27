@@ -48,7 +48,7 @@ const PrivacyPolicy = () => {
               </p>
               <div className="bg-[#0B171E] border border-white/10 rounded-lg p-5 mt-4 space-y-2 text-sm text-white/90">
                 <div><strong className="text-[#F97818]">Riding base and contact address:</strong> XP83+8CW Al Madam - Dubai-Hatta Rd - Sharjah</div>
-                <div><strong className="text-[#F97818]">Privacy contact:</strong> <a href="mailto:info@endurobikedubai.com" className="hover:text-[#F97818] transition-colors">info@endurobikedubai.com</a></div>
+                <div><strong className="text-[#F97818]">Privacy contact:</strong> <a href="mailto:info@endurobikedubai.net" className="hover:text-[#F97818] transition-colors">info@endurobikedubai.net</a></div>
                 <div><strong className="text-[#F97818]">Telephone:</strong> <a href="tel:+971544464649" className="hover:text-[#F97818] transition-colors">+971 54 446 4649</a></div>
               </div>
               <p className="text-sm text-white/60 pt-2">
@@ -254,7 +254,7 @@ const PrivacyPolicy = () => {
                 We send optional promotional emails, WhatsApp messages or other direct marketing only where lawfully permitted and with the consent required by applicable law.
               </p>
               <p>
-                You may unsubscribe using the message instructions or contact us at <a href="mailto:info@endurobikedubai.com" className="text-[#F97818] hover:underline">info@endurobikedubai.com</a>.
+                You may unsubscribe using the message instructions or contact us at <a href="mailto:info@endurobikedubai.net" className="text-[#F97818] hover:underline">info@endurobikedubai.net</a>.
               </p>
               <p>
                 Withdrawing marketing permission does not prevent necessary booking, safety, payment or refund communications. We may retain a minimal suppression record to respect your request not to receive marketing.
@@ -359,7 +359,7 @@ const PrivacyPolicy = () => {
                 <li>Challenge qualifying decisions based solely on automated processing.</li>
               </ul>
               <p>
-                Contact <a href="mailto:info@endurobikedubai.com" className="text-[#F97818] hover:underline">info@endurobikedubai.com</a> to make a request. We may ask for proportionate identity verification and will respond within applicable legal deadlines.
+                Contact <a href="mailto:info@endurobikedubai.net" className="text-[#F97818] hover:underline">info@endurobikedubai.net</a> to make a request. We may ask for proportionate identity verification and will respond within applicable legal deadlines.
               </p>
               <p>
                 Withdrawal does not invalidate processing lawfully carried out beforehand. Some information may need to be retained to meet legal obligations or handle claims; we will explain relevant exceptions. You may complain to the competent data protection authority where applicable.
@@ -396,7 +396,7 @@ const PrivacyPolicy = () => {
               </p>
               <div className="bg-[#0B171E] border border-white/10 rounded-lg p-5 mt-4 space-y-2 text-sm text-white/90">
                 <div className="font-bold text-white text-base">endurbikedubai.net</div>
-                <div><strong className="text-[#F97818]">Email:</strong> <a href="mailto:info@endurobikedubai.com" className="hover:text-[#F97818] transition-colors">info@endurobikedubai.com</a></div>
+                <div><strong className="text-[#F97818]">Email:</strong> <a href="mailto:info@endurobikedubai.net" className="hover:text-[#F97818] transition-colors">info@endurobikedubai.net</a></div>
                 <div><strong className="text-[#F97818]">Telephone:</strong> <a href="tel:+971544464649" className="hover:text-[#F97818] transition-colors">+971 54 446 4649</a></div>
                 <div><strong className="text-[#F97818]">Riding base:</strong> XP83+8CW Al Madam - Dubai-Hatta Rd - Sharjah</div>
               </div>

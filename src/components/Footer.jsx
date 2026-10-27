@@ -78,8 +78,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@endurobikedubai.com" className="hover:text-[#F97818] transition-colors">
-                  info@endurobikedubai.com
+                <a href="mailto:info@endurobikedubai.net" className="hover:text-[#F97818] transition-colors">
+                  info@endurobikedubai.net
                 </a>
               </li>
               <li className="leading-relaxed">XP83+8CW Al Madam - Dubai-Hatta Rd -<br/>Sharjah - United Arab Emirates</li>

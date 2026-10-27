@@ -59,8 +59,8 @@ const ContactUs = () => {
               <div>
                 <h4 className="font-barlow font-bold text-[#F97818] tracking-widest text-[15px] mb-4">EMAIL</h4>
                 <div className="font-inter text-white/90 text-[15px] leading-[1.6]">
-                  <a href="mailto:info@endurobikedubai.com" className="hover:text-[#F97818] transition-colors">
-                    info@endurobikedubai.com
+                  <a href="mailto:info@endurobikedubai.net" className="hover:text-[#F97818] transition-colors">
+                    info@endurobikedubai.net
                   </a>
                 </div>
               </div>
